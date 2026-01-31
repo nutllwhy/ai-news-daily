@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI圈日报 - 2026-01-31</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: "🤖";
+            font-size: 60px;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            opacity: 0.3;
+        }
+        
+        .header::after {
+            content: "⚡";
+            font-size: 60px;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header .date {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            margin-bottom: 10px;
+        }
+        
+        .header .meta {
+            font-size: 0.9em;
+            color: #888;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .header .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: #f8f9fa;
+            padding: 15px 40px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .nav a {
+            color: #495057;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        /* Content */
+        .content {
+            padding: 40px;
+        }
+        
+        /* Section Headers */
+        .section-title {
+            font-size: 1.8em;
+            color: #1a1a2e;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-title:first-child {
+            margin-top: 0;
+        }
+        
+        /* News Cards */
+        .news-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .news-card.hot {
+            border-left-color: #e74c3c;
+            background: linear-gradient(to right, #fff5f5 0%, #ffffff 100%);
+        }
+        
+        .news-card.tool {
+            border-left-color: #27ae60;
+            background: linear-gradient(to right, #f0fff4 0%, #ffffff 100%);
+        }
+        
+        .news-card.research {
+            border-left-color: #9b59b6;
+            background: linear-gradient(to right, #faf5ff 0%, #ffffff 100%);
+        }
+        
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .news-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            font-weight: 700;
+            flex: 1;
+            line-height: 1.4;
+        }
+        
+        .news-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .news-badge.hot { background: #e74c3c; }
+        .news-badge.new { background: #27ae60; }
+        .news-badge.update { background: #3498db; }
+        
+        .news-meta {
+            display: flex;
+            gap: 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .news-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .news-content {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        
+        .news-content strong {
+            color: #2c3e50;
+        }
+        
+        .highlight-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 3px solid #667eea;
+        }
+        
+        .highlight-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .highlight-box li {
+            margin-bottom: 8px;
+        }
+        
+        .sources {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ddd;
+        }
+        
+        .sources-title {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .source-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .source-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 4px 10px;
+            background: #f0f3ff;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+        
+        .source-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        /* Stats Table */
+        .stats-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .stats-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #a0a0a0;
+        }
+        
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .data-table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .data-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        /* Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #1a1a2e;
+            color: #888;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .header::before,
+            .header::after {
+                display: none;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .news-header {
+                flex-direction: column;
+            }
+            
+            .nav {
+                padding: 15px;
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="date">2026年1月31日 星期五</div>
+            <h1>🤖 AI圈日报</h1>
+            <div class="meta">
+                <span>📊 38条精选新闻</span>
+                <span>🔍 6大维度覆盖</span>
+                <span>⚡ 实时更新</span>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#headlines">🚨 头条新闻</a>
+            <a href="#tools">🛠️ 新工具</a>
+            <a href="#trends">📈 行业趋势</a>
+            <a href="#stats">📊 关键数据</a>
+        </nav>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Headlines Section -->
+            <h2 class="section-title" id="headlines">🚨 头条新闻</h2>
+            
+            <div class="news-card hot">
+                <div class="news-header">
+                    <div class="news-title">OpenAI 挥泪斩马谡：GPT-4o 等旧模型彻底退役，全面转向 GPT-5 时代</div>
+                    <span class="news-badge hot">重磅</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 OpenAI</span>
+                </div>
+                <div class="news-content">
+                    <p>OpenAI 正式宣布，将于 <strong>2026年2月13日</strong> 永久退役 GPT-4o、GPT-4.1、GPT-4.1 mini、o4-mini 等多款旧模型。这是 OpenAI 历史上最大规模的模型退役行动。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>核心数据：</strong>
+                        <ul>
+                            <li>目前仅 <strong>0.1%</strong> 的日活用户仍在使用 GPT-4o</li>
+                            <li>绝大多数用户已迁移至 GPT-5.2</li>
+                            <li>开发者需在两周内完成迁移</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>战略意义：</strong>此次强制退役不仅是为了简化技术栈，更是 OpenAI 向市场传递的明确信号——公司正全力押注下一代模型架构，巩固 GPT-5 作为行业新标准的地位。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://www.indiatvnews.com/technology/news/openai-to-permanently-retire-gpt-4o-from-chatgpt-heres-what-changes-for-users-2026-01-30-1028195" target="_blank">India TV</a>
+                        <a href="https://www.cnet.com/tech/services-and-software/bye-bye-chatgpt-4o-openai-retires-several-models-pushes-us-to-use-new-gpt-5-ones/" target="_blank">CNET</a>
+                        <a href="https://www.theregister.com/2026/01/30/openai_gpt_deprecations/" target="_blank">The Register</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card hot">
+                <div class="news-header">
+                    <div class="news-title">【独家爆料】苹果的 AI 双轨战略：内部依赖 Claude，外部拥抱 Gemini</div>
+                    <span class="news-badge hot">独家</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 Bloomberg / Apple</span>
+                </div>
+                <div class="news-content">
+                    <p>据 Bloomberg 记者 Mark Gurman 爆料，苹果在内部 AI 运营中<strong>大量使用 Anthropic 的 Claude 模型</strong>，而非完全依赖自研系统。这一"外包"策略与苹果对外宣传的"全自研 AI"形象形成鲜明对比。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>双轨制策略：</strong>
+                        <ul>
+                            <li><strong>对内：</strong>使用 Claude 处理内部开发和高复杂度任务</li>
+                            <li><strong>对外：</strong>与 Google 合作，使用 Gemini AI 增强 Siri 功能（预计 2026 年 2 月上线）</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>行业意义：</strong>这一爆料揭示了即使是拥有无限资源的科技巨头，在生成式 AI 革命中也面临残酷现实——自研 AI 的技术差距短期内难以弥补。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://www.webpronews.com/inside-apples-quiet-shift-how-anthropics-claude-powers-cupertinos-ai-infrastructure/" target="_blank">WebProNews</a>
+                        <a href="https://wi-fiplanet.com/inside-apples-ai-strategy-anthropics-claude-powers-internal-development-while-googles-gemini-enhances-siri/" target="_blank">WiFi Planet</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card hot">
+                <div class="news-header">
+                    <div class="news-title">春节 AI 决战：字节、阿里、DeepSeek 打响 14 亿用户入口争夺战</div>
+                    <span class="news-badge hot">中国</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 17小时前</span>
+                    <span>🏢 36氪</span>
+                </div>
+                <div class="news-content">
+                    <p>据《The Information》及 36氪报道，这个春节将成为中国 AI 市场的"决战时刻"。<strong>字节跳动、阿里巴巴、DeepSeek</strong> 三大巨头不约而同选择在这个节点发布重磅产品。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>三方布局：</strong>
+                        <ul>
+                            <li><strong>字节跳动：</strong>或将祭出"全模态三件套"，覆盖文本、图像、视频全领域</li>
+                            <li><strong>阿里巴巴：</strong>除发布 Qwen 3.5 旗舰模型外，还将让千问打通支付宝与电商生态</li>
+                            <li><strong>DeepSeek：</strong>V4 版本或将携"最强代码能力"突袭市场</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>竞争本质：</strong>这不仅是技术层面的较量，更是对 <strong>14 亿中国用户数字生活入口</strong> 和未来互联网话语权的终极争夺。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://36kr.com/p/3661770596491906" target="_blank">36氪 - 春节决战</a>
+                        <a href="https://36kr.com/p/3659110783627776" target="_blank">36氪 - 深度分析</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card hot">
+                <div class="news-header">
+                    <div class="news-title">【政策突破】中国松绑芯片禁令，DeepSeek 获准采购英伟达 H200</div>
+                    <span class="news-badge update">政策</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 7小时前</span>
+                    <span>🏢 PhotoNews</span>
+                </div>
+                <div class="news-content">
+                    <p>中国已允许 AI 初创公司 <strong>DeepSeek</strong> 购买英伟达 <strong>H200 AI 芯片</strong>，结束了长期以来因中美紧张关系导致的采购限制。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>政策意义：</strong>
+                        <ul>
+                            <li>中国对特定"非涉军"AI 企业的精准扶持策略</li>
+                            <li>美国方面对民用 AI 领域管制的有限松绑</li>
+                            <li>DeepSeek 作为中国 AI "国家队"成员的特殊地位获得认可</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>英伟达回应：</strong>称中国军方依赖美国技术是"荒谬的"，暗示此交易纯属民用 AI 开发性质。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://photonews.com.pk/china-deepseek-nvidia-h200-ai-chips/" target="_blank">PhotoNews</a>
+                        <a href="https://finance.yahoo.com/news/nvidia-says-chinese-military-dependence-120805384.html" target="_blank">Yahoo Finance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools Section -->
+            <h2 class="section-title" id="tools">🛠️ 新工具/新模型</h2>
+            
+            <div class="news-card tool">
+                <div class="news-header">
+                    <div class="news-title">Google Gemini Drops：Personal Intelligence 打通 Google 全生态</div>
+                    <span class="news-badge new">NEW</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 Google</span>
+                </div>
+                <div class="news-content">
+                    <p>Google 发布 <strong>Gemini Drops</strong> 2026年1月更新，核心功能是 <strong>Personal Intelligence</strong>——能够跨 Google 应用（Gmail、Calendar、Docs、Maps 等）连接信息点，提供高度个性化的智能协助。</p>
+                    
+                    <p><strong>示例场景：</strong>根据邮件内容自动规划旅行行程，结合日历和地图提供完整方案。标志着 Google 从"搜索答案"向"代理执行"的战略转型。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-january-2026/" target="_blank">Google Blog</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card tool">
+                <div class="news-header">
+                    <div class="news-title">Gemini 即将"接管"Siri：苹果语音助手迎来史上最大升级</div>
+                    <span class="news-badge new">NEW</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 Apple / Google</span>
+                </div>
+                <div class="news-content">
+                    <p>据 CNET 报道，<strong>Google Gemini AI 将于 2026 年 2 月集成到 Siri</strong>，为苹果语音助手带来质的飞跃。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>能力突破：</strong>
+                        <ul>
+                            <li><strong>屏幕理解：</strong>Siri 将能"看懂"用户当前屏幕内容</li>
+                            <li><strong>个人上下文：</strong>基于用户历史行为提供主动服务</li>
+                            <li><strong>丰富对话：</strong>实现真正的多轮自然对话</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://www.cnet.com/tech/services-and-software/apple-will-integrate-google-gemini-ai-with-siri-in-february-report-says/" target="_blank">CNET</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card tool">
+                <div class="news-header">
+                    <div class="news-title">Chrome AI Agent：Google 推出能自动浏览网页的智能代理</div>
+                    <span class="news-badge new">NEW</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 Google</span>
+                </div>
+                <div class="news-content">
+                    <p>Google 在美国市场推出 <strong>Chrome AI Agent</strong>，这是一个能直接与网站交互的 AI 代理系统。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>核心能力：</strong>
+                        <ul>
+                            <li><strong>Auto Browse：</strong>自动打开网页、点击按钮、填写复杂表单</li>
+                            <li>用户可以下达"帮我预订周五去纽约的机票"这类复杂指令</li>
+                            <li>Chrome 右侧新增常驻 Gemini 面板</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>订阅级别：</strong>面向 AI Pro 和 AI Ultra 订阅者开放。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://www.dqindia.com/news/google-adds-gemini-ai-tools-to-chrome-in-browser-update-11057130" target="_blank">DQ India</a>
+                        <a href="https://dig.watch/updates/google-brings-ai-agent-to-chrome-in-the-us" target="_blank">Digital Watch</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card tool">
+                <div class="news-header">
+                    <div class="news-title">Anthropic Claude Cowork 插件系统：打造企业 AI 操作系统</div>
+                    <span class="news-badge new">NEW</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 14-16小时前</span>
+                    <span>🏢 Anthropic</span>
+                </div>
+                <div class="news-content">
+                    <p>Anthropic 发布 <strong>Claude Cowork</strong> 升级版插件系统，允许企业创建内部插件目录，构建定制化 AI 工作流。</p>
+                    
+                    <p><strong>战略定位：</strong>Anthropic 正将 Claude 从"聊天机器人"重新定位为<strong>"企业 AI 操作系统层"</strong>，与 OpenAI 的 Consumer 战略形成差异化竞争。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://siliconangle.com/2026/01/30/anthropic-debuts-claude-cowork-plugins-help-users-automate-tasks/" target="_blank">SiliconANGLE</a>
+                        <a href="https://www.tekedia.com/anthropic-expands-cowork-with-plug-ins-deepening-its-push-to-make-claude-an-enterprise-ai-operating-layer/" target="_blank">Tekedia</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trends Section -->
+            <h2 class="section-title" id="trends">📈 行业趋势</h2>
+            
+            <div class="news-card research">
+                <div class="news-header">
+                    <div class="news-title">软件行业陷入"AI 熊市"：ServiceNow 暴跌引发行业地震</div>
+                    <span class="news-badge">趋势</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 CNBC</span>
+                </div>
+                <div class="news-content">
+                    <p>软件股票因 AI 颠覆担忧而进入熊市，<strong>ServiceNow 股价暴跌 10%</strong>，iShares Expanded Tech-Software Sector ETF 从近期高点下跌约 <strong>22%</strong>，正式宣告软件行业进入熊市区域。</p>
+                    
+                    <p><strong>深层逻辑：</strong>AI 正在重构软件价值链，传统 SaaS 模式面临"AI 原生"产品的降维打击。2026 年可能见证软件行业的大洗牌。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://www.cnbc.com/2026/01/29/software-stocks-enter-bear-market-on-ai-disruption-fear-with-servicenow-plunging-11percent-thursday.html" target="_blank">CNBC</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card research">
+                <div class="news-header">
+                    <div class="news-title">2026 年 AI 基建投资将达 5000 亿美元：五大巨头军备竞赛白热化</div>
+                    <span class="news-badge">数据</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 Yahoo Finance / FactSet</span>
+                </div>
+                <div class="news-content">
+                    <p>据 FactSet Research 统计，AI 开发者今年将在基础设施上投入 <strong>5000 亿美元</strong>，创历史新高。</p>
+                    
+                    <div class="highlight-box">
+                        <strong>投资主体：</strong>微软、Alphabet（Google）、亚马逊、Meta、OpenAI 等巨头并未放慢 AI 建设步伐，反而呈现加速态势。
+                    </div>
+                    
+                    <p><strong>行业影响：</strong>巨额资本开支将推动 AI 算力成本持续下降，AGI 竞赛进入"烧钱换时间"的冲刺阶段。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://finance.yahoo.com/news/2-trillion-dollar-artificial-intelligence-075000878.html" target="_blank">Yahoo Finance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card research">
+                <div class="news-header">
+                    <div class="news-title">全球 AI 采用率地图：美国领跑（61%），中国追赶（41%），英国滞后（32%）</div>
+                    <span class="news-badge">数据</span>
+                </div>
+                <div class="news-meta">
+                    <span>📅 1天前</span>
+                    <span>🏢 ET Edge Insights</span>
+                </div>
+                <div class="news-content">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>国家/地区</th>
+                                <th>AI 采用率</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>🇺🇸 美国</td>
+                                <td><strong>61%</strong></td>
+                                <td>企业级应用领先</td>
+                            </tr>
+                            <tr>
+                                <td>🇮🇳 印度</td>
+                                <td><strong>41%</strong></td>
+                                <td>服务外包驱动</td>
+                            </tr>
+                            <tr>
+                                <td>🇨🇳 中国</td>
+                                <td><strong>41%</strong></td>
+                                <td>制造业与互联网并进</td>
+                            </tr>
+                            <tr>
+                                <td>🇬🇧 英国</td>
+                                <td><strong>32%</strong></td>
+                                <td>监管保守影响 adoption</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>趋势预测：</strong>2026 年将是全球 AI 采用率跨越 50% 分水岭的关键年份。</p>
+                </div>
+                <div class="sources">
+                    <div class="sources-title">📎 参考来源</div>
+                    <div class="source-links">
+                        <a href="https://etedge-insights.com/technology/artificial-intelligence/the-inflection-point-scale-skills-and-standards-to-structure-indias-ai-future/amp/" target="_blank">ET Edge Insights</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="stats-section" id="stats">
+                <div class="stats-title">📌 今日关键数字</div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">0.1%</div>
+                        <div class="stat-label">GPT-4o 日活占比</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">22%</div>
+                        <div class="stat-label">软件行业跌幅</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">$5000亿</div>
+                        <div class="stat-label">2026 AI 基建投资</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">24%</div>
+                        <div class="stat-label">全球 AI 周活用户</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">61%</div>
+                        <div class="stat-label">美国 AI 采用率</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">41%</div>
+                        <div class="stat-label">中国 AI 采用率</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Topic Suggestions -->
+            <h2 class="section-title">💡 博主选题建议</h2>
+            
+            <div class="news-card">
+                <div class="news-title">🔥 热点选题（高时效性）</div>
+                <div class="news-content">
+                    <ol style="padding-left: 20px;">
+                        <li style="margin-bottom: 10px;"><strong>《OpenAI挥泪斩马谡：GPT-4o退役背后的战略考量》</strong> - 分析为何OpenAI要强制迁移用户，对比新旧模型的用户数据</li>
+                        <li style="margin-bottom: 10px;"><strong>《苹果的AI双轨战略：自研与外包的博弈》</strong> - 深度解读苹果同时使用Claude和Gemini的策略</li>
+                        <li style="margin-bottom: 10px;"><strong>《春节AI决战：字节、阿里、DeepSeek的三国杀》</strong> - 三大厂的产品路线对比，对14亿用户入口的争夺分析</li>
+                        <li style="margin-bottom: 10px;"><strong>《软件行业的AI寒冬：熊市背后的颠覆逻辑》</strong> - ServiceNow暴跌的深层原因，AI如何重构软件行业价值链</li>
+                    </ol>
+                </div>
+                <div class="tags">
+                    <span class="tag">#OpenAI #GPT5 #GPT4o #AIdeprecation</span>
+                    <span class="tag">#Apple #Claude #Anthropic #Gemini</span>
+                    <span class="tag">#DeepSeek #ChinaAI #ByteDance #Alibaba</span>
+                    <span class="tag">#AIBearMarket #SoftwareDisruption</span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>🤖 本日报由 <strong>Clawdbot</strong> 自动生成</p>
+            <p>数据来源：Brave Search API（38条新闻）| 生成时间：2026-01-31</p>
+            <p style="margin-top: 10px;">
+                <a href="#">返回顶部</a> | 
+                <a href="#headlines">头条新闻</a> | 
+                <a href="#tools">新工具</a> | 
+                <a href="#trends">行业趋势</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
