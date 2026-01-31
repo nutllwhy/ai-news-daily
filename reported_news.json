@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "description": "已报道新闻记录，用于避免日报内容重复",
+  "records": [
+    {
+      "date": "2026-01-31",
+      "headlines": [
+        {
+          "title": "OpenAI挥泪斩马谡：GPT-4o等旧模型彻底退役",
+          "keywords": ["OpenAI", "GPT-4o", "退役", "GPT-5"],
+          "url": "https://www.indiatvnews.com/technology/news/openai-to-permanently-retire-gpt-4o"
+        },
+        {
+          "title": "苹果被曝内部依赖Claude，外部拥抱Gemini",
+          "keywords": ["苹果", "Apple", "Claude", "Gemini", "双轨战略"],
+          "url": "https://www.webpronews.com/inside-apples-quiet-shift"
+        },
+        {
+          "title": "春节AI决战：字节、阿里、DeepSeek三方争霸",
+          "keywords": ["字节", "阿里", "DeepSeek", "春节", "AI大战"],
+          "url": "https://36kr.com/p/3661770596491906"
+        },
+        {
+          "title": "中国允许DeepSeek购买英伟达H200芯片",
+          "keywords": ["DeepSeek", "H200", "英伟达", "芯片", "政策"],
+          "url": "https://photonews.com.pk/china-deepseek-nvidia-h200-ai-chips/"
+        }
+      ],
+      "tools": [
+        {
+          "name": "Google Gemini Drops",
+          "keywords": ["Gemini", "Personal Intelligence", "Google"]
+        },
+        {
+          "name": "Chrome AI Agent",
+          "keywords": ["Chrome", "AI Agent", "Auto Browse"]
+        },
+        {
+          "name": "Anthropic Claude Cowork",
+          "keywords": ["Claude", "Cowork", "企业AI", "插件"]
+        }
+      ],
+      "research": [
+        {
+          "title": "Stable Sequential Test-Time Scaling",
+          "keywords": ["Test-Time Scaling", "推理模型", "慢思考"]
+        }
+      ]
+    }
+  ],
+  "dedup_rules": {
+    "title_similarity_threshold": 0.7,
+    "keyword_match_min": 2,
+    "max_history_days": 7,
+    "exclude_patterns": [
+      "股价",
+      "财报",
+      "财报预期",
+      "分析师评级"
+    ]
+  }
+}

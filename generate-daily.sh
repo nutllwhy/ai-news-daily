@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# AI News Daily - 自动化日报生成脚本
+# AI News Daily - 自动化日报生成脚本（带去重功能）
 # 每天北京时间8:00（UTC 00:00）自动执行
 
 set -e
@@ -15,9 +15,9 @@ cd "$WORK_DIR"
 
 # 获取当前日期
 TODAY=$(date '+%Y-%m-%d')
-YESTERDAY=$(date -d "yesterday" '+%Y-%m-%d' 2>/dev/null || date -v-1d '+%Y-%m-%d' 2>/dev/null || echo "yesterday")
 
-echo "📊 开始搜索新闻..."
+echo "📊 开始搜索新闻（自动去重）..."
+echo "📝 已加载历史记录: reported_news.json"
 
 # 这里将由 OpenClaw Agent 执行实际的搜索和生成
 # 通过 cron 触发 agent 任务
