@@ -1,0 +1,417 @@
+{
+  "portfolio_summary": {
+    "total_investment": 290452.01,
+    "last_update": "2026-01-31",
+    "fund_count": 25,
+    "overall_return": "+20.85%",
+    "owner": "栗噔噔"
+  },
+  "funds": [
+    {
+      "id": 1,
+      "name": "国泰黄金ETF联接A",
+      "code": "000218",
+      "amount": 31221.61,
+      "return_rate": 43.02,
+      "sector": "黄金/大宗商品",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨50%提醒",
+        "stop_loss": "回撤10%提醒",
+        "add_position": "跌5%提醒"
+      }
+    },
+    {
+      "id": 2,
+      "name": "国泰半导体设备ETF联接C",
+      "code": "019633",
+      "amount": 26659.56,
+      "return_rate": 21.16,
+      "sector": "科技-半导体",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨30%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 3,
+      "name": "银华中证5G通信主题ETF联接C",
+      "code": "010524",
+      "amount": 26099.31,
+      "return_rate": 31.19,
+      "sector": "科技-通信",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨40%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 4,
+      "name": "国泰上证科创板芯片ETF联接C",
+      "code": "024854",
+      "amount": 20303.55,
+      "return_rate": 14.99,
+      "sector": "科技-芯片",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨25%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 5,
+      "name": "华安纳斯达克100ETF联接(QDII)A",
+      "code": "040046",
+      "amount": 18731.62,
+      "return_rate": 17.81,
+      "sector": "美股-科技",
+      "risk_level": "中高",
+      "alert_conditions": {
+        "profit_taking": "涨25%提醒",
+        "stop_loss": "回撤12%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 6,
+      "name": "易方达医疗保健行业混合A",
+      "code": "110023",
+      "amount": 17609.64,
+      "return_rate": -2.92,
+      "sector": "医疗",
+      "risk_level": "中高",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "跌15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 7,
+      "name": "宝盈转型动力灵活配置混合A",
+      "code": "001075",
+      "amount": 14557.36,
+      "return_rate": 52.39,
+      "sector": "混合-灵活配置",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨60%提醒",
+        "stop_loss": "回撤20%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 8,
+      "name": "中欧中证细分化工产业主题指数C",
+      "code": "021978",
+      "amount": 12420.81,
+      "return_rate": 30.75,
+      "sector": "周期-化工",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨40%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 9,
+      "name": "景顺长城中证港股通科技ETF联接C",
+      "code": "016496",
+      "amount": 10917.31,
+      "return_rate": -5.07,
+      "sector": "港股-科技",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "跌15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 10,
+      "name": "南方亚太精选ETF联接(QDII)C",
+      "code": "021190",
+      "amount": 9999.62,
+      "return_rate": 11.11,
+      "sector": "亚太-宽基",
+      "risk_level": "中高",
+      "alert_conditions": {
+        "profit_taking": "涨20%提醒",
+        "stop_loss": "回撤12%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 11,
+      "name": "华夏有色金属ETF联接D",
+      "code": "021534",
+      "amount": 9732.28,
+      "return_rate": 48.30,
+      "sector": "周期-有色金属",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨55%提醒",
+        "stop_loss": "回撤20%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 12,
+      "name": "华夏恒生互联网科技业ETF联接(QDII)D",
+      "code": "023764",
+      "amount": 8903.32,
+      "return_rate": -6.28,
+      "sector": "港股-互联网",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "跌15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 13,
+      "name": "永赢科技智选混合C",
+      "code": "022365",
+      "amount": 8766.25,
+      "return_rate": 25.23,
+      "sector": "科技-智选",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨35%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 14,
+      "name": "易方达人工智能ETF联接A",
+      "code": "012733",
+      "amount": 8378.40,
+      "return_rate": 23.12,
+      "sector": "科技-AI",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨35%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 15,
+      "name": "东吴移动互联灵活配置混合C",
+      "code": "002170",
+      "amount": 8338.82,
+      "return_rate": 48.64,
+      "sector": "科技-移动互联",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨55%提醒",
+        "stop_loss": "回撤20%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 16,
+      "name": "鹏扬中证科创创业50ETF联接C",
+      "code": "012908",
+      "amount": 8029.94,
+      "return_rate": 4.88,
+      "sector": "双创-科创板",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨20%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 17,
+      "name": "易方达中证A500ETF联接C",
+      "code": "022460",
+      "amount": 6969.16,
+      "return_rate": 7.22,
+      "sector": "宽基-A500",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "回撤10%提醒",
+        "add_position": "跌5%提醒"
+      }
+    },
+    {
+      "id": 18,
+      "name": "华夏软件龙头混合C",
+      "code": "020594",
+      "amount": 6681.93,
+      "return_rate": -9.59,
+      "sector": "科技-软件",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "跌15%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 19,
+      "name": "广发恒生科技ETF联接(QDII)C",
+      "code": "012805",
+      "amount": 6670.56,
+      "return_rate": -4.71,
+      "sector": "港股-科技",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "跌15%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 20,
+      "name": "景顺长城品质长青混合C",
+      "code": "015751",
+      "amount": 6019.94,
+      "return_rate": 0.33,
+      "sector": "混合-品质",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "回撤10%提醒",
+        "add_position": "跌5%提醒"
+      }
+    },
+    {
+      "id": 21,
+      "name": "富国沪港深业绩驱动混合A",
+      "code": "005847",
+      "amount": 5576.28,
+      "return_rate": 27.90,
+      "sector": "沪港深",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨35%提醒",
+        "stop_loss": "回撤12%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 22,
+      "name": "易方达机器人ETF联接C",
+      "code": "020973",
+      "amount": 5323.98,
+      "return_rate": 1.41,
+      "sector": "科技-机器人",
+      "risk_level": "高",
+      "alert_conditions": {
+        "profit_taking": "涨20%提醒",
+        "stop_loss": "回撤15%提醒",
+        "add_position": "跌10%提醒"
+      }
+    },
+    {
+      "id": 23,
+      "name": "华夏中证基建ETF联接C",
+      "code": "017684",
+      "amount": 4238.55,
+      "return_rate": 5.96,
+      "sector": "基建",
+      "risk_level": "中",
+      "alert_conditions": {
+        "profit_taking": "涨15%提醒",
+        "stop_loss": "回撤10%提醒",
+        "add_position": "跌5%提醒"
+      }
+    },
+    {
+      "id": 24,
+      "name": "易方达先锋成长混合A",
+      "code": "011891",
+      "amount": 3568.29,
+      "return_rate": 18.94,
+      "sector": "成长",
+      "risk_level": "中高",
+      "alert_conditions": {
+        "profit_taking": "涨25%提醒",
+        "stop_loss": "回撤12%提醒",
+        "add_position": "跌8%提醒"
+      }
+    },
+    {
+      "id": 25,
+      "name": "华泰柏瑞中证港股通红利ETF联接C",
+      "code": "018388",
+      "amount": 3435.22,
+      "return_rate": 0.17,
+      "sector": "港股-红利",
+      "risk_level": "中低",
+      "alert_conditions": {
+        "profit_taking": "涨10%提醒",
+        "stop_loss": "回撤8%提醒",
+        "add_position": "跌5%提醒"
+      }
+    }
+  ],
+  "sector_distribution": {
+    "科技板块": {
+      "amount": 147947.08,
+      "percentage": 50.94,
+      "funds": [2,3,4,13,14,15,16,18,22],
+      "avg_return": 22.86
+    },
+    "港股": {
+      "amount": 35508.47,
+      "percentage": 12.23,
+      "funds": [9,12,19,25],
+      "avg_return": -3.93
+    },
+    "周期/大宗商品": {
+      "amount": 45372.65,
+      "percentage": 15.62,
+      "funds": [1,8,11,23],
+      "avg_return": 32.26
+    },
+    "医疗": {
+      "amount": 17609.64,
+      "percentage": 6.06,
+      "funds": [6],
+      "avg_return": -2.92
+    },
+    "海外": {
+      "amount": 28731.24,
+      "percentage": 9.89,
+      "funds": [5,10],
+      "avg_return": 15.32
+    },
+    "宽基/混合": {
+      "amount": 26578.32,
+      "percentage": 9.15,
+      "funds": [7,17,20,21,24],
+      "avg_return": 20.26
+    }
+  },
+  "monitoring_config": {
+    "daily_report_time": "21:00",
+    "weekly_report_day": "Sunday",
+    "monthly_report_day": "Last trading day",
+    "midday_check_time": "13:00",
+    "notification_schedule": {
+      "midday_check": "13:00 - 盘中监控（有重大新闻/异动时通知）",
+      "daily_report": "21:00 - 常规日报（每日必发）",
+      "weekly_report": "Sunday 21:00 - 周报（每周必发）"
+    },
+    "alert_conditions": {
+      "midday": "重大板块新闻、市场大幅波动（±3%以上）",
+      "daily": "净值更新、收益统计、新闻汇总",
+      "weekly": "收益总结、板块分析、下周展望"
+    },
+    "alert_channels": ["Feishu"],
+    "data_source": "Alipay fund data (manual update)"
+  }
+}
