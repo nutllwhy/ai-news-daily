@@ -5,421 +5,615 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI圈日报 - 2026-02-01</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg-primary: #faf9f7;
+            --bg-secondary: #f0ede8;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #5c5c5c;
+            --text-muted: #8a8a8a;
+            --border-color: #e0ddd5;
+            --accent-color: #c41e3a;
+            --accent-light: #fef2f2;
+            --link-color: #2563eb;
+            --link-hover: #1d4ed8;
+            --highlight-bg: #f8f6f3;
+            --highlight-border: #d4d0c8;
+            --shadow: 0 1px 3px rgba(0,0,0,0.05);
+            --header-bg: #1a1a1a;
+            --header-text: #ffffff;
         }
-        
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #242424;
+            --bg-card: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+            --border-color: #404040;
+            --accent-color: #ff6b6b;
+            --accent-light: #3a2a2a;
+            --link-color: #60a5fa;
+            --link-hover: #93c5fd;
+            --highlight-bg: #333333;
+            --highlight-border: #555555;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3);
+            --header-bg: #0a0a0a;
+            --header-text: #f5f5f5;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            line-height: 1.6;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            transition: background 0.3s, color 0.3s;
         }
-        
-        .container {
-            max-width: 900px;
+
+        /* 顶部栏 */
+        .top-bar {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 12px 0;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .top-bar-content {
+            max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .header::before {
-            content: "🤖";
-            font-size: 60px;
-            position: absolute;
-            top: 20px;
-            left: 40px;
-            opacity: 0.3;
-        }
-        
-        .header::after {
-            content: "⚡";
-            font-size: 60px;
-            position: absolute;
-            top: 20px;
-            right: 40px;
-            opacity: 0.3;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .header .date {
-            font-size: 1.2em;
-            color: #a0a0a0;
-            margin-bottom: 10px;
-        }
-        
-        .header .meta {
-            font-size: 0.9em;
-            color: #888;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .nav {
-            background: #f8f9fa;
-            padding: 15px 40px;
-            border-bottom: 1px solid #e9ecef;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .nav a {
-            color: #495057;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 20px;
-            transition: all 0.3s;
-            font-weight: 500;
-        }
-        
-        .nav a:hover {
-            background: #667eea;
-            color: white;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .section-title {
-            font-size: 1.8em;
-            color: #1a1a2e;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .section-title:first-child {
-            margin-top: 0;
-        }
-        
-        .news-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            border-left: 4px solid #667eea;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .news-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-        
-        .news-card.hot {
-            border-left-color: #e74c3c;
-            background: linear-gradient(to right, #fff5f5 0%, #ffffff 100%);
-        }
-        
-        .news-card.tool {
-            border-left-color: #27ae60;
-            background: linear-gradient(to right, #f0fff4 0%, #ffffff 100%);
-        }
-        
-        .news-card.research {
-            border-left-color: #9b59b6;
-            background: linear-gradient(to right, #faf5ff 0%, #ffffff 100%);
-        }
-        
-        .news-header {
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-            gap: 10px;
+            align-items: center;
         }
-        
-        .news-title {
-            font-size: 1.3em;
-            color: #2c3e50;
-            font-weight: 700;
-            flex: 1;
-            line-height: 1.4;
-        }
-        
-        .news-badge {
-            background: #e74c3c;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.75em;
-            font-weight: 600;
-        }
-        
-        .news-badge.new { background: #27ae60; }
-        .news-badge.update { background: #3498db; }
-        
-        .news-meta {
-            display: flex;
-            gap: 20px;
-            color: #7f8c8d;
+
+        .date-weather {
             font-size: 0.9em;
-            margin-bottom: 15px;
+            opacity: 0.9;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* 主题切换 */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .toggle-switch {
+            width: 44px;
+            height: 24px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .toggle-switch::after {
+            content: "☀️";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        [data-theme="dark"] .toggle-switch::after {
+            content: "🌙";
+            transform: translateX(20px);
+        }
+
+        /* 报头 */
+        .masthead {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .newspaper-title {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .edition-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* 导航 */
+        .nav-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
             flex-wrap: wrap;
         }
-        
-        .news-content {
-            color: #34495e;
-            margin-bottom: 15px;
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
+
+        .nav-link:hover {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* 主内容 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* 新闻卡片通用样式 */
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .section-icon {
+            font-size: 1.5em;
+        }
+
+        .section-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .article-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--text-primary);
+        }
+
+        .article-meta {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .article-body {
+            color: var(--text-secondary);
+            line-height: 1.9;
+        }
+
+        .article-body p {
+            margin-bottom: 1em;
+        }
+
+        /* 关键信息框 */
         .highlight-box {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px 0;
-            border-left: 3px solid #667eea;
+            background: var(--highlight-bg);
+            border: 1px solid var(--highlight-border);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 20px 0;
         }
-        
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
         .highlight-box ul {
             margin: 0;
             padding-left: 20px;
         }
-        
+
         .highlight-box li {
             margin-bottom: 8px;
+            line-height: 1.7;
         }
-        
+
+        .highlight-box strong {
+            color: var(--text-primary);
+        }
+
+        /* 来源链接 */
         .sources {
-            margin-top: 15px;
+            margin-top: 20px;
             padding-top: 15px;
-            border-top: 1px dashed #ddd;
+            border-top: 1px dashed var(--border-color);
         }
-        
+
         .sources-title {
             font-size: 0.85em;
-            color: #7f8c8d;
-            margin-bottom: 8px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
             font-weight: 600;
         }
-        
+
         .source-links {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-        
-        .source-links a {
-            color: #667eea;
+
+        .source-link {
+            display: inline-block;
+            color: var(--link-color);
             text-decoration: none;
             font-size: 0.85em;
-            padding: 4px 10px;
-            background: #f0f3ff;
+            padding: 4px 12px;
+            background: var(--bg-secondary);
             border-radius: 4px;
             transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
-        .source-links a:hover {
-            background: #667eea;
+
+        .source-link:hover {
+            background: var(--link-color);
             color: white;
         }
-        
-        .stats-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+
+        /* 头版头条特殊样式 */
+        .front-page {
+            grid-column: 1 / -1;
+            background: var(--bg-card);
+            border: 2px solid var(--accent-color);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .headline-label {
+            display: inline-block;
+            background: var(--accent-color);
             color: white;
-            padding: 30px;
-            border-radius: 12px;
-            margin: 30px 0;
+            padding: 4px 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
-        .stats-title {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .stat-item {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        .stat-value {
-            font-size: 2em;
+
+        .headline {
+            font-size: 2.2em;
             font-weight: 700;
-            color: #667eea;
-            margin-bottom: 5px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: var(--text-primary);
         }
-        
-        .stat-label {
+
+        .subheadline {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .byline {
             font-size: 0.9em;
-            color: #a0a0a0;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
-        .notice-box {
-            background: #e8f4fd;
-            border-left: 4px solid #3498db;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            color: #2c3e50;
+
+        .lead {
+            font-size: 1.1em;
+            line-height: 1.9;
+            color: var(--text-primary);
+            text-align: justify;
         }
-        
+
+        .lead p {
+            margin-bottom: 1em;
+        }
+
+        /* 新闻网格 */
+        .news-grid {
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .data-list {
+            list-style: none;
+        }
+
+        .data-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-item:last-child {
+            border-bottom: none;
+        }
+
+        .data-number {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .data-label {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* 底部 */
         .footer {
-            background: #1a1a2e;
-            color: #888;
-            padding: 30px;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px;
             text-align: center;
+            margin-top: 40px;
         }
-        
-        @media (max-width: 768px) {
-            .header h1 { font-size: 1.8em; }
-            .header::before, .header::after { display: none; }
-            .content { padding: 20px; }
-            .news-header { flex-direction: column; }
-            .nav { padding: 15px; }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .sidebar {
+                grid-column: 1;
+            }
+
+            .newspaper-title {
+                font-size: 2.5em;
+            }
+
+            .headline {
+                font-size: 1.6em;
+            }
+
+            .article-title {
+                font-size: 1.3em;
+            }
+
+            .top-bar-content,
+            .nav-content {
+                padding: 0 20px;
+            }
+
+            .front-page,
+            .article-card,
+            .sidebar-box {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="date">2026年2月1日 星期六</div>
-            <h1>🤖 AI圈日报</h1>
-            <div class="meta">
-                <span>📊 过去24小时精选</span>
-                <span>🔍 来源可溯</span>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="date-weather">2026年2月1日 星期六 | 农历腊月十四</div>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span style="font-size: 0.85em;">浅色</span>
+                <div class="toggle-switch"></div>
+                <span style="font-size: 0.85em;">深色</span>
             </div>
         </div>
+    </div>
 
-        <nav class="nav">
-            <a href="#headlines">🚨 头条新闻</a>
-            <a href="#research">📝 前沿研究</a>
-            <a href="#tools">🛠️ 新工具</a>
-            <a href="#stats">📊 今日数据</a>
-        </nav>
+    <!-- 报头 -->
+    <header class="masthead">
+        <h1 class="newspaper-title">AI圈日报</h1>
+        <p class="tagline">「 每日精选人工智能行业要闻 」</p>
+        <div class="edition-info">
+            第 002 期 | 北京版 | 过去24小时精选
+        </div>
+    </header>
 
-        <div class="content">
-            <div class="notice-box">
-                <strong>📢 今日说明</strong><br>
-                今天是周末（周六），AI圈相对平静。本日报仅包含过去24小时内实际发布的3条重要新闻、1篇前沿研究、1个行业观察和3条关键数据。
+    <!-- 导航 -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="#headlines" class="nav-link">头条新闻</a>
+            <a href="#research" class="nav-link">前沿研究</a>
+            <a href="#tools" class="nav-link">行业观察</a>
+            <a href="#data" class="nav-link">今日数据</a>
+            <a href="#review" class="nav-link">本周回顾</a>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 头版头条 -->
+        <article class="front-page" id="headlines">
+            <span class="headline-label">今日头条</span>
+            <h2 class="headline">Anthropic估值飙升至350亿美元，AI独角兽IPO竞赛白热化</h2>
+            <p class="subheadline">最新融资轮超额认购，预计2026年底上市；Polymarket预测其IPO概率已超过OpenAI</p>
+            <div class="byline">特约撰稿人 · 发自旧金山 | 发布时间：8小时前</div>
+            <div class="lead">
+                <p>Anthropic最新融资传出重磅消息：<strong>估值已达3500亿美元</strong>，相比2025年9月的1830亿美元几乎翻倍。这家由前OpenAI研究人员创立的公司，正在筹备2026年底的IPO，有望成为近年来最大的科技股上市之一。</p>
             </div>
 
-            <h2 class="section-title" id="headlines">🚨 头条新闻</h2>
+            <div class="highlight-box">
+                <div class="highlight-title">融资细节</div>
+                <ul>
+                    <li><strong>估值：</strong>$350 billion（较2025年9月增长91%）</li>
+                    <li><strong>融资目标：</strong>从原定$100亿上调至$200亿</li>
+                    <li><strong>领投方：</strong>Coatue Management、新加坡GIC主权财富基金</li>
+                    <li><strong>认购情况：</strong>1月27-28日出现大量超额认购</li>
+                    <li><strong>IPO计划：</strong>2026年底上市准备中</li>
+                </ul>
+            </div>
 
-            <div class="news-card hot">
-                <div class="news-header">
-                    <div class="news-title">xAI起诉OpenAI案遇挫：联邦法官暗示可能驳回诉讼</div>
-                    <span class="news-badge">重磅</span>
+            <div class="lead">
+                <p>Prediction市场Polymarket数据显示，Anthropic在2027年前IPO的概率已达<strong>55%</strong>，超过了OpenAI的41%。这标志着市场对Claude系列产品的信心正在快速上升。</p>
+            </div>
+
+            <div class="sources">
+                <div class="sources-title">📎 参考来源（发布时间验证）</div>
+                <div class="source-links">
+                    <a href="https://www.tekedia.com/a-2026-anthropic-ipo-will-test-wall-street-resolve-on-ai-investments/" class="source-link" target="_blank">Tekedia - 2月1日</a>
+                    <a href="https://www.tipranks.com/news/private-companies/polymarket-highlights-market-odds-on-potential-openai-and-anthropic-ipos" class="source-link" target="_blank">TipRanks - 1月31日</a>
                 </div>
-                <div class="news-meta">
-                    <span>📅 1月30日发布</span>
-                    <span>🏢 Reuters / CNBC</span>
+            </div>
+        </article>
+
+        <!-- 新闻网格 -->
+        <div class="news-grid">
+            <!-- 法律动态 -->
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">⚖️</span>
+                    <span class="section-title">法律动态</span>
                 </div>
-                <div class="news-content">
-                    <p>美国地方法官在周五的听证会上明确表示，<strong>可能驳回马斯克旗下xAI对OpenAI提起的诉讼</strong>。该案指控OpenAI窃取商业机密并挖角Grok团队成员。</p>
+                <h3 class="article-title">xAI起诉OpenAI案遇重大挫折，联邦法官暗示可能驳回</h3>
+                <div class="article-meta">路透社 / CNBC | 发布时间：1月30日（16小时前）</div>
+                <div class="article-body">
+                    <p>马斯克旗下的xAI指控OpenAI窃取商业机密并挖角Grok团队成员，但联邦法官在周五的听证会上明确表示<strong>可能驳回这起诉讼</strong>。</p>
 
                     <div class="highlight-box">
-                        <strong>关键信息：</strong>
+                        <div class="highlight-title">关键信息</div>
                         <ul>
-                            <li>法官对xAI的诉讼依据表示明显质疑</li>
+                            <li>法官对xAI的诉讼依据表示<strong>明显质疑</strong></li>
                             <li>xAI指控OpenAI挖角Grok团队并窃取商业机密</li>
-                            <li>若被驳回，将是OpenAI的重大法律胜利</li>
-                            <li>本案反映了AI巨头间的激烈人才竞争</li>
+                            <li>若被驳回，将是OpenAI的<strong>重大法律胜利</strong></li>
+                            <li>本案反映了AI巨头间的<strong>激烈人才竞争</strong></li>
                         </ul>
                     </div>
 
-                    <p><strong>影响：</strong>此案结果可能影响未来AI行业的竞业协议和人才流动规则。</p>
+                    <p>如果最终被驳回，这将影响未来AI行业的竞业协议和人才流动规则。目前OpenAI尚未对此事发表官方评论。</p>
                 </div>
                 <div class="sources">
                     <div class="sources-title">📎 参考来源</div>
                     <div class="source-links">
-                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-2026-01-31/" target="_blank">Reuters</a>
-                        <a href="https://www.cnbc.com/2026/01/31/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-trade-secrets.html" target="_blank">CNBC</a>
+                        <a href="https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-2026-01-31/" class="source-link" target="_blank">Reuters - 1月30日</a>
+                        <a href="https://www.cnbc.com/2026/01/31/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-trade-secrets.html" class="source-link" target="_blank">CNBC - 1月31日</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="news-card hot">
-                <div class="news-header">
-                    <div class="news-title">Anthropic估值飙升至$350亿，筹备2026年底IPO</div>
-                    <span class="news-badge">重磅</span>
+            <!-- 前沿研究 -->
+            <article class="article-card" id="research">
+                <div class="section-header">
+                    <span class="section-icon">📝</span>
+                    <span class="section-title">前沿研究</span>
                 </div>
-                <div class="news-meta">
-                    <span>📅 2月1日发布</span>
-                    <span>🏢 Tekedia / FT / TipRanks</span>
-                </div>
-                <div class="news-content">
-                    <p>Anthropic最新融资轮传出重磅消息：<strong>估值已达$350 billion</strong>，相比2025年9月的$183亿几乎翻倍，正在筹备2026年底IPO。</p>
-
-                    <div class="highlight-box">
-                        <strong>融资细节：</strong>
-                        <ul>
-                            <li><strong>估值：</strong>$350 billion（较9月增长91%）</li>
-                            <li><strong>融资目标：</strong>从原定$10亿上调至$20亿</li>
-                            <li><strong>领投方：</strong>Coatue Management、新加坡GIC主权财富基金</li>
-                            <li><strong>超额认购：</strong>1月27-28日出现大量超额认购</li>
-                        </ul>
-                    </div>
-
-                    <p><strong>市场反应：</strong>Polymarket预测市场显示，Anthropic在2027年前IPO的概率已达55%，超过OpenAI的41%。</p>
-                </div>
-                <div class="sources">
-                    <div class="sources-title">📎 参考来源</div>
-                    <div class="source-links">
-                        <a href="https://www.tekedia.com/a-2026-anthropic-ipo-will-test-wall-street-resolve-on-ai-investments/" target="_blank">Tekedia</a>
-                        <a href="https://www.tipranks.com/news/private-companies/polymarket-highlights-market-odds-on-potential-openai-and-anthropic-ipos" target="_blank">TipRanks</a>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="section-title" id="research">📝 前沿研究</h2>
-
-            <div class="news-card research">
-                <div class="news-header">
-                    <div class="news-title">论文：《AI辅助对人类技能习得的影响》</div>
-                </div>
-                <div class="news-meta">
-                    <span>📅 斯坦福大学</span>
-                    <span>🏢 ICLR 2026接收</span>
-                </div>
-                <div class="news-content">
+                <h3 class="article-title">斯坦福研究：AI辅助可能阻碍人类核心技能形成</h3>
+                <div class="article-meta">斯坦福大学 / ICLR 2026 | 论文已接收</div>
+                <div class="article-body">
                     <p>斯坦福大学最新研究（已被ICLR 2026接收）通过实验发现：<strong>AI辅助虽然能提升即时生产力，但可能阻碍新学习任务中核心技能的形成</strong>。</p>
 
                     <div class="highlight-box">
-                        <strong>研究发现：</strong>
+                        <div class="highlight-title">研究发现</div>
                         <ul>
-                            <li>使用AI辅助的受试者在即时任务中表现更好</li>
-                            <li>但在后续独立测试中，技能掌握程度明显低于对照组</li>
-                            <li>AI的"过度帮助"可能干扰学习过程中的关键认知环节</li>
+                            <li>使用AI辅助的受试者在<strong>即时任务</strong>中表现更好</li>
+                            <li>但在后续<strong>独立测试</strong>中，技能掌握程度明显低于对照组</li>
+                            <li>AI的"<strong>过度帮助</strong>"可能干扰学习过程中的关键认知环节</li>
+                            <li>研究涉及多个学习任务的对比实验</li>
                         </ul>
                     </div>
 
@@ -428,80 +622,128 @@
                 <div class="sources">
                     <div class="sources-title">📎 参考来源</div>
                     <div class="source-links">
-                        <a href="https://alphaxiv.org/" target="_blank">alphaXiv</a>
+                        <a href="https://alphaxiv.org/" class="source-link" target="_blank">alphaXiv - ICLR 2026</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <h2 class="section-title" id="tools">🛠️ 行业观察</h2>
-
-            <div class="news-card tool">
-                <div class="news-header">
-                    <div class="news-title">Business Insider：AI正成为企业运营基础设施</div>
-                    <span class="news-badge new">NEW</span>
+            <!-- 行业观察 -->
+            <article class="article-card" id="tools">
+                <div class="section-header">
+                    <span class="section-icon">🛠️</span>
+                    <span class="section-title">行业观察</span>
                 </div>
-                <div class="news-meta">
-                    <span>📅 2月1日发布</span>
-                    <span>🏢 WebProNews / Business Insider</span>
-                </div>
-                <div class="news-content">
-                    <p>Business Insider最新分析指出，AI已不再是研究实验室里的未来概念，而是成为<strong>立即性的运营必需品</strong>，将从根本上改变企业的运营方式。</p>
+                <h3 class="article-title">AI正从实验室工具转变为企业运营基础设施</h3>
+                <div class="article-meta">Business Insider / WebProNews / NYT | 发布时间：2月1日</div>
+                <div class="article-body">
+                    <p>Business Insider最新分析指出，AI已不再是研究实验室里的未来概念，而是成为<strong>"立即性的运营必需品"</strong>，将从根本上改变企业的运营方式。</p>
 
-                    <p><strong>核心观点：</strong>2026年将是AI从"试点项目"转向"核心基础设施"的关键转折点。这个判断和最近各大厂密集推出企业级AI产品的节奏一致。</p>
+                    <div class="highlight-box">
+                        <div class="highlight-title">核心观点</div>
+                        <ul>
+                            <li><strong>2026年转折点：</strong>AI从"试点项目"转向"核心基础设施"</li>
+                            <li><strong>企业级应用：</strong>各大厂密集推出企业级AI产品</li>
+                            <li><strong>市场周期：</strong>2025年"期望降温"后，2026年初重回炒作周期</li>
+                        </ul>
+                    </div>
 
-                    <p>另一篇NYT观点文章也指出，AI行业在2025年经历了"期望降温"，但2026年初随着Claude代码代理等新产品的出现，市场又回到了炒作周期。</p>
+                    <p>《纽约时报》观点文章也认为，AI行业在2025年经历"期望降温"，但2026年初随着Claude代码代理等新产品的出现，市场又回到了炒作周期。硅谷同时存在"我们将成为神"的乐观情绪和末日恐惧。</p>
                 </div>
                 <div class="sources">
                     <div class="sources-title">📎 参考来源</div>
                     <div class="source-links">
-                        <a href="https://www.webpronews.com/the-inflection-point-how-artificial-intelligence-will-reshape-business-operations-by-2026/" target="_blank">WebProNews</a>
-                        <a href="https://www.nytimes.com/2026/01/31/opinion/artificial-intelligence-new-world.html" target="_blank">NYT Opinion</a>
+                        <a href="https://www.webpronews.com/the-inflection-point-how-artificial-intelligence-will-reshape-business-operations-by-2026/" class="source-link" target="_blank">WebProNews - 2月1日</a>
+                        <a href="https://www.nytimes.com/2026/01/31/opinion/artificial-intelligence-new-world.html" class="source-link" target="_blank">NYT Opinion - 1月31日</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="stats-section" id="stats">
-                <div class="stats-title">📊 今日数据</div>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-value">$350B</div>
-                        <div class="stat-label">Anthropic最新估值</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">91%</div>
-                        <div class="stat-label">估值较9月增长</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">55%</div>
-                        <div class="stat-label">Anthropic IPO概率</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">3</div>
-                        <div class="stat-label">过去24小时重要新闻</div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="section-title">📚 本周回顾</h2>
-
-            <div class="news-card">
-                <div class="news-content">
-                    <p>本周早些时候的重大事件：</p>
-                    <ul style="padding-left: 20px; margin-top: 10px;">
-                        <li><strong>1月30日：</strong>OpenAI宣布将于2月13日退役GPT-4o等旧模型</li>
-                        <li><strong>1月30日：</strong>苹果被曝内部使用Claude、对外合作Gemini的双轨战略</li>
-                        <li><strong>1月30日：</strong>字节、阿里、DeepSeek春节前夕密集发布AI产品</li>
-                        <li><strong>1月30日：</strong>DeepSeek获准采购英伟达H200芯片</li>
-                    </ul>
-                </div>
-            </div>
-
+            </article>
         </div>
 
-        <div class="footer">
-            <p>📰 AI圈日报 | 2026-02-01</p>
-            <p style="margin-top: 10px; font-size: 0.85em;">数据来源：Reuters、CNBC、Tekedia、NYT等权威媒体 | 每条新闻均标注发布时间</p>
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <!-- 今日数据 -->
+            <div class="sidebar-box" id="data">
+                <h3 class="sidebar-title">📊 今日数据</h3>
+                <ul class="data-list">
+                    <li class="data-item">
+                        <div class="data-number">$350B</div>
+                        <div class="data-label">Anthropic最新估值</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">+91%</div>
+                        <div class="data-label">较9月估值增长</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">55%</div>
+                        <div class="data-label">Anthropic IPO概率<br><span style="font-size: 0.85em; color: var(--text-muted);">（超过OpenAI的41%）</span></div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">3</div>
+                        <div class="data-label">过去24小时重要新闻</div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 本周回顾 -->
+            <div class="sidebar-box" id="review">
+                <h3 class="sidebar-title">📅 本周回顾</h3>
+                <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: var(--text-primary);">1月30日</strong><br>
+                        OpenAI宣布将于<strong>2月13日</strong>退役GPT-4o等旧模型
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: var(--text-primary);">1月30日</strong><br>
+                        苹果被曝内部使用Claude、对外合作Gemini的"双轨战略"
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        <strong style="color: var(--text-primary);">1月30日</strong><br>
+                        字节、阿里、DeepSeek春节前夕密集发布AI产品
+                    </p>
+                    <p>
+                        <strong style="color: var(--text-primary);">1月30日</strong><br>
+                        DeepSeek获准采购英伟达H200芯片
+                    </p>
+                </div>
+            </div>
+
+            <!-- 关于本报 -->
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">ℹ️ 关于本报</h3>
+                <div style="font-size: 0.9em; color: var(--text-secondary); line-height: 1.7;">
+                    <p style="margin-bottom: 12px;">《AI圈日报》每日北京时间8:00更新，精选过去24小时内人工智能行业重要新闻。</p>
+                    <p style="margin-bottom: 8px;"><strong style="color: var(--text-primary);">编辑：</strong>栗噔噔</p>
+                    <p><strong style="color: var(--text-primary);">技术支持：</strong>OpenClaw AI</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">AI圈日报</div>
+            <p class="footer-text">
+                每日精选AI行业要闻 · 早上8点更新<br>
+                数据来源：Reuters、CNBC、Tekedia、NYT等权威媒体<br>
+                <span style="font-size: 0.85em; opacity: 0.8;">每条新闻均标注发布时间，确保真实性</span>
+            </p>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
 </body>
 </html>
