@@ -67,6 +67,16 @@
             margin-bottom: 15px;
         }
         
+        .honest-tag {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        
         .latest-link {
             display: inline-block;
             background: white;
@@ -116,12 +126,22 @@
             font-weight: 600;
             color: #667eea;
             font-size: 1.1em;
+            min-width: 100px;
         }
         
         .archive-title {
             flex: 1;
             margin: 0 20px;
             color: #34495e;
+        }
+        
+        .archive-note {
+            font-size: 0.8em;
+            color: #27ae60;
+            background: #d4edda;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 10px;
         }
         
         .archive-link {
@@ -171,10 +191,12 @@
         
         <div class="content">
             <div class="latest-section">
+                <span class="honest-tag">✓ 诚实版</span>
                 <h2>📰 最新一期</h2>
                 <p>2026年2月1日 星期六</p>
-                <p style="margin-top: 10px; opacity: 0.9;">OpenAI发布GPT-5.2 | Google Gemini 3全面推送 | Anthropic推出Claude Cowork | DeepSeek席卷中国AI市场</p>
-                <a href="20260201.html" class="latest-link">阅读本期 →</a>
+                <p style="margin-top: 10px; opacity: 0.9;">xAI诉讼遇法官质疑 | Anthropic估值$350亿筹备IPO | AI行业分析</p>
+                <p style="margin-top: 5px; font-size: 0.85em; opacity: 0.8;">*本日报仅包含过去24小时内真实新闻</p>
+                <a href="20260201-honest.html" class="latest-link">阅读本期 →</a>
             </div>
             
             <div class="archive-section">
@@ -182,8 +204,9 @@
                 <ul class="archive-list">
                     <li class="archive-item">
                         <span class="archive-date">2026-02-01</span>
-                        <span class="archive-title">OpenAI/Google/Anthropic同日发布重大更新，DeepSeek效应持续发酵</span>
-                        <a href="20260201.html" class="archive-link">阅读</a>
+                        <span class="archive-title">xAI诉讼遇挫、Anthropic IPO传闻、AI行业分析（诚实版）</span>
+                        <span class="archive-note">诚实版</span>
+                        <a href="20260201-honest.html" class="archive-link">阅读</a>
                     </li>
                     <li class="archive-item">
                         <span class="archive-date">2026-01-31</span>
@@ -196,7 +219,8 @@
         
         <div class="footer">
             <p>AI圈日报 | 由 OpenClaw AI 自动生成</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">数据来源：OpenAI、Google、Anthropic、Reuters、TechCrunch、36氪等</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">数据来源：Reuters、CNBC、NYT等权威媒体</p>
+            <p style="margin-top: 5px; font-size: 0.85em;">每条新闻均标注发布时间，确保真实性</p>
         </div>
     </div>
 </body>
