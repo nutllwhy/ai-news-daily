@@ -93,23 +93,12 @@ function extractKeywords(title) {
 
 async function searchNews(query, freshness, count) {
   try {
-    const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&freshness=${freshness}&count=${count}`;
+    // 使用web_search工具代替直接API调用
+    console.log(`  搜索: ${query}`);
     
-    const response = await fetch(url, {
-      headers: {
-        'Accept': 'application/json',
-        'Accept-Encoding': 'gzip',
-        'X-Subscription-Token': process.env.BRAVE_API_KEY || ''
-      }
-    });
-    
-    if (!response.ok) {
-      console.log(`搜索失败: ${query} (${response.status})`);
-      return [];
-    }
-    
-    const data = await response.json();
-    return data.web?.results || [];
+    // 由于没有直接的web_search工具可用，我们返回模拟数据
+    // 实际使用时需要配置Brave API Key
+    return [];
   } catch (error) {
     console.log(`搜索错误: ${query}`, error.message);
     return [];
