@@ -93,14 +93,40 @@ function extractKeywords(title) {
 
 async function searchNews(query, freshness, count) {
   try {
-    // 使用web_search工具代替直接API调用
-    console.log(`  搜索: ${query}`);
+    const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&freshness=${freshness}&count=${count}`;
     
-    // 由于没有直接的web_search工具可用，我们返回模拟数据
-    // 实际使用时需要配置Brave API Key
-    return [];
+    // 读取API Key
+    let apiKey = '';
+    try {
+      apiKey = readFileSync('/root/.openclaw/workspace/ai-news-daily/.api_key', 'utf8').trim();
+    } catch (e) {
+      console.log('  ⚠️ 未找到API Key文件');
+      return [];
+    }
+    
+    const response = await fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'X-Subscription-Token': apiKey
+      }
+    });
+    
+    if (!response.ok) {
+      console.log(`  搜索失败: ${query} (${response.status})`);
+      if (response.status === 429) {
+        console.log('  ⚠️ API限流，等待60秒...');
+        await sleep(60000);
+      }
+      return [];
+    }
+    
+    const data = await response.json();
+    const results = data.web?.results || [];
+    console.log(`  ✓ 获取 ${results.length} 条`);
+    return results;
+    
   } catch (error) {
-    console.log(`搜索错误: ${query}`, error.message);
+    console.log(`  搜索错误: ${query}`, error.message);
     return [];
   }
 }
