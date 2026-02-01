@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI圈日报 - 2026-02-01</title>
+    <style>
+        :root {
+            /* 浅色主题（默认） */
+            --bg-primary: #faf9f7;
+            --bg-secondary: #f0ede8;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #5c5c5c;
+            --text-muted: #8a8a8a;
+            --border-color: #e0ddd5;
+            --accent-color: #c41e3a;
+            --accent-light: #fef2f2;
+            --link-color: #2563eb;
+            --link-hover: #1d4ed8;
+            --shadow: 0 1px 3px rgba(0,0,0,0.05);
+            --header-bg: #1a1a1a;
+            --header-text: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            /* 深色主题 */
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #242424;
+            --bg-card: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+            --border-color: #404040;
+            --accent-color: #ff6b6b;
+            --accent-light: #3a2a2a;
+            --link-color: #60a5fa;
+            --link-hover: #93c5fd;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3);
+            --header-bg: #0a0a0a;
+            --header-text: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* 顶部栏 */
+        .top-bar {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 12px 0;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .top-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .date-weather {
+            font-size: 0.9em;
+            opacity: 0.9;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* 主题切换开关 */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .theme-toggle span {
+            font-size: 0.85em;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .toggle-switch {
+            width: 44px;
+            height: 24px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 12px;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .toggle-switch::after {
+            content: "☀️";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        [data-theme="dark"] .toggle-switch::after {
+            content: "🌙";
+            transform: translateX(20px);
+        }
+
+        /* 报头 */
+        .masthead {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .newspaper-title {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-family: "Noto Serif SC", serif;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            font-style: italic;
+            letter-spacing: 0.05em;
+        }
+
+        .edition-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* 导航 */
+        .nav-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* 主内容区 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* 头版新闻 */
+        .front-page {
+            grid-column: 1 / -1;
+            background: var(--bg-card);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .headline-label {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .headline {
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .subheadline {
+            font-size: 1.3em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .byline {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .lead {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: var(--text-primary);
+            text-align: justify;
+        }
+
+        .lead p {
+            margin-bottom: 1em;
+        }
+
+        .lead strong {
+            color: var(--accent-color);
+        }
+
+        /* 新闻网格 */
+        .news-grid {
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .section-icon {
+            font-size: 1.5em;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .article-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--text-primary);
+        }
+
+        .article-meta {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .article-body {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-body p {
+            margin-bottom: 1em;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .data-list {
+            list-style: none;
+        }
+
+        .data-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-item:last-child {
+            border-bottom: none;
+        }
+
+        .data-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .data-label {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* 研究卡片特殊样式 */
+        .research-highlight {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .research-title {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* 来源链接 */
+        .sources {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .source-link {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-right: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .source-link:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        /* 底部 */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .sidebar {
+                grid-column: 1;
+            }
+
+            .newspaper-title {
+                font-size: 2.5em;
+            }
+
+            .headline {
+                font-size: 1.8em;
+            }
+
+            .top-bar-content,
+            .nav-content {
+                padding: 0 20px;
+            }
+
+            .front-page,
+            .article-card,
+            .sidebar-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="date-weather">2026年2月1日 星期六 | 农历腊月十四</div>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span>浅色</span>
+                <div class="toggle-switch"></div>
+                <span>深色</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 报头 -->
+    <header class="masthead">
+        <h1 class="newspaper-title">AI圈日报</h1>
+        <p class="tagline">「 每日精选人工智能行业要闻 」</p>
+        <div class="edition-info">
+            第 002 期 | 北京版 | 过去24小时精选
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="#headlines" class="nav-link">头条新闻</a>
+            <a href="#research" class="nav-link">前沿研究</a>
+            <a href="#tools" class="nav-link">新工具</a>
+            <a href="#data" class="nav-link">今日数据</a>
+            <a href="#review" class="nav-link">本周回顾</a>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 头版头条 -->
+        <article class="front-page" id="headlines">
+            <span class="headline-label">今日头条</span>
+            <h2 class="headline">Anthropic估值飙升至350亿美元，AI独角兽IPO竞赛白热化</h2>
+            <p class="subheadline">最新融资轮超额认购，预计2026年底上市；Polymarket预测其IPO概率已超过OpenAI</p>
+            <div class="byline">特约撰稿人 · 发自旧金山 | 发布时间：8小时前</div>
+            <div class="lead">
+                <p>Anthropic最新融资传出重磅消息：<strong>估值已达3500亿美元</strong>，相比2025年9月的1830亿美元几乎翻倍。这家由前OpenAI研究人员创立的公司，正在筹备2026年底的IPO，有望成为近年来最大的科技股上市之一。</p>
+                <p>据Tekedia报道，本轮融资目标从原定的100亿美元上调至200亿美元，由Coatue Management和新加坡GIC主权财富基金领投。由于投资者热情高涨，出现了大量超额认购的情况。</p>
+                <p>Prediction市场Polymarket数据显示，Anthropic在2027年前IPO的概率已达55%，超过了OpenAI的41%。这标志着市场对Claude系列产品的信心正在快速上升。</p>
+            </div>
+            <div class="sources">
+                <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
+                <a href="#" class="source-link">Tekedia</a>
+                <a href="#" class="source-link">Financial Times</a>
+                <a href="#" class="source-link">Polymarket</a>
+            </div>
+        </article>
+
+        <!-- 新闻网格 -->
+        <div class="news-grid">
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">⚖️</span>
+                    <span class="section-title">法律动态</span>
+                </div>
+                <h3 class="article-title">xAI起诉OpenAI案遇重大挫折，联邦法官暗示可能驳回</h3>
+                <div class="article-meta">路透社 / CNBC | 发布时间：16小时前</div>
+                <div class="article-body">
+                    <p>马斯克旗下的xAI指控OpenAI窃取商业机密，但联邦法官在听证会上明确表示可能驳回这起诉讼。法官对xAI的诉讼依据表示质疑，认为证据不够充分。</p>
+                    <p>如果最终被驳回，这将是OpenAI的重大法律胜利，也将影响未来AI行业的人才流动规则。</p>
+                </div>
+            </article>
+
+            <article class="article-card" id="research">
+                <div class="section-header">
+                    <span class="section-icon">📝</span>
+                    <span class="section-title">前沿研究</span>
+                </div>
+                <h3 class="article-title">斯坦福研究：AI辅助可能阻碍人类核心技能形成</h3>
+                <div class="article-meta">斯坦福大学 / ICLR 2026 | 接收时间：近期</div>
+                <div class="article-body">
+                    <p>最新研究发现，虽然AI辅助能提升即时任务表现，但可能阻碍新学习任务中核心技能的形成。实验显示，使用AI辅助的受试者在后续独立测试中，技能掌握程度明显低于对照组。</p>
+                    <div class="research-highlight">
+                        <div class="research-title">核心发现</div>
+                        <p>AI的"过度帮助"可能干扰学习过程中的关键认知环节。这对AI教育应用的设计具有重要启示——如何在提供辅助和保留学习空间之间取得平衡。</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card" id="tools">
+                <div class="section-header">
+                    <span class="section-icon">🛠️</span>
+                    <span class="section-title">行业观察</span>
+                </div>
+                <h3 class="article-title">AI正从实验室工具转变为企业运营基础设施</h3>
+                <div class="article-meta">Business Insider / WebProNews | 发布时间：今日</div>
+                <div class="article-body">
+                    <p>BI最新分析指出，AI已不再是研究实验室里的未来概念，而是成为"立即性的运营必需品"。2026年将是AI从"试点项目"转向"核心基础设施"的关键转折点。</p>
+                    <p>《纽约时报》观点文章也认为，AI行业在2025年经历"期望降温"后，2026年初随着Claude代码代理等新产品的出现，市场又回到了炒作周期。</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-box" id="data">
+                <h3 class="sidebar-title">📊 今日数据</h3>
+                <ul class="data-list">
+                    <li class="data-item">
+                        <div class="data-number">$350B</div>
+                        <div class="data-label">Anthropic最新估值</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">+91%</div>
+                        <div class="data-label">较9月估值增长</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">55%</div>
+                        <div class="data-label">Anthropic IPO概率</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">3</div>
+                        <div class="data-label">过去24小时重要新闻</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box" id="review">
+                <h3 class="sidebar-title">📅 本周回顾</h3>
+                <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
+                    <p style="margin-bottom: 12px;"><strong>1月30日</strong><br>OpenAI宣布2月13日退役GPT-4o等旧模型</p>
+                    <p style="margin-bottom: 12px;"><strong>1月30日</strong><br>苹果被曝内部用Claude、对外合作Gemini</p>
+                    <p style="margin-bottom: 12px;"><strong>1月30日</strong><br>字节、阿里、DeepSeek春节前夕密集发布</p>
+                    <p><strong>1月30日</strong><br>DeepSeek获准采购英伟达H200芯片</p>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">ℹ️ 关于本报</h3>
+                <div style="font-size: 0.9em; color: var(--text-secondary); line-height: 1.7;">
+                    <p style="margin-bottom: 10px;">《AI圈日报》每日北京时间8:00更新，精选过去24小时内人工智能行业重要新闻。</p>
+                    <p>编辑：栗噔噔<br>技术支持：OpenClaw AI</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">AI圈日报</div>
+            <p class="footer-text">每日精选AI行业要闻 · 早上8点更新<br>数据来源：Reuters、CNBC、Tekedia、NYT等权威媒体</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // 恢复用户主题偏好
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</body>
+</html>
