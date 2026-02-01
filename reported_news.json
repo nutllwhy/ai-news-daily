@@ -46,6 +46,50 @@
           "keywords": ["Test-Time Scaling", "推理模型", "慢思考"]
         }
       ]
+    },
+    {
+      "date": "2026-02-01",
+      "headlines": [
+        {
+          "title": "马斯克xAI起诉OpenAI遇重挫，法官暗示可能驳回诉讼",
+          "keywords": ["xAI", "Elon Musk", "OpenAI", "诉讼", "商业机密", "Grok"],
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-2026-01-31/"
+        },
+        {
+          "title": "春节AI大战白热化：四大巨头豪掷25亿争夺14亿用户",
+          "keywords": ["字节", "腾讯", "百度", "阿里", "春节", "AI大战", "25亿", "红包"],
+          "url": "https://finance.sina.cn/stock/jdts/2026-02-01/detail-inhkiasz8235259.d.html"
+        },
+        {
+          "title": "Nvidia千亿投资OpenAI计划停滞，内部质疑声起",
+          "keywords": ["Nvidia", "OpenAI", "投资", "1000亿", "黄仁勋"],
+          "url": "https://www.reuters.com/business/nvidias-plan-invest-up-100-billion-openai-has-stalled-wsj-reports-2026-01-31/"
+        }
+      ],
+      "tools": [
+        {
+          "name": "OpenAI Prism",
+          "keywords": ["OpenAI", "Prism", "LaTeX", "科研", "GPT-5.2", "学术写作"]
+        },
+        {
+          "name": "Moltbot",
+          "keywords": ["Moltbot", "Clawdbot", "开源", "AI Agent", "自托管", "多平台"]
+        },
+        {
+          "name": "Claude Cowork Plugins",
+          "keywords": ["Claude", "Cowork", "插件", "MCP", "子代理", "企业"]
+        },
+        {
+          "name": "Google Gemini Guided Learning",
+          "keywords": ["Google", "Gemini", "Guided Learning", "教育", "学习工具"]
+        }
+      ],
+      "research": [
+        {
+          "title": "OpenAI Prism: AI-Native Scientific Workspace",
+          "keywords": ["Prism", "LaTeX", "科研写作", "GPT-5.2", "学术协作"]
+        }
+      ]
     }
   ],
   "dedup_rules": {
