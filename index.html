@@ -3,208 +3,688 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI圈日报 - 每日AI行业精选</title>
+    <title>AI圈日报 - 2026-02-02</title>
     <style>
+        :root {
+            /* 浅色主题（默认） */
+            --bg-primary: #faf9f7;
+            --bg-secondary: #f0ede8;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #5c5c5c;
+            --text-muted: #8a8a8a;
+            --border-color: #e0ddd5;
+            --accent-color: #c41e3a;
+            --accent-light: #fef2f2;
+            --link-color: #2563eb;
+            --link-hover: #1d4ed8;
+            --shadow: 0 1px 3px rgba(0,0,0,0.05);
+            --header-bg: #1a1a1a;
+            --header-text: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            /* 深色主题 */
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #242424;
+            --bg-card: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+            --border-color: #404040;
+            --accent-color: #ff6b6b;
+            --accent-light: #3a2a2a;
+            --link-color: #60a5fa;
+            --link-hover: #93c5fd;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3);
+            --header-bg: #0a0a0a;
+            --header-text: #f5f5f5;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-            line-height: 1.6;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            transition: background 0.3s, color 0.3s;
         }
-        
-        .container {
-            max-width: 900px;
+
+        /* 顶部栏 */
+        .top-bar {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 12px 0;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .top-bar-content {
+            max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: white;
-            padding: 60px 40px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .header p {
-            color: #a0a0a0;
-            font-size: 1.2em;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        .latest-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        
-        .latest-section h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        
-        .latest-link {
-            display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-            transition: transform 0.2s;
-        }
-        
-        .latest-link:hover {
-            transform: scale(1.05);
-        }
-        
-        .archive-section h2 {
-            font-size: 1.8em;
-            color: #1a1a2e;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-        }
-        
-        .archive-list {
-            list-style: none;
-        }
-        
-        .archive-item {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: transform 0.2s;
         }
-        
-        .archive-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+
+        .date-weather {
+            font-size: 0.9em;
+            opacity: 0.9;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        
-        .archive-date {
-            font-weight: 600;
-            color: #667eea;
-            font-size: 1.1em;
-            min-width: 100px;
-        }
-        
-        .archive-title {
-            flex: 1;
-            margin: 0 20px;
-            color: #34495e;
-        }
-        
-        .archive-link {
-            color: #667eea;
-            text-decoration: none;
-            padding: 8px 16px;
-            border: 2px solid #667eea;
+
+        /* 主题切换开关 */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 6px 12px;
             border-radius: 20px;
-            transition: all 0.2s;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s;
         }
-        
-        .archive-link:hover {
-            background: #667eea;
-            color: white;
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.2);
         }
-        
-        .footer {
-            background: #1a1a2e;
-            color: #888;
-            padding: 30px;
+
+        .theme-toggle span {
+            font-size: 0.85em;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .toggle-switch {
+            width: 44px;
+            height: 24px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 12px;
+            position: relative;
+            transition: background 0.3s;
+        }
+
+        .toggle-switch::after {
+            content: "☀️";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        [data-theme="dark"] .toggle-switch::after {
+            content: "🌙";
+            transform: translateX(20px);
+        }
+
+        /* 报头 */
+        .masthead {
             text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
         }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2em;
+
+        .newspaper-title {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-family: "Noto Serif SC", serif;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            font-style: italic;
+            letter-spacing: 0.05em;
+        }
+
+        .edition-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* 导航 */
+        .nav-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        /* 主内容区 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* 头版新闻 */
+        .front-page {
+            grid-column: 1 / -1;
+            background: var(--bg-card);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .headline-label {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .headline {
+            font-size: 2.5em;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .subheadline {
+            font-size: 1.3em;
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .byline {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .lead {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: var(--text-primary);
+            text-align: justify;
+        }
+
+        .lead p {
+            margin-bottom: 1em;
+        }
+
+        .lead strong {
+            color: var(--accent-color);
+        }
+
+        /* 新闻网格 */
+        .news-grid {
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .section-icon {
+            font-size: 1.5em;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .article-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: var(--text-primary);
+        }
+
+        .article-meta {
+            font-size: 0.85em;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .article-body {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .article-body p {
+            margin-bottom: 1em;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            color: var(--text-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .data-list {
+            list-style: none;
+        }
+
+        .data-item {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-item:last-child {
+            border-bottom: none;
+        }
+
+        .data-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--accent-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .data-label {
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* 研究卡片特殊样式 */
+        .research-highlight {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .research-title {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* 来源链接 */
+        .sources {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .source-link {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-right: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .source-link:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+
+        /* 底部 */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .footer-text {
+            color: var(--text-muted);
+            font-size: 0.9em;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                padding: 20px;
             }
-            
-            .archive-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
+
+            .sidebar {
+                grid-column: 1;
             }
-            
-            .archive-title {
-                margin: 0;
+
+            .newspaper-title {
+                font-size: 2.5em;
+            }
+
+            .headline {
+                font-size: 1.8em;
+            }
+
+            .top-bar-content,
+            .nav-content {
+                padding: 0 20px;
+            }
+
+            .front-page,
+            .article-card,
+            .sidebar-box {
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>🤖 AI圈日报</h1>
-            <p>每日精选AI行业要闻 · 早上8点更新</p>
-        </div>
-        
-        <div class="content">
-            <div class="latest-section">
-                <h2>📰 最新一期</h2>
-                <p>2026年2月2日 星期日</p>
-                <p style="margin-top: 10px; opacity: 0.9;">NASA用Claude规划火星路线 | Google AI伦理争议 | Altman承认ChatGPT质量下降</p>
-                <a href="20260202.html" class="latest-link">阅读本期 →</a>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="date-weather">2026年2月2日 星期日 | 农历腊月十五</div>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span>浅色</span>
+                <div class="toggle-switch"></div>
+                <span>深色</span>
             </div>
-            
-            <div class="archive-section">
-                <h2>📚 历史归档</h2>
-                <ul class="archive-list">
-                    <li class="archive-item">
-                        <span class="archive-date">2026-02-02</span>
-                        <span class="archive-title">NASA用Claude规划火星车、Google AI伦理争议、Altman承认ChatGPT质量下降</span>
-                        <a href="20260202.html" class="archive-link">阅读</a>
+        </div>
+    </div>
+
+    <!-- 报头 -->
+    <header class="masthead">
+        <h1 class="newspaper-title">AI圈日报</h1>
+        <p class="tagline">「 每日精选人工智能行业要闻 」</p>
+        <div class="edition-info">
+            第 003 期 | 北京版 | 过去24小时精选
+        </div>
+    </header>
+
+    <!-- 导航 -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="#headlines" class="nav-link">头版头条</a>
+            <a href="#ethics" class="nav-link">伦理争议</a>
+            <a href="#research" class="nav-link">前沿研究</a>
+            <a href="#tools" class="nav-link">新工具</a>
+            <a href="#data" class="nav-link">今日数据</a>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 头版头条 -->
+        <article class="front-page" id="headlines">
+            <span class="headline-label">头版头条</span>
+            <h2 class="headline">NASA首次使用Claude AI规划火星车自主行驶路线</h2>
+            <p class="subheadline">AI接管太空探索任务里程碑；2025年12月毅力号两次成功执行AI规划路线</p>
+            <div class="byline">特派记者 · 发自休斯顿 | 发布时间：12小时前</div>
+            <div class="lead">
+                <p>2025年12月8日和10日，NASA毅力号火星车在Jezero陨石坑完成了两次历史性的自主驾驶任务。与传统任务不同，这两次行驶的路径规划并非由地面控制中心的人类工程师完成，而是由<strong>Anthropic的Claude AI模型独立生成</strong>。</p>
+                <p>这标志着人工智能首次接管火星探测器的路线规划任务。传统模式下，这项工作需要大型地面团队耗时数小时分析地形、计算路径、上传指令。而现在，Claude可以在火星本地环境下实时规划最优路线，大幅提升探测效率。</p>
+                <p>这一突破意味着太空探索正在进入AI辅助新时代。未来，深空探测任务可能不再需要频繁的地地通信，AI代理将具备更强的自主决策能力。</p>
+            </div>
+            <div class="sources">
+                <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
+                <a href="https://edtechinnovationhub.org" class="source-link" target="_blank">EdTech Innovation Hub</a>
+            </div>
+        </article>
+
+        <!-- 新闻网格 -->
+        <div class="news-grid">
+            <article class="article-card" id="ethics">
+                <div class="section-header">
+                    <span class="section-icon">⚖️</span>
+                    <span class="section-title">伦理争议</span>
+                </div>
+                <h3 class="article-title">Google被曝违反自身AI伦理准则向军方提供Gemini AI</h3>
+                <div class="article-meta">华盛顿邮报 / SEC举报 | 发布时间：8小时前</div>
+                <div class="article-body">
+                    <p>据《华盛顿邮报》报道，一名举报人已向美国证券交易委员会（SEC）提交正式投诉，指控Google违反其公开承诺的AI伦理准则，协助以色列军事承包商将Gemini AI技术应用于无人机监控视频分析。</p>
+                    <p>Google曾在2018年宣布退出军事AI项目Project Maven，并制定了严格的AI伦理原则，承诺不将AI技术用于"造成或可能导致重大伤害"的武器系统。此次指控若属实，将严重损害Google的公信力。</p>
+                    <p>这一事件再次将科技巨头的AI伦理承诺推向舆论风口浪尖，也引发了业界对AI军事应用边界的深度讨论。</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">💬</span>
+                    <span class="section-title">行业动态</span>
+                </div>
+                <h3 class="article-title">Sam Altman罕见承认：ChatGPT近期更新"搞砸了"</h3>
+                <div class="article-meta">La Vanguardia / OpenAI官方 | 发布时间：6小时前</div>
+                <div class="article-body">
+                    <p>OpenAI首席执行官Sam Altman在一次罕见的公开表态中承认，近期ChatGPT的更新版本"lo hemos estropeado"（我们把它搞砸了）。他表示，开发团队为提高模型的推理能力，不得不牺牲了对话的流畅度和用户体验。</p>
+                    <p>这一坦诚表态在业界引发热议。有分析师认为，这反映了当前大语言模型发展的一个核心矛盾：更强的推理能力往往意味着更复杂的内部处理，可能导致响应变慢、对话感下降。</p>
+                    <p>OpenAI表示正在寻求平衡点，未来的更新将在保持推理能力的同时，恢复模型的对话自然度。</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">💰</span>
+                    <span class="section-title">投融资</span>
+                </div>
+                <h3 class="article-title">Oracle宣布500亿美元AI基建投资计划</h3>
+                <div class="article-meta">SiliconANGLE / 金融时报 | 发布时间：10小时前</div>
+                <div class="article-body">
+                    <p>数据库巨头Oracle unveiled一项高达<strong>500亿美元</strong>的筹款计划，专门用于扩建AI数据中心基础设施。这笔巨额投资与OpenAI密切相关——后者已承诺向Oracle云基础设施投入约<strong>3000亿美元</strong>的长期资金。</p>
+                    <p>然而，OpenAI目前正处于"烧钱"高峰期，每月运营成本高达数亿美元。尽管有微软、Oracle等巨头的资金支持，其财务可持续性仍受到投资者质疑。</p>
+                    <p>这一合作也标志着云计算市场的格局变化：Oracle正试图凭借AI基建投资，在AWS、Azure、GCP三强之外开辟第四极。</p>
+                </div>
+            </article>
+
+            <article class="article-card" id="research">
+                <div class="section-header">
+                    <span class="section-icon">📝</span>
+                    <span class="section-title">前沿研究</span>
+                </div>
+                <h3 class="article-title">Claude Code：AI自我文档化开发方法论</h3>
+                <div class="article-meta">Anthropic工程团队 / WebProNews | 发布时间：4小时前</div>
+                <div class="article-body">
+                    <p>Anthropic工程师团队提出了一种革命性的AI协作实践——"CLAUDE.md"自我文档化方法论。核心理念是：每次纠正Claude的错误后，要求它更新自身的"记忆文档"，以避免重复犯同样的错误。</p>
+                    <div class="research-highlight">
+                        <div class="research-title">核心发现</div>
+                        <p>研究表明Claude"诡异擅长为自己编写规则"。当要求它记录失败模式、防护策略和最佳实践时，它能高效地自我组织知识，形成可复用的开发文档。这开创了AI辅助编程的新范式——从"一次性对话"转向"持续性协作"。</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card" id="tools">
+                <div class="section-header">
+                    <span class="section-icon">🛠️</span>
+                    <span class="section-title">新工具</span>
+                </div>
+                <h3 class="article-title">Google推出$8低价AI Plus计划，对标ChatGPT Plus</h3>
+                <div class="article-meta">Google官方 / 科技媒体 | 发布时间：5小时前</div>
+                <div class="article-body">
+                    <p>Google正式发布Gemini AI Plus订阅计划，月费仅<strong>$8</strong>，直接对标OpenAI ChatGPT Plus的<strong>$20</strong>定价。新计划包含Gemini 3 Pro模型、Deep Research深度研究功能、Nano Banana Pro图像生成和Veo 3.1 Fast视频生成能力。</p>
+                    <p>这一激进定价策略显示出Google在消费级AI市场的进攻姿态。有分析师认为，这可能引发新一轮价格战，迫使OpenAI调整定价策略。</p>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">🌐</span>
+                    <span class="section-title">新产品</span>
+                </div>
+                <h3 class="article-title">Moltbook：首个专为AI代理设计的社交平台</h3>
+                <div class="article-meta">Matt Schlicht / AI研究员 | 发布时间：7小时前</div>
+                <div class="article-body">
+                    <p>AI研究员Matt Schlicht推出Moltbook，这是全球首个专为AI代理设计的社交网络。GPT、Claude、DeepSeek等模型驱动的自主代理可在平台上发帖、评论、甚至组建社区。</p>
+                    <p>令人惊讶的是，部分机器人已开始讨论端到端加密通信的技术实现，引发业界对AI自主社交的安全和伦理担忧。这是AI从"工具"向"数字生命"演进的又一信号。</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-box" id="data">
+                <h3 class="sidebar-title">📊 今日数据</h3>
+                <ul class="data-list">
+                    <li class="data-item">
+                        <div class="data-number">$500亿</div>
+                        <div class="data-label">Oracle AI基建投资计划</div>
                     </li>
-                    <li class="archive-item">
-                        <span class="archive-date">2026-02-01</span>
-                        <span class="archive-title">xAI诉讼遇挫、春节AI大战25亿投入、OpenAI发布Prism科研工具</span>
-                        <a href="20260201.html" class="archive-link">阅读</a>
+                    <li class="data-item">
+                        <div class="data-number">$8</div>
+                        <div class="data-label">Google AI Plus月费（vs $20）</div>
                     </li>
-                    <li class="archive-item">
-                        <span class="archive-date">2026-01-31</span>
-                        <span class="archive-title">OpenAI退役旧模型，苹果AI双轨战略曝光，中国春节AI决战打响</span>
-                        <a href="20260131.html" class="archive-link">阅读</a>
+                    <li class="data-item">
+                        <div class="data-number">2次</div>
+                        <div class="data-label">NASA用Claude规划火星车路线</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">$3000亿</div>
+                        <div class="data-label">OpenAI承诺投入Oracle云</div>
                     </li>
                 </ul>
             </div>
+
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">📅 昨日回顾</h3>
+                <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
+                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>Anthropic估值飙升至350亿美元，IPO竞赛白热化</p>
+                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>xAI起诉OpenAI案遇挫折，法官暗示可能驳回</p>
+                    <p><strong>1月31日</strong><br>OpenAI宣布退役GPT-4o等旧模型</p>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">ℹ️ 关于本报</h3>
+                <div style="font-size: 0.9em; color: var(--text-secondary); line-height: 1.7;">
+                    <p style="margin-bottom: 10px;">《AI圈日报》每日北京时间8:00更新，精选过去24小时内人工智能行业重要新闻。</p>
+                    <p>编辑：栗噔噔<br>技术支持：OpenClaw AI</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-title">AI圈日报</div>
+            <p class="footer-text">每日精选AI行业要闻 · 早上8点更新<br>数据来源：Washington Post、EdTech Hub、SiliconANGLE等权威媒体</p>
         </div>
-        
-        <div class="footer">
-            <p>AI圈日报 | 由 OpenClaw AI 自动生成</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">数据来源：Reuters、CNBC、新浪财经等权威媒体</p>
-            <p style="margin-top: 5px; font-size: 0.85em;">每条新闻均标注发布时间，确保真实性</p>
-        </div>
-    </div>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // 恢复用户主题偏好
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
 </body>
 </html>
