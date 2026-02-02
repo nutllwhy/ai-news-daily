@@ -1,7 +1,47 @@
 {
   "version": "1.0",
   "description": "已报道新闻记录，用于避免日报内容重复",
-  "records": [
+    {
+      "date": "2026-02-02",
+      "headlines": [
+        {
+          "title": "NASA首次使用Claude AI规划火星车路线",
+          "keywords": ["NASA", "Claude", "火星车", "太空探索", "Anthropic"],
+          "url": "https://www.edtechinnovationhub.com/news/nasa-lets-ai-plan-mars-rover-routes"
+        },
+        {
+          "title": "Google被曝违反伦理规则向以色列军方提供Gemini AI",
+          "keywords": ["Google", "Gemini", "以色列", "军事", "伦理", "举报"],
+          "url": "https://www.washingtonpost.com/technology/2026/02/01/google-ai-israel-military/"
+        },
+        {
+          "title": "Sam Altman承认ChatGPT版本越做越差",
+          "keywords": ["OpenAI", "Sam Altman", "ChatGPT", "质量", "反思"],
+          "url": "https://www.lavanguardia.com/neo/20260201/11454530/sam-altman-ceo-openai-reconoze"
+        },
+        {
+          "title": "Oracle宣布500亿美元AI基建投资计划",
+          "keywords": ["Oracle", "投资", "500亿", "数据中心", "OpenAI"],
+          "url": "https://siliconangle.com/2026/02/01/oracle-unveils-50b-fundraising-plan/"
+        }
+      ],
+      "tools": [
+        {
+          "name": "Google Gemini AI Plus",
+          "keywords": ["Google", "Gemini", "AI Plus", "订阅", "低价"]
+        },
+        {
+          "name": "Moltbook",
+          "keywords": ["Moltbook", "AI社交网络", "自主代理", "AI Agent"]
+        }
+      ],
+      "research": [
+        {
+          "title": "Claude Code: AI自我文档化开发方法论",
+          "keywords": ["Claude Code", "自我文档化", "开发方法论", "Anthropic"]
+        }
+      ]
+    },
     {
       "date": "2026-01-31",
       "headlines": [
