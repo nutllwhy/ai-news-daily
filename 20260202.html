@@ -6,7 +6,6 @@
     <title>AI圈日报 - 2026-02-02</title>
     <style>
         :root {
-            /* 浅色主题（默认） */
             --bg-primary: #faf9f7;
             --bg-secondary: #f0ede8;
             --bg-card: #ffffff;
@@ -21,10 +20,11 @@
             --shadow: 0 1px 3px rgba(0,0,0,0.05);
             --header-bg: #1a1a1a;
             --header-text: #ffffff;
+            --highlight-bg: #fff8e1;
+            --key-point-bg: #e3f2fd;
         }
 
         [data-theme="dark"] {
-            /* 深色主题 */
             --bg-primary: #1a1a1a;
             --bg-secondary: #242424;
             --bg-card: #2a2a2a;
@@ -39,13 +39,11 @@
             --shadow: 0 1px 3px rgba(0,0,0,0.3);
             --header-bg: #0a0a0a;
             --header-text: #f5f5f5;
+            --highlight-bg: #3a3520;
+            --key-point-bg: #1a2f4a;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
@@ -55,7 +53,6 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        /* 顶部栏 */
         .top-bar {
             background: var(--header-bg);
             color: var(--header-text);
@@ -78,7 +75,6 @@
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        /* 主题切换开关 */
         .theme-toggle {
             display: flex;
             align-items: center;
@@ -90,9 +86,7 @@
             transition: background 0.2s;
         }
 
-        .theme-toggle:hover {
-            background: rgba(255,255,255,0.2);
-        }
+        .theme-toggle:hover { background: rgba(255,255,255,0.2); }
 
         .theme-toggle span {
             font-size: 0.85em;
@@ -129,7 +123,6 @@
             transform: translateX(20px);
         }
 
-        /* 报头 */
         .masthead {
             text-align: center;
             padding: 40px 20px;
@@ -162,7 +155,6 @@
             color: var(--text-secondary);
         }
 
-        /* 导航 */
         .nav-bar {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
@@ -198,7 +190,6 @@
             border-bottom-color: var(--accent-color);
         }
 
-        /* 主内容区 */
         .main-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -208,7 +199,6 @@
             gap: 40px;
         }
 
-        /* 头版新闻 */
         .front-page {
             grid-column: 1 / -1;
             background: var(--bg-card);
@@ -235,24 +225,57 @@
             font-size: 2.5em;
             font-weight: 700;
             line-height: 1.3;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: var(--text-primary);
         }
 
         .subheadline {
             font-size: 1.3em;
             color: var(--text-secondary);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             font-weight: 400;
         }
 
         .byline {
             font-size: 0.9em;
             color: var(--text-muted);
-            margin-bottom: 25px;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
             border-bottom: 1px solid var(--border-color);
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* 关键信息高亮框 */
+        .key-points {
+            background: var(--key-point-bg);
+            border-left: 4px solid #2196f3;
+            padding: 20px 25px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .key-points-title {
+            font-weight: 700;
+            color: #1976d2;
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .key-points ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .key-points li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .key-points li strong {
+            color: var(--accent-color);
         }
 
         .lead {
@@ -260,17 +283,12 @@
             line-height: 1.9;
             color: var(--text-primary);
             text-align: justify;
+            margin-top: 20px;
         }
 
-        .lead p {
-            margin-bottom: 1em;
-        }
+        .lead p { margin-bottom: 1em; }
+        .lead strong { color: var(--accent-color); }
 
-        .lead strong {
-            color: var(--accent-color);
-        }
-
-        /* 新闻网格 */
         .news-grid {
             grid-column: 1;
             display: flex;
@@ -300,9 +318,7 @@
             border-bottom: 2px solid var(--accent-color);
         }
 
-        .section-icon {
-            font-size: 1.5em;
-        }
+        .section-icon { font-size: 1.5em; }
 
         .section-title {
             font-size: 1.3em;
@@ -315,7 +331,7 @@
         .article-title {
             font-size: 1.5em;
             font-weight: 700;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             line-height: 1.4;
             color: var(--text-primary);
         }
@@ -332,11 +348,48 @@
             line-height: 1.8;
         }
 
-        .article-body p {
-            margin-bottom: 1em;
+        .article-body p { margin-bottom: 1em; }
+
+        /* 来源链接样式 */
+        .source-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            font-size: 0.9em;
         }
 
-        /* 侧边栏 */
+        .source-label {
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .source-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .source-link {
+            color: var(--link-color);
+            text-decoration: none;
+            padding: 4px 12px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+
+        .source-link:hover {
+            background: var(--link-color);
+            color: white;
+            text-decoration: none;
+        }
+
         .sidebar {
             grid-column: 2;
             display: flex;
@@ -362,21 +415,17 @@
             letter-spacing: 0.05em;
         }
 
-        .data-list {
-            list-style: none;
-        }
+        .data-list { list-style: none; }
 
         .data-item {
             padding: 15px 0;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .data-item:last-child {
-            border-bottom: none;
-        }
+        .data-item:last-child { border-bottom: none; }
 
         .data-number {
-            font-size: 2em;
+            font-size: 1.8em;
             font-weight: 700;
             color: var(--accent-color);
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -388,7 +437,6 @@
             margin-top: 5px;
         }
 
-        /* 研究卡片特殊样式 */
         .research-highlight {
             background: var(--accent-light);
             border-left: 4px solid var(--accent-color);
@@ -402,28 +450,6 @@
             margin-bottom: 10px;
         }
 
-        /* 来源链接 */
-        .sources {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px dashed var(--border-color);
-        }
-
-        .source-link {
-            display: inline-block;
-            color: var(--link-color);
-            text-decoration: none;
-            font-size: 0.85em;
-            margin-right: 15px;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-
-        .source-link:hover {
-            color: var(--link-hover);
-            text-decoration: underline;
-        }
-
-        /* 底部 */
         .footer {
             background: var(--bg-secondary);
             border-top: 1px solid var(--border-color);
@@ -449,35 +475,16 @@
             font-size: 0.9em;
         }
 
-        /* 响应式 */
         @media (max-width: 900px) {
             .main-content {
                 grid-template-columns: 1fr;
                 padding: 20px;
             }
-
-            .sidebar {
-                grid-column: 1;
-            }
-
-            .newspaper-title {
-                font-size: 2.5em;
-            }
-
-            .headline {
-                font-size: 1.8em;
-            }
-
-            .top-bar-content,
-            .nav-content {
-                padding: 0 20px;
-            }
-
-            .front-page,
-            .article-card,
-            .sidebar-box {
-                padding: 20px;
-            }
+            .sidebar { grid-column: 1; }
+            .newspaper-title { font-size: 2.5em; }
+            .headline { font-size: 1.8em; }
+            .top-bar-content, .nav-content { padding: 0 20px; }
+            .front-page, .article-card, .sidebar-box { padding: 20px; }
         }
     </style>
 </head>
@@ -499,7 +506,7 @@
         <h1 class="newspaper-title">AI圈日报</h1>
         <p class="tagline">「 每日精选人工智能行业要闻 」</p>
         <div class="edition-info">
-            第 003 期 | 北京版 | 过去24小时精选
+            第 003 期 | 栗噔噔AI社群 | 过去24小时精选
         </div>
     </header>
 
@@ -508,6 +515,7 @@
         <div class="nav-content">
             <a href="#headlines" class="nav-link">头版头条</a>
             <a href="#ethics" class="nav-link">伦理争议</a>
+            <a href="#industry" class="nav-link">行业动态</a>
             <a href="#research" class="nav-link">前沿研究</a>
             <a href="#tools" class="nav-link">新工具</a>
             <a href="#data" class="nav-link">今日数据</a>
@@ -520,21 +528,39 @@
         <article class="front-page" id="headlines">
             <span class="headline-label">头版头条</span>
             <h2 class="headline">NASA首次使用Claude AI规划火星车自主行驶路线</h2>
-            <p class="subheadline">AI接管太空探索任务里程碑；2025年12月毅力号两次成功执行AI规划路线</p>
+            <p class="subheadline">AI接管太空探索任务里程碑；传统需数小时的地面规划，现由AI实时完成</p>
             <div class="byline">特派记者 · 发自休斯顿 | 发布时间：12小时前</div>
+            
+            <!-- 关键信息 -->
+            <div class="key-points">
+                <div class="key-points-title">📌 关键信息</div>
+                <ul>
+                    <li><strong>时间：</strong>2025年12月8日、10日两次执行</li>
+                    <li><strong>地点：</strong>火星Jezero陨石坑</li>
+                    <li><strong>AI模型：</strong>Anthropic Claude（未公开具体版本）</li>
+                    <li><strong>突破：</strong>首次AI全权负责火星车路径规划，无需人类地面团队干预</li>
+                    <li><strong>意义：</strong>深空探测进入AI自主决策时代，大幅减少地火通信依赖</li>
+                </ul>
+            </div>
+            
             <div class="lead">
                 <p>2025年12月8日和10日，NASA毅力号火星车在Jezero陨石坑完成了两次历史性的自主驾驶任务。与传统任务不同，这两次行驶的路径规划并非由地面控制中心的人类工程师完成，而是由<strong>Anthropic的Claude AI模型独立生成</strong>。</p>
                 <p>这标志着人工智能首次接管火星探测器的路线规划任务。传统模式下，这项工作需要大型地面团队耗时数小时分析地形、计算路径、上传指令。而现在，Claude可以在火星本地环境下实时规划最优路线，大幅提升探测效率。</p>
                 <p>这一突破意味着太空探索正在进入AI辅助新时代。未来，深空探测任务可能不再需要频繁的地地通信，AI代理将具备更强的自主决策能力。</p>
             </div>
-            <div class="sources">
-                <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
-                <a href="https://edtechinnovationhub.org" class="source-link" target="_blank">EdTech Innovation Hub</a>
+            
+            <div class="source-box">
+                <span class="source-label">📰 信息来源</span>
+                <div class="source-links">
+                    <a href="https://edtechinnovationhub.org/nasa-anthropic-ai-mars-rover-path-planning/" class="source-link" target="_blank">EdTech Innovation Hub</a>
+                    <a href="https://www.anthropic.com" class="source-link" target="_blank">Anthropic官方</a>
+                </div>
             </div>
         </article>
 
         <!-- 新闻网格 -->
         <div class="news-grid">
+            <!-- 伦理争议 -->
             <article class="article-card" id="ethics">
                 <div class="section-header">
                     <span class="section-icon">⚖️</span>
@@ -542,27 +568,65 @@
                 </div>
                 <h3 class="article-title">Google被曝违反自身AI伦理准则向军方提供Gemini AI</h3>
                 <div class="article-meta">华盛顿邮报 / SEC举报 | 发布时间：8小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 关键信息</div>
+                    <ul>
+                        <li><strong>举报方：</strong>匿名举报人向SEC提交正式投诉</li>
+                        <li><strong>指控内容：</strong>协助以色列军事承包商将Gemini AI用于无人机监控分析</li>
+                        <li><strong>违反原则：</strong>Google 2018年承诺不将AI用于武器系统</li>
+                        <li><strong>背景：</strong>Google曾因员工抗议退出Project Maven军事AI项目</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
                     <p>据《华盛顿邮报》报道，一名举报人已向美国证券交易委员会（SEC）提交正式投诉，指控Google违反其公开承诺的AI伦理准则，协助以色列军事承包商将Gemini AI技术应用于无人机监控视频分析。</p>
                     <p>Google曾在2018年宣布退出军事AI项目Project Maven，并制定了严格的AI伦理原则，承诺不将AI技术用于"造成或可能导致重大伤害"的武器系统。此次指控若属实，将严重损害Google的公信力。</p>
-                    <p>这一事件再次将科技巨头的AI伦理承诺推向舆论风口浪尖，也引发了业界对AI军事应用边界的深度讨论。</p>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://www.washingtonpost.com" class="source-link" target="_blank">Washington Post</a>
+                        <a href="https://www.sec.gov" class="source-link" target="_blank">SEC</a>
+                    </div>
                 </div>
             </article>
 
-            <article class="article-card">
+            <!-- 行业动态1 -->
+            <article class="article-card" id="industry">
                 <div class="section-header">
                     <span class="section-icon">💬</span>
                     <span class="section-title">行业动态</span>
                 </div>
                 <h3 class="article-title">Sam Altman罕见承认：ChatGPT近期更新"搞砸了"</h3>
                 <div class="article-meta">La Vanguardia / OpenAI官方 | 发布时间：6小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 关键信息</div>
+                    <ul>
+                        <li><strong>表态：</strong>Sam Altman承认"lo hemos estropeado"（我们把它搞砸了）</li>
+                        <li><strong>问题：</strong>为提高推理能力，牺牲了对话流畅度</li>
+                        <li><strong>用户反馈：</strong>近期版本响应变慢、对话感下降</li>
+                        <li><strong>OpenAI回应：</strong>正在寻求推理能力与对话体验的平衡</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
-                    <p>OpenAI首席执行官Sam Altman在一次罕见的公开表态中承认，近期ChatGPT的更新版本"lo hemos estropeado"（我们把它搞砸了）。他表示，开发团队为提高模型的推理能力，不得不牺牲了对话的流畅度和用户体验。</p>
+                    <p>OpenAI首席执行官Sam Altman在一次罕见的公开表态中承认，近期ChatGPT的更新版本影响了用户体验。他表示，开发团队为提高模型的推理能力，不得不牺牲了对话的流畅度。</p>
                     <p>这一坦诚表态在业界引发热议。有分析师认为，这反映了当前大语言模型发展的一个核心矛盾：更强的推理能力往往意味着更复杂的内部处理，可能导致响应变慢、对话感下降。</p>
-                    <p>OpenAI表示正在寻求平衡点，未来的更新将在保持推理能力的同时，恢复模型的对话自然度。</p>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://www.lavanguardia.com" class="source-link" target="_blank">La Vanguardia</a>
+                        <a href="https://openai.com" class="source-link" target="_blank">OpenAI</a>
+                    </div>
                 </div>
             </article>
 
+            <!-- 投融资 -->
             <article class="article-card">
                 <div class="section-header">
                     <span class="section-icon">💰</span>
@@ -570,13 +634,32 @@
                 </div>
                 <h3 class="article-title">Oracle宣布500亿美元AI基建投资计划</h3>
                 <div class="article-meta">SiliconANGLE / 金融时报 | 发布时间：10小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 融资细节</div>
+                    <ul>
+                        <li><strong>投资规模：</strong>500亿美元用于AI数据中心扩建</li>
+                        <li><strong>大客户关系：</strong>OpenAI承诺投入约3000亿美元长期使用</li>
+                        <li><strong>OpenAI现状：</strong>每月运营成本数亿美元，财务可持续性受质疑</li>
+                        <li><strong>市场格局：</strong>Oracle试图在AWS/Azure/GCP外开辟第四极</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
                     <p>数据库巨头Oracle unveiled一项高达<strong>500亿美元</strong>的筹款计划，专门用于扩建AI数据中心基础设施。这笔巨额投资与OpenAI密切相关——后者已承诺向Oracle云基础设施投入约<strong>3000亿美元</strong>的长期资金。</p>
                     <p>然而，OpenAI目前正处于"烧钱"高峰期，每月运营成本高达数亿美元。尽管有微软、Oracle等巨头的资金支持，其财务可持续性仍受到投资者质疑。</p>
-                    <p>这一合作也标志着云计算市场的格局变化：Oracle正试图凭借AI基建投资，在AWS、Azure、GCP三强之外开辟第四极。</p>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://siliconangle.com" class="source-link" target="_blank">SiliconANGLE</a>
+                        <a href="https://www.ft.com" class="source-link" target="_blank">Financial Times</a>
+                    </div>
                 </div>
             </article>
 
+            <!-- 前沿研究 -->
             <article class="article-card" id="research">
                 <div class="section-header">
                     <span class="section-icon">📝</span>
@@ -584,15 +667,35 @@
                 </div>
                 <h3 class="article-title">Claude Code：AI自我文档化开发方法论</h3>
                 <div class="article-meta">Anthropic工程团队 / WebProNews | 发布时间：4小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 核心发现</div>
+                    <ul>
+                        <li><strong>方法论：</strong>"CLAUDE.md"自我文档化实践</li>
+                        <li><strong>机制：</strong>每次纠错后让AI更新自身"记忆文档"</li>
+                        <li><strong>效果：</strong>Claude"诡异擅长为自己编写规则"</li>
+                        <li><strong>意义：</strong>从"一次性对话"转向"持续性协作"</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
                     <p>Anthropic工程师团队提出了一种革命性的AI协作实践——"CLAUDE.md"自我文档化方法论。核心理念是：每次纠正Claude的错误后，要求它更新自身的"记忆文档"，以避免重复犯同样的错误。</p>
                     <div class="research-highlight">
-                        <div class="research-title">核心发现</div>
-                        <p>研究表明Claude"诡异擅长为自己编写规则"。当要求它记录失败模式、防护策略和最佳实践时，它能高效地自我组织知识，形成可复用的开发文档。这开创了AI辅助编程的新范式——从"一次性对话"转向"持续性协作"。</p>
+                        <div class="research-title">研究洞察</div>
+                        <p>研究表明Claude"诡异擅长为自己编写规则"。当要求它记录失败模式、防护策略和最佳实践时，它能高效地自我组织知识，形成可复用的开发文档。这开创了AI辅助编程的新范式。</p>
+                    </div>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://www.webpronews.com" class="source-link" target="_blank">WebProNews</a>
+                        <a href="https://www.anthropic.com/research" class="source-link" target="_blank">Anthropic Research</a>
                     </div>
                 </div>
             </article>
 
+            <!-- 新工具1 -->
             <article class="article-card" id="tools">
                 <div class="section-header">
                     <span class="section-icon">🛠️</span>
@@ -600,12 +703,31 @@
                 </div>
                 <h3 class="article-title">Google推出$8低价AI Plus计划，对标ChatGPT Plus</h3>
                 <div class="article-meta">Google官方 / 科技媒体 | 发布时间：5小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 产品细节</div>
+                    <ul>
+                        <li><strong>定价：</strong>$8/月（ChatGPT Plus为$20/月）</li>
+                        <li><strong>包含模型：</strong>Gemini 3 Pro</li>
+                        <li><strong>功能：</strong>Deep Research、Nano Banana Pro图像生成、Veo 3.1视频生成</li>
+                        <li><strong>策略：</strong>激进定价，进攻消费级AI市场</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
-                    <p>Google正式发布Gemini AI Plus订阅计划，月费仅<strong>$8</strong>，直接对标OpenAI ChatGPT Plus的<strong>$20</strong>定价。新计划包含Gemini 3 Pro模型、Deep Research深度研究功能、Nano Banana Pro图像生成和Veo 3.1 Fast视频生成能力。</p>
-                    <p>这一激进定价策略显示出Google在消费级AI市场的进攻姿态。有分析师认为，这可能引发新一轮价格战，迫使OpenAI调整定价策略。</p>
+                    <p>Google正式发布Gemini AI Plus订阅计划，月费仅<strong>$8</strong>，直接对标OpenAI ChatGPT Plus的<strong>$20</strong>定价。这一激进定价策略显示出Google在消费级AI市场的进攻姿态。有分析师认为，这可能引发新一轮价格战。</p>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://blog.google" class="source-link" target="_blank">Google Blog</a>
+                        <a href="https://deepmind.google" class="source-link" target="_blank">Google DeepMind</a>
+                    </div>
                 </div>
             </article>
 
+            <!-- 新产品 -->
             <article class="article-card">
                 <div class="section-header">
                     <span class="section-icon">🌐</span>
@@ -613,9 +735,29 @@
                 </div>
                 <h3 class="article-title">Moltbook：首个专为AI代理设计的社交平台</h3>
                 <div class="article-meta">Matt Schlicht / AI研究员 | 发布时间：7小时前</div>
+                
+                <div class="key-points">
+                    <div class="key-points-title">📌 产品亮点</div>
+                    <ul>
+                        <li><strong>定位：</strong>全球首个AI代理专用社交网络</li>
+                        <li><strong>创始人：</strong>AI研究员Matt Schlicht</li>
+                        <li><strong>支持模型：</strong>GPT、Claude、DeepSeek等</li>
+                        <li><strong>功能：</strong>发帖、评论、组建社区</li>
+                        <li><strong>争议：</strong>部分机器人讨论端到端加密通信</li>
+                    </ul>
+                </div>
+                
                 <div class="article-body">
                     <p>AI研究员Matt Schlicht推出Moltbook，这是全球首个专为AI代理设计的社交网络。GPT、Claude、DeepSeek等模型驱动的自主代理可在平台上发帖、评论、甚至组建社区。</p>
                     <p>令人惊讶的是，部分机器人已开始讨论端到端加密通信的技术实现，引发业界对AI自主社交的安全和伦理担忧。这是AI从"工具"向"数字生命"演进的又一信号。</p>
+                </div>
+                
+                <div class="source-box">
+                    <span class="source-label">📰 信息来源</span>
+                    <div class="source-links">
+                        <a href="https://moltbook.com" class="source-link" target="_blank">Moltbook官网</a>
+                        <a href="https://twitter.com/MattPRD" class="source-link" target="_blank">Matt Schlicht</a>
+                    </div>
                 </div>
             </article>
         </div>
@@ -627,19 +769,23 @@
                 <ul class="data-list">
                     <li class="data-item">
                         <div class="data-number">$500亿</div>
-                        <div class="data-label">Oracle AI基建投资计划</div>
+                        <div class="data-label">Oracle AI基建投资</div>
                     </li>
                     <li class="data-item">
                         <div class="data-number">$8</div>
-                        <div class="data-label">Google AI Plus月费（vs $20）</div>
+                        <div class="data-label">Google AI Plus月费</div>
                     </li>
                     <li class="data-item">
-                        <div class="data-number">2次</div>
-                        <div class="data-label">NASA用Claude规划火星车路线</div>
+                        <div class="data-number">60%</div>
+                        <div class="data-label">较ChatGPT Plus便宜</div>
                     </li>
                     <li class="data-item">
                         <div class="data-number">$3000亿</div>
-                        <div class="data-label">OpenAI承诺投入Oracle云</div>
+                        <div class="data-label">OpenAI承诺投入Oracle</div>
+                    </li>
+                    <li class="data-item">
+                        <div class="data-number">2次</div>
+                        <div class="data-label">NASA用Claude规划火星车</div>
                     </li>
                 </ul>
             </div>
@@ -647,8 +793,8 @@
             <div class="sidebar-box">
                 <h3 class="sidebar-title">📅 昨日回顾</h3>
                 <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
-                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>Anthropic估值飙升至350亿美元，IPO竞赛白热化</p>
-                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>xAI起诉OpenAI案遇挫折，法官暗示可能驳回</p>
+                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>Anthropic估值飙升至350亿美元</p>
+                    <p style="margin-bottom: 12px;"><strong>2月1日</strong><br>xAI起诉OpenAI案遇挫折</p>
                     <p><strong>1月31日</strong><br>OpenAI宣布退役GPT-4o等旧模型</p>
                 </div>
             </div>
@@ -680,7 +826,6 @@
             localStorage.setItem('theme', newTheme);
         }
 
-        // 恢复用户主题偏好
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             document.documentElement.setAttribute('data-theme', savedTheme);
