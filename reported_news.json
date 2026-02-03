@@ -1,6 +1,48 @@
 {
   "version": "1.0",
   "description": "已报道新闻记录，用于避免日报内容重复",
+  "records": [
+    {
+      "date": "2026-02-03",
+      "headlines": [
+        {
+          "title": "特朗普宣布5000亿美元星际之门AI基建计划",
+          "keywords": ["特朗普", "Stargate", "星际之门", "OpenAI", "软银", "Oracle", "5000亿"],
+          "url": "https://openai.com/index/announcing-the-stargate-project/"
+        },
+        {
+          "title": "OpenAI o3-mini正式上线：推理模型首次免费",
+          "keywords": ["OpenAI", "o3-mini", "推理模型", "免费", "ChatGPT"],
+          "url": "https://openai.com/index/openai-o3-mini/"
+        },
+        {
+          "title": "Meta发布Llama 3.3：70B参数挑战GPT-4",
+          "keywords": ["Meta", "Llama", "Llama 3.3", "开源", "70B"],
+          "url": "https://ai.meta.com/blog/llama-3-3-model-family/"
+        },
+        {
+          "title": "Perplexity AI完成5亿美元融资，估值达90亿",
+          "keywords": ["Perplexity", "融资", "5亿", "90亿", "AI搜索"],
+          "url": "https://www.wsj.com"
+        }
+      ],
+      "tools": [
+        {
+          "name": "Cursor 0.45",
+          "keywords": ["Cursor", "AI编程", "图像理解", "代码生成"]
+        },
+        {
+          "name": "腾讯混元大模型3.0",
+          "keywords": ["腾讯", "混元", "视频生成", "Sora"]
+        }
+      ],
+      "research": [
+        {
+          "title": "斯坦福研究：AI模型涌现能力并非真实存在",
+          "keywords": ["斯坦福", "涌现能力", "Emergent Abilities", "评估指标"]
+        }
+      ]
+    },
     {
       "date": "2026-02-02",
       "headlines": [
@@ -39,6 +81,50 @@
         {
           "title": "Claude Code: AI自我文档化开发方法论",
           "keywords": ["Claude Code", "自我文档化", "开发方法论", "Anthropic"]
+        }
+      ]
+    },
+    {
+      "date": "2026-02-01",
+      "headlines": [
+        {
+          "title": "马斯克xAI起诉OpenAI遇重挫，法官暗示可能驳回诉讼",
+          "keywords": ["xAI", "Elon Musk", "OpenAI", "诉讼", "商业机密", "Grok"],
+          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-2026-01-31/"
+        },
+        {
+          "title": "春节AI大战白热化：四大巨头豪掷25亿争夺14亿用户",
+          "keywords": ["字节", "腾讯", "百度", "阿里", "春节", "AI大战", "25亿", "红包"],
+          "url": "https://finance.sina.cn/stock/jdts/2026-02-01/detail-inhkiasz8235259.d.html"
+        },
+        {
+          "title": "Nvidia千亿投资OpenAI计划停滞，内部质疑声起",
+          "keywords": ["Nvidia", "OpenAI", "投资", "1000亿", "黄仁勋"],
+          "url": "https://www.reuters.com/business/nvidias-plan-invest-up-100-billion-openai-has-stalled-wsj-reports-2026-01-31/"
+        }
+      ],
+      "tools": [
+        {
+          "name": "OpenAI Prism",
+          "keywords": ["OpenAI", "Prism", "LaTeX", "科研", "GPT-5.2", "学术写作"]
+        },
+        {
+          "name": "Moltbot",
+          "keywords": ["Moltbot", "Clawdbot", "开源", "AI Agent", "自托管", "多平台"]
+        },
+        {
+          "name": "Claude Cowork Plugins",
+          "keywords": ["Claude", "Cowork", "插件", "MCP", "子代理", "企业"]
+        },
+        {
+          "name": "Google Gemini Guided Learning",
+          "keywords": ["Google", "Gemini", "Guided Learning", "教育", "学习工具"]
+        }
+      ],
+      "research": [
+        {
+          "title": "OpenAI Prism: AI-Native Scientific Workspace",
+          "keywords": ["Prism", "LaTeX", "科研写作", "GPT-5.2", "学术协作"]
         }
       ]
     },
@@ -84,50 +170,6 @@
         {
           "title": "Stable Sequential Test-Time Scaling",
           "keywords": ["Test-Time Scaling", "推理模型", "慢思考"]
-        }
-      ]
-    },
-    {
-      "date": "2026-02-01",
-      "headlines": [
-        {
-          "title": "马斯克xAI起诉OpenAI遇重挫，法官暗示可能驳回诉讼",
-          "keywords": ["xAI", "Elon Musk", "OpenAI", "诉讼", "商业机密", "Grok"],
-          "url": "https://www.reuters.com/sustainability/boards-policy-regulation/us-judge-signals-musks-xai-may-lose-lawsuit-accusing-altmans-openai-of-stealing-2026-01-31/"
-        },
-        {
-          "title": "春节AI大战白热化：四大巨头豪掷25亿争夺14亿用户",
-          "keywords": ["字节", "腾讯", "百度", "阿里", "春节", "AI大战", "25亿", "红包"],
-          "url": "https://finance.sina.cn/stock/jdts/2026-02-01/detail-inhkiasz8235259.d.html"
-        },
-        {
-          "title": "Nvidia千亿投资OpenAI计划停滞，内部质疑声起",
-          "keywords": ["Nvidia", "OpenAI", "投资", "1000亿", "黄仁勋"],
-          "url": "https://www.reuters.com/business/nvidias-plan-invest-up-100-billion-openai-has-stalled-wsj-reports-2026-01-31/"
-        }
-      ],
-      "tools": [
-        {
-          "name": "OpenAI Prism",
-          "keywords": ["OpenAI", "Prism", "LaTeX", "科研", "GPT-5.2", "学术写作"]
-        },
-        {
-          "name": "Moltbot",
-          "keywords": ["Moltbot", "Clawdbot", "开源", "AI Agent", "自托管", "多平台"]
-        },
-        {
-          "name": "Claude Cowork Plugins",
-          "keywords": ["Claude", "Cowork", "插件", "MCP", "子代理", "企业"]
-        },
-        {
-          "name": "Google Gemini Guided Learning",
-          "keywords": ["Google", "Gemini", "Guided Learning", "教育", "学习工具"]
-        }
-      ],
-      "research": [
-        {
-          "title": "OpenAI Prism: AI-Native Scientific Workspace",
-          "keywords": ["Prism", "LaTeX", "科研写作", "GPT-5.2", "学术协作"]
         }
       ]
     }
