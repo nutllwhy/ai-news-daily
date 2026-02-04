@@ -3,6 +3,47 @@
   "description": "已报道新闻记录，用于避免日报内容重复",
   "records": [
     {
+      "date": "2026-02-04",
+      "headlines": [
+        {
+          "title": "SpaceX收购xAI，1.25万亿美元交易创历史",
+          "keywords": ["SpaceX", "xAI", "Elon Musk", "收购", "1.25万亿", "Grok"],
+          "url": "https://www.reuters.com/legal/transactional/spacex-acquires-xai-key-facts-about-musk-owned-startups-2026-02-03/"
+        },
+        {
+          "title": "Grok面临全球监管风暴，英国正式调查非自愿性内容生成",
+          "keywords": ["Grok", "xAI", "英国", "ICO", "隐私监管", "深度伪造"],
+          "url": "https://www.bloomberg.com/news/articles/2026-02-03/elon-musk-s-xai-faces-second-uk-probe-for-grok-sexualized-images"
+        },
+        {
+          "title": "2026年1月AI应用榜：ChatGPT 9.3亿月活，千问增速第一",
+          "keywords": ["AI产品榜", "ChatGPT", "月活", "阿里千问", "增速", "可灵AI"],
+          "url": "https://finance.sina.com.cn/tech/roll/2026-02-04/doc-inhkqfvf4232250.shtml"
+        },
+        {
+          "title": "DeepSeek全球影响力扩大，开源策略助推全球南方国家采用",
+          "keywords": ["DeepSeek", "开源", "全球南方", "网易", "腾讯", "AI采用"],
+          "url": "https://chinaglobalsouth.com/2026/02/03/deepseek-ai-global-south-adoption/"
+        }
+      ],
+      "tools": [
+        {
+          "name": "Lightfern for Email",
+          "keywords": ["Lightfern", "AI写作", "邮件", "Product Hunt"]
+        },
+        {
+          "name": "xAI Imagine 1.0",
+          "keywords": ["xAI", "Imagine", "音频生成", "音频质量"]
+        }
+      ],
+      "research": [
+        {
+          "title": "推理模型被认为是AI的下一个重大飞跃",
+          "keywords": ["推理模型", "Reasoning Models", "测试时扩展", "Test-Time Scaling", "AI进化"]
+        }
+      ]
+    },
+    {
       "date": "2026-02-03",
       "headlines": [
         {
