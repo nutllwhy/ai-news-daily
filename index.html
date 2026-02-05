@@ -202,6 +202,7 @@
         }
         .lead { font-size: 1.15em; line-height: 1.9; color: var(--text-primary); text-align: justify; }
         .lead strong { color: var(--accent-color); }
+        .lead h3 { font-size: 1.3em; margin: 25px 0 15px; color: var(--text-primary); border-left: 4px solid var(--accent-color); padding-left: 10px; }
 
         /* 新闻网格 */
         .news-grid { grid-column: 1; display: flex; flex-direction: column; gap: 30px; }
@@ -229,6 +230,7 @@
         .article-meta { font-size: 0.85em; color: var(--text-muted); margin-bottom: 15px; font-family: -apple-system, sans-serif; }
         .article-body { color: var(--text-secondary); line-height: 1.8; }
         .article-body p { margin-bottom: 1em; }
+        .article-body strong { color: var(--text-primary); font-weight: 600; }
 
         /* 侧边栏 */
         .sidebar { grid-column: 2; display: flex; flex-direction: column; gap: 30px; }
@@ -331,19 +333,32 @@
         <!-- 头版头条 -->
         <article class="front-page" id="headlines">
             <span class="headline-label">今日头条</span>
-            <h2 class="headline">Anthropic 发布新 AI 自动化工具，引发全球软件股万亿抛售</h2>
-            <p class="subheadline">Relx、Pearson 等专业服务巨头股价重挫，市场恐慌 AI 真正替代白领工作</p>
+            <h2 class="headline">Anthropic 引发万亿崩盘：AI 替代白领工作的「狼」真的来了</h2>
+            <p class="subheadline">自动化工具重创专业服务板块，Relx、Pearson 股价暴跌，市场重新定价「AI 颠覆性」</p>
             <div class="byline">栗噔噔 · 发自北京 | 发布时间：1天前</div>
             <div class="lead">
                 
-      <p>昨夜，<strong>Anthropic</strong> 发布了一款针对法律和文书工作的自动化工具（Cowork相关），这一举动在资本市场引发了剧烈震荡。全球软件和服务板块单日市值蒸发接近 <strong>1 万亿美元</strong>。</p>
-      <p>受此影响，Relx、Pearson、London Stock Exchange Group 等依赖专业数据服务的公司股价遭受重创。投资者的恐慌在于：这不再是概念演示，而是 AI 开始真正切入并替代昂贵的白领专业服务市场。</p>
-      <p>分析师指出，Anthropic 的新产品直接挑战了传统专业服务软件的护城河，标志着 AI 应用从“辅助提效”向“服务替代”迈出了关键一步。</p>
+      <p><strong>一场由 AI 产品发布引发的资本海啸，正在席卷全球金融市场。</strong></p>
+      <p>昨日，AI 独角兽 <strong>Anthropic</strong> 正式推出了一款针对法律、税务和文书工作的全新自动化协作工具（Cowork相关功能）。这一看似常规的产品更新，却成为了压垮传统专业服务巨头股价的“最后一根稻草”。</p>
+      
+      <h3>📉 软件板块的“黑色星期二”</h3>
+      <p>市场反应极其剧烈且迅速。全球软件和服务板块在单日内市值蒸发接近 <strong>1 万亿美元</strong>。其中，受冲击最严重的是那些依赖专有数据和人力服务的公司：</p>
+      <ul style="margin: 15px 0; padding-left: 20px; color: var(--text-secondary);">
+          <li>数据分析巨头 <strong>Relx</strong> 和教育出版集团 <strong>Pearson</strong> 股价遭受重挫；</li>
+          <li>伦敦证券交易所集团（LSEG）等金融数据服务商也未能幸免；</li>
+          <li>甚至连 Adobe、Salesforce 等 SaaS 巨头也因“AI 替代逻辑”被波及。</li>
+      </ul>
+
+      <h3>🧠 为什么市场如此恐慌？</h3>
+      <p>AJ Bell 的市场主管 Dan Coatue 指出：“这不再是概念演示，投资者突然意识到，AI 开始真正切入并替代昂贵的白领专业服务了。”</p>
+      <p>过去，市场认为法律检索、合规审查等高门槛工作有“护城河”。但 Anthropic 的新工具证明，AI 能够以极低的成本、极高的准确率完成这些工作。这意味着，那些依然按“人头”或“订阅席位”收费的传统软件公司，其商业模式的基础正在坍塌。</p>
+      
+      <p><strong>结论很残酷：</strong>AI 不再只是辅助工具（Copilot），它正在成为替代者（Autopilot）。资本市场正在用脚投票，抛弃旧时代的“收租者”，转而寻找能在这场生产力革命中生存下来的新物种。</p>
     
             </div>
             <div class="sources">
                 <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
-                <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" class="source-link" target="_blank">Bloomberg</a><a href="https://www.theguardian.com/technology/2026/feb/03/anthropic-ai-legal-tool-shares-data-services-pearson" class="source-link" target="_blank">The Guardian</a>
+                <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" class="source-link" target="_blank">Bloomberg</a><a href="https://www.theguardian.com/technology/2026/feb/03/anthropic-ai-legal-tool-shares-data-services-pearson" class="source-link" target="_blank">The Guardian</a><a href="https://www.reuters.com/business/media-telecom/global-software-stocks-hit-by-anthropic-wake-up-call-ai-disruption-2026-02-04/" class="source-link" target="_blank">Reuters</a>
             </div>
         </article>
 
@@ -355,12 +370,14 @@
                     <span class="section-icon">🏢</span>
                     <span class="section-title">大厂动态</span>
                 </div>
-                <h3 class="article-title">Google 1月 AI 更新全家桶回顾</h3>
+                <h3 class="article-title">Google 1月 AI 更新回顾：Gemini 全面接管企业服务</h3>
                 <div class="article-meta">Google Blog | 发布时间：10小时前</div>
                 <div class="article-body">
                     
-        <p>Google 发布官方博客回顾了 1 月份的 AI 进展，重点强调了 <strong>Gemini</strong> 模型在零售和企业服务中的深度集成。</p>
-        <p>更新亮点包括：Gemini 在 Google Workspace 中的能力增强，以及针对开发者的 Vertex AI 新功能。Google 正在加速将 AI 能力转化为实际的企业生产力工具。</p>
+        <p>Google 发布了官方博客，详细梳理了 1 月份的 AI 进展。与其说是“更新”，不如说是 Gemini 模型对 Google 生态的<strong>全面接管</strong>。核心变化集中在零售和企业服务领域：</p>
+        <p><strong>1. 零售业的深度集成：</strong> Google 推出了新的 AI 代理功能，帮助零售商自动处理客户咨询、库存管理甚至是个性化推荐。这不仅是聊天机器人，而是能直接调用后端 API 执行任务的 Agent。</p>
+        <p><strong>2. Workspace 生产力跃升：</strong> Gemini 在 Docs、Sheets 和 Slides 中的能力进一步增强。现在的 Gemini 不仅能“写”，还能“读懂”复杂的企业知识库，帮助员工在海量文档中快速提取关键信息。</p>
+        <p>这表明 Google 的策略正在从“通用大模型比拼”转向“场景化落地”，利用其庞大的 B 端客户群构建 AI 护城河。</p>
       
                 </div>
                 <div class="sources">
@@ -374,15 +391,17 @@
                     <span class="section-icon">💬</span>
                     <span class="section-title">行业声音</span>
                 </div>
-                <h3 class="article-title">Oura CEO：可穿戴设备进入“预测医疗”时代</h3>
+                <h3 class="article-title">Oura CEO：可穿戴设备将进入“预测医疗”时代</h3>
                 <div class="article-meta">BusinessToday | 发布时间：19小时前</div>
                 <div class="article-body">
                     
-        <p>在世界政府峰会上，智能戒指品牌 Oura 的 CEO 表示，结合 AI 的可穿戴设备将不再只是记录步数，而是能<strong>提前数年预测长期健康结果</strong>。</p>
-        <div class="research-highlight">
-            <div class="research-title">核心观点</div>
-            <p>未来的医疗将从“治疗疾病”转向“预测和预防”，AI + 连续生物监测数据是实现这一转变的关键。</p>
-        </div>
+        <p>在迪拜举行的世界政府峰会上，智能戒指品牌 Oura 的 CEO Tom Hale 发表了关于数字健康的重磅观点。他认为，现在的可穿戴设备大多停留在“记录过去”（走了多少步、睡了多久），而下一阶段的核心是<strong>“预测未来”</strong>。</p>
+        <p>Hale 表示，结合 AI 大模型分析能力，可穿戴设备将能够：</p>
+        <ul style="margin-bottom:10px; padding-left:15px; color:var(--text-secondary);">
+          <li>利用连续的生物特征数据（心率变异性、体温趋势等），提前数年识别出慢性病的早期信号；</li>
+          <li>在用户生病<strong>之前</strong>发出预警，从而彻底重塑医疗体系——从“治病”转向“防病”。</li>
+        </ul>
+        <p>这一愿景强调了 AI 在处理海量纵向健康数据方面的独特优势，也是未来几年 HealthTech 领域最大的增长点。</p>
       
                 </div>
                 <div class="sources">
@@ -396,12 +415,13 @@
                     <span class="section-icon">🛠️</span>
                     <span class="section-title">新工具</span>
                 </div>
-                <h3 class="article-title">Wispr Flow：不仅是听写，更是写作助手</h3>
+                <h3 class="article-title">Wispr Flow：不仅是听写，更是“读心”的写作助手</h3>
                 <div class="article-meta">Product Hunt | 发布时间：5小时前</div>
                 <div class="article-body">
                     
-        <p>Product Hunt 上备受关注的新工具 <strong>Wispr Flow</strong>，重新定义了语音转文字体验。</p>
-        <p>它主打精准识别和隐私保护，更重要的是，它不仅仅是把语音变成文字，还能根据上下文辅助整理思路，直接生成可用的文档草稿。</p>
+        <p>Product Hunt 上备受关注的 <strong>Wispr Flow</strong> 并不是又一个普通的语音转文字工具。它的核心痛点解决得非常精准：<strong>我们说话的方式和写作的方式是完全不同的。</strong></p>
+        <p>传统的听写工具（如 Siri）只是忠实记录你的口语（包括“呃”、“那个”），结果往往是一堆需要大量修整的废话。而 Wispr Flow 利用大模型能力，能够理解你的<strong>意图</strong>。</p>
+        <p>你可以对着它语无伦次地倾诉想法，它会自动整理逻辑、润色措辞，直接生成一篇结构清晰的邮件或文章草稿。它还主打<strong>隐私优先</strong>，所有音频处理都经过严格加密，适合对数据安全敏感的专业人士。</p>
       
                 </div>
                 <div class="sources">
@@ -415,12 +435,18 @@
                     <span class="section-icon">📱</span>
                     <span class="section-title">开发者工具</span>
                 </div>
-                <h3 class="article-title">NexaSDK：在手机上轻松运行多模态 AI</h3>
+                <h3 class="article-title">NexaSDK：让多模态 AI 跑在用户的口袋里</h3>
                 <div class="article-meta">Product Hunt | 发布时间：19小时前</div>
                 <div class="article-body">
                     
-        <p>为开发者提供的全新移动端部署方案 <strong>NexaSDK</strong>，大幅降低了在 iOS 和 Android 设备上运行多模态模型的门槛。</p>
-        <p>这意味着更多 AI 应用将能够摆脱云端依赖，实现更低延迟、更隐私的本地化运行。</p>
+        <p>随着端侧 AI（On-device AI）成为趋势，开发者面临的最大难题是如何将庞大的多模态模型塞进手机里。<strong>NexaSDK</strong> 就是为了解决这个问题而生的。</p>
+        <p>它提供了一套完整的移动端部署方案，支持 iOS 和 Android。通过极致的模型量化和推理优化，它能让手机在<strong>离线状态</strong>下运行复杂的多模态任务（如图像识别、语音交互）。</p>
+        <p><strong>价值点：</strong></p>
+        <ul style="margin-bottom:10px; padding-left:15px; color:var(--text-secondary);">
+          <li><strong>零延迟：</strong>无需网络请求，交互极快；</li>
+          <li><strong>隐私安全：</strong>数据不出设备，解决了用户对上传照片/语音的顾虑；</li>
+          <li><strong>零成本：</strong>省去了昂贵的云端 GPU 推理费用。</li>
+        </ul>
       
                 </div>
                 <div class="sources">
