@@ -6,149 +6,498 @@
     <title>AI圈日报 - 2026-02-04</title>
     <style>
         :root {
+            /* 浅色主题（默认） */
             --bg-primary: #faf9f7;
+            --bg-secondary: #f0ede8;
             --bg-card: #ffffff;
             --text-primary: #1a1a1a;
             --text-secondary: #5c5c5c;
+            --text-muted: #8a8a8a;
             --border-color: #e0ddd5;
             --accent-color: #c41e3a;
+            --accent-light: #fef2f2;
+            --link-color: #2563eb;
+            --link-hover: #1d4ed8;
+            --shadow: 0 1px 3px rgba(0,0,0,0.05);
+            --header-bg: #1a1a1a;
+            --header-text: #ffffff;
         }
+
+        [data-theme="dark"] {
+            /* 深色主题 */
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #242424;
+            --bg-card: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b0b0b0;
+            --text-muted: #808080;
+            --border-color: #404040;
+            --accent-color: #ff6b6b;
+            --accent-light: #3a2a2a;
+            --link-color: #60a5fa;
+            --link-hover: #93c5fd;
+            --shadow: 0 1px 3px rgba(0,0,0,0.3);
+            --header-bg: #0a0a0a;
+            --header-text: #f5f5f5;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: "Noto Serif SC", "Songti SC", serif;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", "SimSun", serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.8;
+            transition: background 0.3s, color 0.3s;
         }
-        .header {
-            background: #c41e3a;
-            color: white;
-            padding: 40px 20px;
+
+        /* 顶部栏 */
+        .top-bar {
+            background: var(--header-bg);
+            color: var(--header-text);
+            padding: 12px 0;
+            border-bottom: 3px solid var(--accent-color);
+        }
+        .top-bar-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .date-weather { font-size: 0.9em; opacity: 0.9; font-family: -apple-system, sans-serif; }
+        
+        /* 主题切换开关 */
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            transition: background 0.2s;
+        }
+        .theme-toggle:hover { background: rgba(255,255,255,0.2); }
+        .theme-toggle span { font-size: 0.85em; font-family: -apple-system, sans-serif; }
+        .toggle-switch {
+            width: 44px;
+            height: 24px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 12px;
+            position: relative;
+            transition: background 0.3s;
+        }
+        .toggle-switch::after {
+            content: "☀️";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+        [data-theme="dark"] .toggle-switch::after { content: "🌙"; transform: translateX(20px); }
+
+        /* 报头 */
+        .masthead {
             text-align: center;
-            border-bottom: 4px solid #8b1528;
+            padding: 40px 20px;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-color);
         }
-        .header h1 { font-size: 2.2em; margin-bottom: 10px; font-weight: 700; letter-spacing: 1px; }
-        .header .date { font-size: 0.9em; opacity: 0.9; font-family: sans-serif; }
-        .container { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
-        .section-title {
-            font-size: 1.4em;
-            margin: 30px 0 20px;
-            padding-bottom: 10px;
+        .newspaper-title {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+        .tagline { font-size: 1.1em; color: var(--text-muted); font-style: italic; letter-spacing: 0.05em; }
+        .edition-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-family: -apple-system, sans-serif;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* 导航 */
+        .nav-bar {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            font-family: -apple-system, sans-serif;
+        }
+        .nav-link:hover { color: var(--accent-color); border-bottom-color: var(--accent-color); }
+
+        /* 主内容区 */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* 头版新闻 */
+        .front-page {
+            grid-column: 1 / -1;
+            background: var(--bg-card);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        .headline-label {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            font-family: -apple-system, sans-serif;
+        }
+        .headline { font-size: 2.5em; font-weight: 700; line-height: 1.3; margin-bottom: 20px; color: var(--text-primary); }
+        .subheadline { font-size: 1.3em; color: var(--text-secondary); margin-bottom: 25px; font-weight: 400; }
+        .byline {
+            font-size: 0.9em;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            font-family: -apple-system, sans-serif;
+        }
+        .lead { font-size: 1.15em; line-height: 1.9; color: var(--text-primary); text-align: justify; }
+        .lead strong { color: var(--accent-color); }
+
+        /* 新闻网格 */
+        .news-grid { grid-column: 1; display: flex; flex-direction: column; gap: 30px; }
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
             border-bottom: 2px solid var(--accent-color);
-            color: var(--accent-color);
-            font-weight: bold;
         }
-        .news-card {
+        .section-icon { font-size: 1.5em; }
+        .section-title { font-size: 1.3em; font-weight: 700; color: var(--text-primary); text-transform: uppercase; }
+        
+        .article-title { font-size: 1.5em; font-weight: 700; margin-bottom: 12px; line-height: 1.4; color: var(--text-primary); }
+        .article-meta { font-size: 0.85em; color: var(--text-muted); margin-bottom: 15px; font-family: -apple-system, sans-serif; }
+        .article-body { color: var(--text-secondary); line-height: 1.8; }
+        .article-body p { margin-bottom: 1em; }
+
+        /* 侧边栏 */
+        .sidebar { grid-column: 2; display: flex; flex-direction: column; gap: 30px; }
+        .sidebar-box {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            border-radius: 2px;
+            box-shadow: var(--shadow);
         }
-        .news-card.hot { border-left: 5px solid var(--accent-color); }
-        .news-title { font-size: 1.3em; font-weight: 700; margin-bottom: 12px; line-height: 1.4; }
-        .news-meta { color: #888; font-size: 0.85em; margin-bottom: 15px; font-family: sans-serif; }
-        .news-content { color: #333; font-size: 1.05em; text-align: justify; }
-        .footer { text-align: center; padding: 40px; color: #888; font-size: 0.9em; border-top: 1px solid #eee; margin-top: 40px; }
+        .sidebar-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            color: var(--text-primary);
+            text-transform: uppercase;
+        }
+        .data-list { list-style: none; }
+        .data-item { padding: 15px 0; border-bottom: 1px solid var(--border-color); }
+        .data-item:last-child { border-bottom: none; }
+        .data-number { font-size: 2em; font-weight: 700; color: var(--accent-color); font-family: -apple-system, sans-serif; }
+        .data-label { font-size: 0.9em; color: var(--text-secondary); margin-top: 5px; }
+
+        /* 研究卡片特殊样式 */
+        .research-highlight {
+            background: var(--accent-light);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .research-title { font-weight: 700; color: var(--accent-color); margin-bottom: 10px; }
+
+        /* 来源链接 */
+        .sources { margin-top: 20px; padding-top: 15px; border-top: 1px dashed var(--border-color); }
+        .source-link {
+            display: inline-block;
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-right: 15px;
+            font-family: -apple-system, sans-serif;
+        }
+        .source-link:hover { color: var(--link-hover); text-decoration: underline; }
+
+        /* 底部 */
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer-title { font-size: 1.5em; font-weight: 700; margin-bottom: 10px; color: var(--text-primary); }
+        .footer-text { color: var(--text-muted); font-size: 0.9em; }
+
+        @media (max-width: 900px) {
+            .main-content { grid-template-columns: 1fr; padding: 20px; }
+            .sidebar { grid-column: 1; }
+            .newspaper-title { font-size: 2.5em; }
+            .headline { font-size: 1.8em; }
+            .top-bar-content, .nav-content { padding: 0 20px; }
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>栗噔噔AI早报</h1>
-        <div class="date">2026-02-04 | 每日精选 AI 行业要闻</div>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="date-weather">2026年2月4日 星期三 | 农历腊月十七</div>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <span>浅色</span>
+                <div class="toggle-switch"></div>
+                <span>深色</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 报头 -->
+    <header class="masthead">
+        <h1 class="newspaper-title">AI圈日报</h1>
+        <p class="tagline">「 每日精选人工智能行业要闻 」</p>
+        <div class="edition-info">
+            第 005 期 | 栗噔噔AI社群 | 过去24小时精选
+        </div>
     </header>
-    <div class="container">
-        <h2 class="section-title">🚨 今日头条</h2>
-        
-    <div class="news-card hot">
-      <div class="news-header">
-        <div class="news-title">1. Anthropic 发布新 AI 自动化工具，全球软件股单日蒸发近 1 万亿美元</div>
-        <span class="news-badge hot" style="background:#c41e3a;color:white;padding:2px 8px;border-radius:4px;font-size:0.8em;">头条</span>
-      </div>
-      <div class="news-meta">
-        <span>📅 1天前</span>
-        <span>🏢 Bloomberg / The Guardian</span>
-      </div>
-      <div class="news-content">
-        <p>Anthropic 推出了针对法律和文书工作的自动化工具，直接导致 Relx、Pearson 等专业服务和数据公司股价大跌。市场恐慌在于：AI 开始真正替代昂贵的白领专业服务了。</p>
-      </div>
-      <div class="sources">
-        <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" class="source-link" target="_blank" style="color:#2563eb;text-decoration:none;">查看原文 →</a>
-      </div>
-    </div>
-  
-    <div class="news-card ">
-      <div class="news-header">
-        <div class="news-title">2. Google 1月 AI 更新回顾：Gemini 全面接管企业服务</div>
-        
-      </div>
-      <div class="news-meta">
-        <span>📅 10小时前</span>
-        <span>🏢 Google Blog</span>
-      </div>
-      <div class="news-content">
-        <p>Google 发布博客回顾 1 月进展，重点强调 AI 在零售和企业服务中的深度集成，以及 Gemini 模型在各产品线的全面铺开。</p>
-      </div>
-      <div class="sources">
-        <a href="https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/" class="source-link" target="_blank" style="color:#2563eb;text-decoration:none;">查看原文 →</a>
-      </div>
-    </div>
-  
-    <div class="news-card ">
-      <div class="news-header">
-        <div class="news-title">3. Oura CEO：可穿戴设备将进入“预测医疗”时代</div>
-        
-      </div>
-      <div class="news-meta">
-        <span>📅 19小时前</span>
-        <span>🏢 BusinessToday</span>
-      </div>
-      <div class="news-content">
-        <p>在世界政府峰会上，Oura CEO 表示，结合 AI 的可穿戴设备将不再只是记录步数，而是能提前数年预测长期健康结果，重塑医疗体系。</p>
-      </div>
-      <div class="sources">
-        <a href="https://www.businesstoday.in/technology/news/story/world-governments-summit-2026-oura-ceo-tom-hale-sees-ai-wearables-forecasting-health-years-ahead-514543-2026-02-04" class="source-link" target="_blank" style="color:#2563eb;text-decoration:none;">查看原文 →</a>
-      </div>
-    </div>
-  
-    <div class="news-card ">
-      <div class="news-header">
-        <div class="news-title">4. Wispr Flow：语音写作新利器，不仅仅是听写</div>
-        
-      </div>
-      <div class="news-meta">
-        <span>📅 5小时前</span>
-        <span>🏢 Product Hunt</span>
-      </div>
-      <div class="news-content">
-        <p>Product Hunt 上备受关注的 AI 听写工具，主打精准、隐私保护，让语音转文字不仅仅是记录，而是直接辅助写作。</p>
-      </div>
-      <div class="sources">
-        <a href="https://www.producthunt.com/categories/ai-dictation-apps" class="source-link" target="_blank" style="color:#2563eb;text-decoration:none;">查看原文 →</a>
-      </div>
-    </div>
-  
-    <div class="news-card ">
-      <div class="news-header">
-        <div class="news-title">5. NexaSDK：让多模态 AI 轻松跑在手机上</div>
-        
-      </div>
-      <div class="news-meta">
-        <span>📅 19小时前</span>
-        <span>🏢 Product Hunt</span>
-      </div>
-      <div class="news-content">
-        <p>为开发者提供的移动端部署方案，大幅降低了多模态模型在本地设备上运行的门槛。</p>
-      </div>
-      <div class="sources">
-        <a href="https://www.producthunt.com/categories/ai-infrastructure" class="source-link" target="_blank" style="color:#2563eb;text-decoration:none;">查看原文 →</a>
-      </div>
-    </div>
-  
-    </div>
+
+    <!-- 导航 -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="#headlines" class="nav-link">头条新闻</a>
+            <a href="#news-list" class="nav-link">行业动态</a>
+            <a href="#data" class="nav-link">今日数据</a>
+            <a href="#review" class="nav-link">本周回顾</a>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <!-- 头版头条 -->
+        <article class="front-page" id="headlines">
+            <span class="headline-label">今日头条</span>
+            <h2 class="headline">Anthropic 发布新 AI 自动化工具，引发全球软件股万亿抛售</h2>
+            <p class="subheadline">Relx、Pearson 等专业服务巨头股价重挫，市场恐慌 AI 真正替代白领工作</p>
+            <div class="byline">栗噔噔 · 发自北京 | 发布时间：1天前</div>
+            <div class="lead">
+                
+      <p>昨夜，<strong>Anthropic</strong> 发布了一款针对法律和文书工作的自动化工具（Cowork相关），这一举动在资本市场引发了剧烈震荡。全球软件和服务板块单日市值蒸发接近 <strong>1 万亿美元</strong>。</p>
+      <p>受此影响，Relx、Pearson、London Stock Exchange Group 等依赖专业数据服务的公司股价遭受重创。投资者的恐慌在于：这不再是概念演示，而是 AI 开始真正切入并替代昂贵的白领专业服务市场。</p>
+      <p>分析师指出，Anthropic 的新产品直接挑战了传统专业服务软件的护城河，标志着 AI 应用从“辅助提效”向“服务替代”迈出了关键一步。</p>
+    
+            </div>
+            <div class="sources">
+                <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
+                <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" class="source-link" target="_blank">Bloomberg</a><a href="https://www.theguardian.com/technology/2026/feb/03/anthropic-ai-legal-tool-shares-data-services-pearson" class="source-link" target="_blank">The Guardian</a>
+            </div>
+        </article>
+
+        <!-- 新闻网格 -->
+        <div class="news-grid" id="news-list">
+            
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">🏢</span>
+                    <span class="section-title">大厂动态</span>
+                </div>
+                <h3 class="article-title">Google 1月 AI 更新全家桶回顾</h3>
+                <div class="article-meta">Google Blog | 发布时间：10小时前</div>
+                <div class="article-body">
+                    
+        <p>Google 发布官方博客回顾了 1 月份的 AI 进展，重点强调了 <strong>Gemini</strong> 模型在零售和企业服务中的深度集成。</p>
+        <p>更新亮点包括：Gemini 在 Google Workspace 中的能力增强，以及针对开发者的 Vertex AI 新功能。Google 正在加速将 AI 能力转化为实际的企业生产力工具。</p>
+      
+                </div>
+                <div class="sources">
+                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
+                    <a href="https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/" class="source-link" target="_blank">Google Blog</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">💬</span>
+                    <span class="section-title">行业声音</span>
+                </div>
+                <h3 class="article-title">Oura CEO：可穿戴设备进入“预测医疗”时代</h3>
+                <div class="article-meta">BusinessToday | 发布时间：19小时前</div>
+                <div class="article-body">
+                    
+        <p>在世界政府峰会上，智能戒指品牌 Oura 的 CEO 表示，结合 AI 的可穿戴设备将不再只是记录步数，而是能<strong>提前数年预测长期健康结果</strong>。</p>
+        <div class="research-highlight">
+            <div class="research-title">核心观点</div>
+            <p>未来的医疗将从“治疗疾病”转向“预测和预防”，AI + 连续生物监测数据是实现这一转变的关键。</p>
+        </div>
+      
+                </div>
+                <div class="sources">
+                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
+                    <a href="https://www.businesstoday.in/technology/news/story/world-governments-summit-2026-oura-ceo-tom-hale-sees-ai-wearables-forecasting-health-years-ahead-514543-2026-02-04" class="source-link" target="_blank">BusinessToday</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">🛠️</span>
+                    <span class="section-title">新工具</span>
+                </div>
+                <h3 class="article-title">Wispr Flow：不仅是听写，更是写作助手</h3>
+                <div class="article-meta">Product Hunt | 发布时间：5小时前</div>
+                <div class="article-body">
+                    
+        <p>Product Hunt 上备受关注的新工具 <strong>Wispr Flow</strong>，重新定义了语音转文字体验。</p>
+        <p>它主打精准识别和隐私保护，更重要的是，它不仅仅是把语音变成文字，还能根据上下文辅助整理思路，直接生成可用的文档草稿。</p>
+      
+                </div>
+                <div class="sources">
+                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
+                    <a href="https://www.producthunt.com/categories/ai-dictation-apps" class="source-link" target="_blank">Product Hunt</a>
+                </div>
+            </article>
+            
+            <article class="article-card">
+                <div class="section-header">
+                    <span class="section-icon">📱</span>
+                    <span class="section-title">开发者工具</span>
+                </div>
+                <h3 class="article-title">NexaSDK：在手机上轻松运行多模态 AI</h3>
+                <div class="article-meta">Product Hunt | 发布时间：19小时前</div>
+                <div class="article-body">
+                    
+        <p>为开发者提供的全新移动端部署方案 <strong>NexaSDK</strong>，大幅降低了在 iOS 和 Android 设备上运行多模态模型的门槛。</p>
+        <p>这意味着更多 AI 应用将能够摆脱云端依赖，实现更低延迟、更隐私的本地化运行。</p>
+      
+                </div>
+                <div class="sources">
+                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
+                    <a href="https://www.producthunt.com/categories/ai-infrastructure" class="source-link" target="_blank">Product Hunt</a>
+                </div>
+            </article>
+            
+        </div>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-box" id="data">
+                <h3 class="sidebar-title">📊 今日数据</h3>
+                <ul class="data-list">
+                    
+                    <li class="data-item">
+                        <div class="data-number" style="color: #c41e3a">$1 Trillion</div>
+                        <div class="data-label">软件板块市值蒸发</div>
+                    </li>
+                    
+                    <li class="data-item">
+                        <div class="data-number" style="color: #2563eb">+282%</div>
+                        <div class="data-label">CIO AI 采用率增长</div>
+                    </li>
+                    
+                    <li class="data-item">
+                        <div class="data-number" style="color: #1a1a1a">12,600+</div>
+                        <div class="data-label">Snowflake 客户数</div>
+                    </li>
+                    
+                    <li class="data-item">
+                        <div class="data-number" style="color: #1a1a1a">5</div>
+                        <div class="data-label">今日重要新闻</div>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="sidebar-box" id="review">
+                <h3 class="sidebar-title">📅 本周回顾</h3>
+                <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
+                    <p style="margin-bottom: 12px;"><strong>2月3日</strong><br>Anthropic发布Cowork自动化工具</p><p style="margin-bottom: 12px;"><strong>2月2日</strong><br>DeepSeek发布多模态新模型</p><p style="margin-bottom: 12px;"><strong>2月1日</strong><br>OpenAI宣布GPT-4.5预览版测试</p><p style="margin-bottom: 12px;"><strong>1月31日</strong><br>Meta开源Llama 4早期权重</p>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3 class="sidebar-title">ℹ️ 关于本报</h3>
+                <div style="font-size: 0.9em; color: var(--text-secondary); line-height: 1.7;">
+                    <p style="margin-bottom: 10px;">《AI圈日报》每日北京时间8:00更新，精选过去24小时内人工智能行业重要新闻。</p>
+                    <p>编辑：栗噔噔<br>技术支持：OpenClaw AI</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 底部 -->
     <footer class="footer">
-        <p>栗噔噔AI早报 | 每日8:00更新</p>
+        <div class="footer-content">
+            <div class="footer-title">AI圈日报</div>
+            <p class="footer-text">每日精选AI行业要闻 · 早上8点更新<br>数据来源：Reuters、Bloomberg、TechCrunch等权威媒体</p>
+        </div>
     </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
 </body>
 </html>

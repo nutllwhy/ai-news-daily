@@ -1,9 +1,102 @@
-<!DOCTYPE html>
+
+const fs = require('fs');
+const { execSync } = require('child_process');
+const path = require('path');
+
+// 今天的日期
+const date = '2026-02-04';
+const outputDir = '/root/.openclaw/workspace/ai-news-daily';
+
+// 1. 定义数据
+const data = {
+  dateStr: '2026年2月4日 星期三 | 农历腊月十七',
+  headline: {
+    label: '今日头条',
+    title: 'Anthropic 发布新 AI 自动化工具，引发全球软件股万亿抛售',
+    subtitle: 'Relx、Pearson 等专业服务巨头股价重挫，市场恐慌 AI 真正替代白领工作',
+    byline: '栗噔噔 · 发自北京 | 发布时间：1天前',
+    content: `
+      <p>昨夜，<strong>Anthropic</strong> 发布了一款针对法律和文书工作的自动化工具（Cowork相关），这一举动在资本市场引发了剧烈震荡。全球软件和服务板块单日市值蒸发接近 <strong>1 万亿美元</strong>。</p>
+      <p>受此影响，Relx、Pearson、London Stock Exchange Group 等依赖专业数据服务的公司股价遭受重创。投资者的恐慌在于：这不再是概念演示，而是 AI 开始真正切入并替代昂贵的白领专业服务市场。</p>
+      <p>分析师指出，Anthropic 的新产品直接挑战了传统专业服务软件的护城河，标志着 AI 应用从“辅助提效”向“服务替代”迈出了关键一步。</p>
+    `,
+    sources: [
+      { name: 'Bloomberg', url: 'https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool' },
+      { name: 'The Guardian', url: 'https://www.theguardian.com/technology/2026/feb/03/anthropic-ai-legal-tool-shares-data-services-pearson' }
+    ]
+  },
+  newsList: [
+    {
+      icon: '🏢',
+      category: '大厂动态',
+      title: 'Google 1月 AI 更新全家桶回顾',
+      meta: 'Google Blog | 发布时间：10小时前',
+      body: `
+        <p>Google 发布官方博客回顾了 1 月份的 AI 进展，重点强调了 <strong>Gemini</strong> 模型在零售和企业服务中的深度集成。</p>
+        <p>更新亮点包括：Gemini 在 Google Workspace 中的能力增强，以及针对开发者的 Vertex AI 新功能。Google 正在加速将 AI 能力转化为实际的企业生产力工具。</p>
+      `,
+      source: { name: 'Google Blog', url: 'https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/' }
+    },
+    {
+      icon: '💬',
+      category: '行业声音',
+      title: 'Oura CEO：可穿戴设备进入“预测医疗”时代',
+      meta: 'BusinessToday | 发布时间：19小时前',
+      body: `
+        <p>在世界政府峰会上，智能戒指品牌 Oura 的 CEO 表示，结合 AI 的可穿戴设备将不再只是记录步数，而是能<strong>提前数年预测长期健康结果</strong>。</p>
+        <div class="research-highlight">
+            <div class="research-title">核心观点</div>
+            <p>未来的医疗将从“治疗疾病”转向“预测和预防”，AI + 连续生物监测数据是实现这一转变的关键。</p>
+        </div>
+      `,
+      source: { name: 'BusinessToday', url: 'https://www.businesstoday.in/technology/news/story/world-governments-summit-2026-oura-ceo-tom-hale-sees-ai-wearables-forecasting-health-years-ahead-514543-2026-02-04' }
+    },
+    {
+      icon: '🛠️',
+      category: '新工具',
+      title: 'Wispr Flow：不仅是听写，更是写作助手',
+      meta: 'Product Hunt | 发布时间：5小时前',
+      body: `
+        <p>Product Hunt 上备受关注的新工具 <strong>Wispr Flow</strong>，重新定义了语音转文字体验。</p>
+        <p>它主打精准识别和隐私保护，更重要的是，它不仅仅是把语音变成文字，还能根据上下文辅助整理思路，直接生成可用的文档草稿。</p>
+      `,
+      source: { name: 'Product Hunt', url: 'https://www.producthunt.com/categories/ai-dictation-apps' }
+    },
+    {
+      icon: '📱',
+      category: '开发者工具',
+      title: 'NexaSDK：在手机上轻松运行多模态 AI',
+      meta: 'Product Hunt | 发布时间：19小时前',
+      body: `
+        <p>为开发者提供的全新移动端部署方案 <strong>NexaSDK</strong>，大幅降低了在 iOS 和 Android 设备上运行多模态模型的门槛。</p>
+        <p>这意味着更多 AI 应用将能够摆脱云端依赖，实现更低延迟、更隐私的本地化运行。</p>
+      `,
+      source: { name: 'Product Hunt', url: 'https://www.producthunt.com/categories/ai-infrastructure' }
+    }
+  ],
+  sidebar: {
+    stats: [
+      { label: '软件板块市值蒸发', value: '$1 Trillion', color: '#c41e3a' },
+      { label: 'CIO AI 采用率增长', value: '+282%', color: '#2563eb' },
+      { label: 'Snowflake 客户数', value: '12,600+', color: '#1a1a1a' },
+      { label: '今日重要新闻', value: '5', color: '#1a1a1a' }
+    ],
+    review: [
+      '<strong>2月3日</strong><br>Anthropic发布Cowork自动化工具',
+      '<strong>2月2日</strong><br>DeepSeek发布多模态新模型',
+      '<strong>2月1日</strong><br>OpenAI宣布GPT-4.5预览版测试',
+      '<strong>1月31日</strong><br>Meta开源Llama 4早期权重'
+    ]
+  }
+};
+
+// 2. HTML 模板 (CSS 复用 20260201-newstyle.html)
+const htmlTemplate = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI圈日报 - 2026-02-04</title>
+    <title>AI圈日报 - ${date}</title>
     <style>
         :root {
             /* 浅色主题（默认） */
@@ -298,7 +391,7 @@
     <!-- 顶部栏 -->
     <div class="top-bar">
         <div class="top-bar-content">
-            <div class="date-weather">2026年2月4日 星期三 | 农历腊月十七</div>
+            <div class="date-weather">${data.dateStr}</div>
             <div class="theme-toggle" onclick="toggleTheme()">
                 <span>浅色</span>
                 <div class="toggle-switch"></div>
@@ -330,105 +423,38 @@
     <main class="main-content">
         <!-- 头版头条 -->
         <article class="front-page" id="headlines">
-            <span class="headline-label">今日头条</span>
-            <h2 class="headline">Anthropic 发布新 AI 自动化工具，引发全球软件股万亿抛售</h2>
-            <p class="subheadline">Relx、Pearson 等专业服务巨头股价重挫，市场恐慌 AI 真正替代白领工作</p>
-            <div class="byline">栗噔噔 · 发自北京 | 发布时间：1天前</div>
+            <span class="headline-label">${data.headline.label}</span>
+            <h2 class="headline">${data.headline.title}</h2>
+            <p class="subheadline">${data.headline.subtitle}</p>
+            <div class="byline">${data.headline.byline}</div>
             <div class="lead">
-                
-      <p>昨夜，<strong>Anthropic</strong> 发布了一款针对法律和文书工作的自动化工具（Cowork相关），这一举动在资本市场引发了剧烈震荡。全球软件和服务板块单日市值蒸发接近 <strong>1 万亿美元</strong>。</p>
-      <p>受此影响，Relx、Pearson、London Stock Exchange Group 等依赖专业数据服务的公司股价遭受重创。投资者的恐慌在于：这不再是概念演示，而是 AI 开始真正切入并替代昂贵的白领专业服务市场。</p>
-      <p>分析师指出，Anthropic 的新产品直接挑战了传统专业服务软件的护城河，标志着 AI 应用从“辅助提效”向“服务替代”迈出了关键一步。</p>
-    
+                ${data.headline.content}
             </div>
             <div class="sources">
                 <span style="color: var(--text-muted); font-size: 0.85em;">参考来源：</span>
-                <a href="https://www.bloomberg.com/news/articles/2026-02-03/legal-software-stocks-plunge-as-anthropic-releases-new-ai-tool" class="source-link" target="_blank">Bloomberg</a><a href="https://www.theguardian.com/technology/2026/feb/03/anthropic-ai-legal-tool-shares-data-services-pearson" class="source-link" target="_blank">The Guardian</a>
+                ${data.headline.sources.map(s => `<a href="${s.url}" class="source-link" target="_blank">${s.name}</a>`).join('')}
             </div>
         </article>
 
         <!-- 新闻网格 -->
         <div class="news-grid" id="news-list">
-            
+            ${data.newsList.map(news => `
             <article class="article-card">
                 <div class="section-header">
-                    <span class="section-icon">🏢</span>
-                    <span class="section-title">大厂动态</span>
+                    <span class="section-icon">${news.icon}</span>
+                    <span class="section-title">${news.category}</span>
                 </div>
-                <h3 class="article-title">Google 1月 AI 更新全家桶回顾</h3>
-                <div class="article-meta">Google Blog | 发布时间：10小时前</div>
+                <h3 class="article-title">${news.title}</h3>
+                <div class="article-meta">${news.meta}</div>
                 <div class="article-body">
-                    
-        <p>Google 发布官方博客回顾了 1 月份的 AI 进展，重点强调了 <strong>Gemini</strong> 模型在零售和企业服务中的深度集成。</p>
-        <p>更新亮点包括：Gemini 在 Google Workspace 中的能力增强，以及针对开发者的 Vertex AI 新功能。Google 正在加速将 AI 能力转化为实际的企业生产力工具。</p>
-      
+                    ${news.body}
                 </div>
                 <div class="sources">
                     <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
-                    <a href="https://blog.google/innovation-and-ai/products/google-ai-updates-january-2026/" class="source-link" target="_blank">Google Blog</a>
+                    <a href="${news.source.url}" class="source-link" target="_blank">${news.source.name}</a>
                 </div>
             </article>
-            
-            <article class="article-card">
-                <div class="section-header">
-                    <span class="section-icon">💬</span>
-                    <span class="section-title">行业声音</span>
-                </div>
-                <h3 class="article-title">Oura CEO：可穿戴设备进入“预测医疗”时代</h3>
-                <div class="article-meta">BusinessToday | 发布时间：19小时前</div>
-                <div class="article-body">
-                    
-        <p>在世界政府峰会上，智能戒指品牌 Oura 的 CEO 表示，结合 AI 的可穿戴设备将不再只是记录步数，而是能<strong>提前数年预测长期健康结果</strong>。</p>
-        <div class="research-highlight">
-            <div class="research-title">核心观点</div>
-            <p>未来的医疗将从“治疗疾病”转向“预测和预防”，AI + 连续生物监测数据是实现这一转变的关键。</p>
-        </div>
-      
-                </div>
-                <div class="sources">
-                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
-                    <a href="https://www.businesstoday.in/technology/news/story/world-governments-summit-2026-oura-ceo-tom-hale-sees-ai-wearables-forecasting-health-years-ahead-514543-2026-02-04" class="source-link" target="_blank">BusinessToday</a>
-                </div>
-            </article>
-            
-            <article class="article-card">
-                <div class="section-header">
-                    <span class="section-icon">🛠️</span>
-                    <span class="section-title">新工具</span>
-                </div>
-                <h3 class="article-title">Wispr Flow：不仅是听写，更是写作助手</h3>
-                <div class="article-meta">Product Hunt | 发布时间：5小时前</div>
-                <div class="article-body">
-                    
-        <p>Product Hunt 上备受关注的新工具 <strong>Wispr Flow</strong>，重新定义了语音转文字体验。</p>
-        <p>它主打精准识别和隐私保护，更重要的是，它不仅仅是把语音变成文字，还能根据上下文辅助整理思路，直接生成可用的文档草稿。</p>
-      
-                </div>
-                <div class="sources">
-                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
-                    <a href="https://www.producthunt.com/categories/ai-dictation-apps" class="source-link" target="_blank">Product Hunt</a>
-                </div>
-            </article>
-            
-            <article class="article-card">
-                <div class="section-header">
-                    <span class="section-icon">📱</span>
-                    <span class="section-title">开发者工具</span>
-                </div>
-                <h3 class="article-title">NexaSDK：在手机上轻松运行多模态 AI</h3>
-                <div class="article-meta">Product Hunt | 发布时间：19小时前</div>
-                <div class="article-body">
-                    
-        <p>为开发者提供的全新移动端部署方案 <strong>NexaSDK</strong>，大幅降低了在 iOS 和 Android 设备上运行多模态模型的门槛。</p>
-        <p>这意味着更多 AI 应用将能够摆脱云端依赖，实现更低延迟、更隐私的本地化运行。</p>
-      
-                </div>
-                <div class="sources">
-                    <span style="color: var(--text-muted); font-size: 0.85em;">来源：</span>
-                    <a href="https://www.producthunt.com/categories/ai-infrastructure" class="source-link" target="_blank">Product Hunt</a>
-                </div>
-            </article>
-            
+            `).join('')}
         </div>
 
         <!-- 侧边栏 -->
@@ -436,34 +462,19 @@
             <div class="sidebar-box" id="data">
                 <h3 class="sidebar-title">📊 今日数据</h3>
                 <ul class="data-list">
-                    
+                    ${data.sidebar.stats.map(stat => `
                     <li class="data-item">
-                        <div class="data-number" style="color: #c41e3a">$1 Trillion</div>
-                        <div class="data-label">软件板块市值蒸发</div>
+                        <div class="data-number" style="color: ${stat.color}">${stat.value}</div>
+                        <div class="data-label">${stat.label}</div>
                     </li>
-                    
-                    <li class="data-item">
-                        <div class="data-number" style="color: #2563eb">+282%</div>
-                        <div class="data-label">CIO AI 采用率增长</div>
-                    </li>
-                    
-                    <li class="data-item">
-                        <div class="data-number" style="color: #1a1a1a">12,600+</div>
-                        <div class="data-label">Snowflake 客户数</div>
-                    </li>
-                    
-                    <li class="data-item">
-                        <div class="data-number" style="color: #1a1a1a">5</div>
-                        <div class="data-label">今日重要新闻</div>
-                    </li>
-                    
+                    `).join('')}
                 </ul>
             </div>
 
             <div class="sidebar-box" id="review">
                 <h3 class="sidebar-title">📅 本周回顾</h3>
                 <div style="font-size: 0.9em; line-height: 1.8; color: var(--text-secondary);">
-                    <p style="margin-bottom: 12px;"><strong>2月3日</strong><br>Anthropic发布Cowork自动化工具</p><p style="margin-bottom: 12px;"><strong>2月2日</strong><br>DeepSeek发布多模态新模型</p><p style="margin-bottom: 12px;"><strong>2月1日</strong><br>OpenAI宣布GPT-4.5预览版测试</p><p style="margin-bottom: 12px;"><strong>1月31日</strong><br>Meta开源Llama 4早期权重</p>
+                    ${data.sidebar.review.map(item => `<p style="margin-bottom: 12px;">${item}</p>`).join('')}
                 </div>
             </div>
 
@@ -500,4 +511,22 @@
         }
     </script>
 </body>
-</html>
+</html>`;
+
+// 3. 写入文件
+console.log('Writing HTML...');
+fs.writeFileSync(path.join(outputDir, `${date}.html`), htmlTemplate);
+fs.writeFileSync(path.join(outputDir, 'index.html'), htmlTemplate);
+
+// 4. Git 推送
+console.log('Pushing to GitHub...');
+try {
+  execSync('git config --global user.email "bot@openclaw.ai"');
+  execSync('git config --global user.name "OpenClaw Bot"');
+  execSync('git add .', { cwd: outputDir });
+  execSync(`git commit -m "Style fix: Daily AI News ${date} (V2)"`, { cwd: outputDir });
+  execSync('git push origin main', { cwd: outputDir });
+  console.log('Done.');
+} catch (e) {
+  console.error('Git push failed:', e.message);
+}
