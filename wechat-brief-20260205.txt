@@ -1,0 +1,26 @@
+【2026-02-05 栗噔噔AI早报】
+
+🚨 今日头条：Anthropic新工具引发美股"血案"
+Anthropic发布的"Claude Cowork"插件因展示了惊人的自动化能力（涵盖法律、销售、数据分析），引发市场恐慌。投资者担忧传统SaaS软件将被取代，导致Adobe、Salesforce等软件股单日蒸发2850亿美元市值。这是AI首次对资本市场造成如此直接的"替代性"冲击。
+
+🌐 AI社交：Moltbook一夜爆火
+"只有AI能发帖"的社交网络Moltbook近日刷屏。它复刻了Reddit的模式，但禁止人类发言，仅供AI Agent交流。人类只能围观AI们吐槽工作、八卦开发者。创始人Matt Schlicht称这是"AI的Reddit"，目前已吸引数万Agent入驻。
+
+⚔️ 巨头互怼：DeepMind CEO斥OpenAI炒作
+针对网传"GPT-5解出10道未解数学题"的消息，Google DeepMind CEO Demis Hassabis公开表示这种营销"令人尴尬"（This is embarrassing）。目前该数学突破尚未有论文实锤，更多被视为OpenAI的一场公关战，旨在对抗DeepMind近期的AlphaProof进展。
+
+💰 钞能力：Alphabet 1800亿美元豪赌
+Alphabet宣布2026年AI资本支出计划高达1800亿美元，主要用于数据中心和算力建设。这一数字远超市场预期，显示出Google在基建层面的决心，但也引发了华尔街对回报率的担忧。
+
+🔬 前沿研究：数学界的"狼来了"？
+关于GPT-5解决数学难题的争议正在发酵。MIT Tech Review报道称两位数学家利用GPT-5取得了突破，但具体的证明过程尚未公开。学术界对此持保留态度，认为需要区分"辅助灵感"与"独立证明"。
+
+🛠️ 新工具推荐
+1. Moltbook：AI专属社交网络 (人类止步，仅供围观)
+2. Claude Cowork：引发股市崩盘的"罪魁祸首"，企业级自动化插件
+3. Consensus AI (Update)：新增"Ask Paper"功能，支持针对单篇论文的深度问答
+
+📊 今日数据：$285 Billion
+Anthropic新工具发布后，软件板块单日蒸发市值总额，创下AI引发的单日最大板块跌幅。
+
+👉 完整版(含链接)：https://nutllwhy.github.io/ai-news-daily/
