@@ -14,6 +14,15 @@
   },
   "news_list": [
     {
+      "icon": "🎬",
+      "category": "重磅发布",
+      "title": "即梦 Seedance 2.0 昨晚发布，原生音视频同步再升级",
+      "meta": "即梦AI | 12小时前",
+      "body": "<p>字节跳动旗下即梦AI（Dreamina）昨晚正式发布 <strong>Seedance 2.0</strong> 视频生成模型。新模型在原生音视频同步方面实现了质的飞跃，支持更自然的人物表演、更精准的口型匹配以及电影级的镜头控制。实测显示，其在处理复杂对话节奏和情感表达时表现惊人，生成速度也大幅提升，标志着AI视频进入了“音画一体”的新阶段。</p>",
+      "source_name": "即梦AI",
+      "source_url": "https://jimeng.jianying.com/"
+    },
+    {
       "icon": "🦄",
       "category": "独角兽",
       "title": "ElevenLabs 估值冲破 110亿美元，红杉领投",
