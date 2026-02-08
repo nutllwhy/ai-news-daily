@@ -1,72 +1,54 @@
 {
-  "date_str": "2026年2月7日 星期六 | 农历腊月二十",
-  "date_full": "2026年2月7日 星期六",
-  "issue_no": "第 008 期",
+  "date_str": "2026年2月8日 星期日 | 农历腊月廿一",
+  "date_full": "2026年2月8日 星期日",
+  "issue_no": "第 046 期",
   "headline": {
-    "title": "豪掷6500亿美元：科技巨头2026年AI基建狂潮",
-    "subtitle": "Capex支出创历史新高，市场担忧SaaS模式被颠覆",
+    "title": "硅谷「双雄对决」：Claude Opus 4.6 与 GPT-5.3-Codex 同日发布，AI 编程进入新纪元",
+    "subtitle": "Anthropic 超级碗广告嘲讽 OpenAI 广告化，Sam Altman 反击称其「富人玩具」",
     "time": "12小时前",
-    "content": "<p><strong>【史诗级基建竞赛】</strong> 彭博社最新数据显示，美国四大科技巨头（Alphabet, Amazon, Meta, Microsoft）在2026年的资本支出（Capex）预计将合计达到惊人的 <strong>6500亿美元</strong>。这一数字不仅刷新了人类商业史的记录，甚至接近它们过去三年预算的总和。这些资金几乎全部流向了下一代数据中心、定制AI芯片以及能源设施。</p><h3>市场恐慌：SaaS的黄昏？</h3><p>与巨额投入形成鲜明对比的是资本市场的焦虑。近期软件股（SaaS）遭遇集体抛售，核心逻辑在于：随着 <strong>GPT-5.2</strong> 和 <strong>Agentic AI</strong>（代理智能）的成熟，传统的“按席位收费”的软件模式可能面临被“按结果付费”的AI员工取代。投资者担心，这6500亿美元的军备竞赛最终会孵化出吞噬旧世界利润的超级智能。</p><p><strong>深度观点：</strong> 这不再是简单的算力竞赛，而是对未来数字经济基础设施的垄断性押注。当算力成为像电力一样的基础能源，拥有“发电厂”的巨头将掌握绝对话语权。</p>",
+    "content": "<p><strong>【事件】</strong> 本周四，全球 AI 领域的竞争进入白热化阶段。Anthropic 与 OpenAI 在同一天发布了各自的旗舰级代码生成模型——<strong>Claude Opus 4.6</strong> 与 <strong>GPT-5.3-Codex</strong>。这一「撞车」发布并非巧合，而是双方在争夺企业级开发市场主导权上的直接刺刀见红。</p><h3>Agent 能力 vs 速度成本</h3><p>Anthropic 的 Claude Opus 4.6 主打<strong>「深度思考与纠错」</strong>。据官方介绍，新模型在长程 Agent 任务上表现卓越，能够更仔细地规划任务步骤，并在复杂的代码库中自我纠错。Sholto Douglas（Anthropic 研究员）表示，他们的策略是让模型在「真正困难的问题」上表现得更好，而不是单纯追求速度。</p><p>相比之下，OpenAI 的 GPT-5.3-Codex 则侧重于<strong>「效率与落地」</strong>。新模型运行速度更快，算力消耗更低，并配备了独立的 Codex 桌面应用。Sam Altman 在播客中强调，未来的工作流是「管理一队 AI Agents」，而 GPT-5.3-Codex 正是为此设计的基石。</p><h3>商业化分歧：广告 vs 订阅</h3><p>除了技术过招，双方在商业模式上的分歧也公开化。Anthropic 在即将播出的超级碗广告中，辛辣嘲讽 OpenAI 在 ChatGPT 免费版中插入广告的计划，打出<strong>「Ads are coming to AI. But not to Claude」</strong>的口号。对此，Sam Altman 回击称 Anthropic 是在为富人提供昂贵产品，而 ChatGPT 致力于让数十亿人免费使用 AI。</p><p><strong>【深度分析】</strong> 这场对决揭示了 AI 行业的两个趋势：一是<strong>垂直场景（Coding）成为兵家必争之地</strong>，通用大模型正在向专用高能效模型分化；二是<strong>变现压力剧增</strong>，无论是 OpenAI 的广告模式还是 Anthropic 的高价订阅，都表明烧钱换增长的时代结束，巨头们急需证明盈利能力。</p>",
     "sources": [
-      {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-02-06/how-much-is-big-tech-spending-on-ai-computing-a-staggering-650-billion-in-2026"},
-      {"name": "Reuters", "url": "https://www.reuters.com/business/global-software-data-firms-slide-ai-disruption-fears-compound-jitters-over-600-2026-02-06/"}
+      {"name": "Business Insider", "url": "https://www.businessinsider.com/anthropic-openai-rivalry-dueling-ai-models-on-the-same-day-2026-2"},
+      {"name": "Mercury News", "url": "https://www.mercurynews.com/2026/02/05/openai-anthropic-rivalry/"}
     ]
   },
   "news_list": [
     {
-      "icon": "🎬",
-      "category": "重磅发布",
-      "title": "即梦 Seedance 2.0 昨晚发布，原生音视频同步再升级",
-      "meta": "即梦AI | 12小时前",
-      "body": "<p>字节跳动旗下即梦AI（Dreamina）昨晚正式发布 <strong>Seedance 2.0</strong> 视频生成模型。新模型在原生音视频同步方面实现了质的飞跃，支持更自然的人物表演、更精准的口型匹配以及电影级的镜头控制。实测显示，其在处理复杂对话节奏和情感表达时表现惊人，生成速度也大幅提升，标志着AI视频进入了“音画一体”的新阶段。</p>",
-      "source_name": "即梦AI",
-      "source_url": "https://jimeng.jianying.com/"
+      "icon": "🇨🇳",
+      "category": "国产之光",
+      "title": "DeepSeek V4 将于本月发布，剑指代码生成王座",
+      "meta": "Capacity Global | 14小时前",
+      "body": "<p>在 DeepSeek R1 震撼全球一年后，这家中国 AI 独角兽即将在本月（2026年2月）推出下一代模型 <strong>DeepSeek V4</strong>。据悉，V4 将是一款<strong>代码优化（coding-optimised）模型</strong>，旨在推动 AI 软件开发的边界。早期传闻称，其测试成绩可能超越 Claude 3.5 Sonnet 和 GPT-4o。此外，DeepSeek 正在通过优化算法大幅降低对高端芯片的依赖，这在芯片出口管制的背景下显得尤为重要。如果 V4 能如期兑现性能，将进一步巩固中国在开源 AI 领域的领导地位。</p>",
+      "source_name": "Capacity",
+      "source_url": "https://capacityglobal.com/news/deepseek-one-year-later-china-global-ai-race/"
     },
     {
-      "icon": "🦄",
-      "category": "独角兽",
-      "title": "ElevenLabs 估值冲破 110亿美元，红杉领投",
-      "meta": "CNBC | 6小时前",
-      "body": "<p>AI语音领域的霸主 ElevenLabs 完成新一轮5亿美元融资，估值翻倍至110亿美元。本轮由红杉资本领投，<strong>Nvidia</strong> 跟投。公司去年ARR（年度经常性收入）已达3.3亿美元，正积极筹备IPO。其多语言克隆技术已成为内容创作者和企业的标配。</p>",
-      "source_name": "CNBC",
-      "source_url": "https://www.cnbc.com/2026/02/04/nvidia-backed-ai-startup-elevenlabs-11-billion-valuation.html"
+      "icon": "📉",
+      "category": "市场震荡",
+      "title": "AI 进化引发恐慌？软件股遭华尔街抛售",
+      "meta": "Reuters | 18小时前",
+      "body": "<p>Anthropic 和 OpenAI 的新模型发布在资本市场引发了意想不到的震荡。随着 AI 编写和管理复杂软件的能力提升，投资者开始担心传统 SaaS（软件即服务）公司的护城河被填平。本周软件板块出现明显回调，市场逻辑正在从「AI 赋能软件」转向「AI 替代软件」。分析师认为，能够自我构建工具的 AI Agent 可能会让许多现有的付费软件变得多余。对于初创公司而言，如果你的产品仅仅是「套壳」或简单的流程自动化，2026年将是生死攸关的一年。</p>",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/business/retail-consumer/anthropic-releases-ai-upgrade-market-punishes-software-stocks-2026-02-05/"
     },
     {
-      "icon": "❄️",
-      "category": "企业应用",
-      "title": "Snowflake 联手 OpenAI，将 GPT-5.2 引入企业数据云",
-      "meta": "Snowflake Blog | 8小时前",
-      "body": "<p>Snowflake 宣布与 OpenAI 达成2亿美元战略合作。最引人注目的是，<strong>GPT-5.2</strong> 模型将原生集成到 Snowflake Cortex AI 中。这意味着企业无需将数据移出，即可直接在私有数据湖上运行最先进的 AI Agent，解决了企业采用大模型最大的安全与隐私顾虑。</p>",
-      "source_name": "Snowflake",
-      "source_url": "https://www.snowflake.com/en/news/press-releases/snowflake-and-openAI-forge-200-million-partnership-to-bring-enterprise-ready-ai-to-the-worlds-most-trusted-data-platform/"
-    },
-    {
-      "icon": "⚡",
-      "category": "硬核科技",
-      "title": "Cerebras 融资10亿美元，晶圆级芯片挑战 Nvidia",
-      "meta": "HPCwire | 10小时前",
-      "body": "<p>以“比披萨还大”的晶圆级芯片闻名的 Cerebras Systems 完成H轮融资，估值达到230亿美元。老虎环球基金领投。其硬件专为超大规模模型训练设计，试图在 Nvidia 统治的算力市场撕开一道口子，主打“训练推理一体化”的高效架构。</p>",
-      "source_name": "HPCwire",
-      "source_url": "https://www.hpcwire.com/aiwire/2026/02/04/cerebras-systems-raises-1-billion-series-h/"
-    },
-    {
-      "icon": "🔌",
-      "category": "芯片创新",
-      "title": "Positron AI 获2.3亿美元融资，宣称能效比 Nvidia 高5倍",
-      "meta": "BusinessWire | 12小时前",
-      "body": "<p>基于 Arm 架构的推理芯片初创公司 Positron AI 完成B轮融资。公司宣称其下一代芯片在 Transformer 推理任务上的每瓦性能（Tokens/Watt）是 Nvidia 即将推出的 Rubin GPU 的5倍。这显示出专用推理芯片（ASIC）正在成为AI硬件的新战场。</p>",
-      "source_name": "BusinessWire",
-      "source_url": "https://www.businesswire.com/news/home/20260204250472/en/Positron-AI-Raises-%24230-Million-Series-B-at-Over-%241-Billion-Valuation-to-Scale-Energy-Efficient-AI-Inference"
+      "icon": "📺",
+      "category": "行业营销",
+      "title": "AI 巨头争夺超级碗：昂贵的「认知战」",
+      "meta": "Mercury News | 12小时前",
+      "body": "<p>AI 的竞争已经从代码行延伸到了橄榄球场。Anthropic 和 OpenAI 都在今年的超级碗投放了广告，试图争夺主流用户的认知。这标志着 AI 公司正在经历类似当年「.com 泡沫」时期的品牌化阶段。Anthropic 试图建立「纯净、无广告、高隐私」的高端品牌形象，而 OpenAI 则继续强化其「全民 AI」的普惠定位。对于 B 端企业用户来说，选择哪家模型不仅是技术问题，更成了价值观站队的问题。</p>",
+      "source_name": "Mercury News",
+      "source_url": "https://www.mercurynews.com/2026/02/05/openai-anthropic-rivalry/"
     }
   ],
   "stats": [
-    {"label": "2026 Capex", "value": "$650B", "color": "#c41e3a"},
-    {"label": "11Labs Val", "value": "$11B", "color": "#1e88e5"},
-    {"label": "Agent Growth", "value": "+67%", "color": "#00897b"},
-    {"label": "Cerebras Val", "value": "$23B", "color": "#fb8c00"}
+    {"label": "DeepSeek市占", "value": "89%", "color": "#10a37f"},
+    {"label": "OpenAI债务", "value": "$1T+", "color": "#c41e3a"},
+    {"label": "V4发布时间", "value": "Feb 2026", "color": "#007aff"}
   ],
   "review": [
-    "<strong>2月6日</strong><br>软件股因Agent替代恐慌暴跌",
-    "<strong>2月5日</strong><br>Salesforce报告显示企业人均AI Agent数量激增"
+    "<strong>2月5日</strong><br>Claude Opus 4.6 与 GPT-5.3-Codex 同日发布",
+    "<strong>2月4日</strong><br>DeepSeek 确认 V4 本月发布",
+    "<strong>2月6日</strong><br>软件股因 AI 替代担忧大跌"
   ]
 }
