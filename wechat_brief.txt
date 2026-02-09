@@ -1,21 +1,17 @@
-【2026-02-08 栗噔噔AI早报】
+【2026-02-09 栗噔噔AI早报】
 
-各位早上好！昨天是个热闹的日子，Anthropic 和 OpenAI 像是约好了一样，同一天发布了针对 coding 场景的重磅更新。Claude Opus 4.6 对决 GPT-5.3-Codex，不仅是技术的较量，更是商业模式的分道扬镳。DeepSeek 也不甘示弱，V4 蓄势待发。
+各位早上好！Anthropic 的新动作在周末引爆了华尔街，不仅登顶全球第一，更让“Agent Teams”协同模式成为现实。同时，中国开源力量 DeepSeek 与 Qwen 正在重写全球规则。
 
 🚨 头版头条
-1. 硅谷「双雄对决」：Claude Opus 4.6 与 GPT-5.3-Codex 同日发布
-本周四，Anthropic 与 OpenAI 在同一天发布了各自的旗舰级代码生成模型。Claude Opus 4.6 主打「深度思考与纠错」，更擅长长程 Agent 任务；而 GPT-5.3-Codex 侧重「效率与落地」，速度更快且配备独立桌面应用。此外，双方在商业模式上的分歧公开化，Anthropic 在超级碗广告中嘲讽 OpenAI 的广告计划，Sam Altman 则回击称其为「富人玩具」。
+1. Anthropic 发布 Claude Opus 4.6，华尔街 6110 亿美元市值蒸发
+Opus 4.6 登顶 Artificial Analysis 全球第一，其杀手锏是全新的“Agent Teams”模式，允许 AI 像人类团队一样自动拆解任务、并行协作。这一能力被视为对传统白领工作的降维打击，导致软件与金融板块在数小时内蒸发 6110 亿美元市值。
 
-🇨🇳 国产之光
-2. DeepSeek V4 将于本月发布，剑指代码生成王座
-在 R1 震撼全球一年后，DeepSeek 即将在本月推出下一代代码优化模型 V4。早期传闻称其测试成绩可能超越 Claude 3.5 Sonnet 和 GPT-4o，并将进一步降低对高端芯片的依赖。
+🌏 全球视野
+2. 中国 AI 开源生态超越美国，Qwen 成全球标准
+Hugging Face 数据显示，DeepSeek 以 11.6 万关注量居全球榜首，而阿里 Qwen 已成为仅次于 Llama 的事实标准，衍生模型达 11.5 万个（远超 Google 和 OpenAI）。MIT 研究确认，中国模型下载量占比达 17.1%，已超越美国。
 
-📉 市场震荡
-3. AI 进化引发恐慌？软件股遭华尔街抛售
-随着 AI 编写和管理复杂软件的能力提升，投资者担心传统 SaaS 公司的护城河被填平。本周软件板块回调，市场逻辑正在从「AI 赋能软件」转向「AI 替代软件」。
-
-📺 行业营销
-4. AI 巨头争夺超级碗：昂贵的「认知战」
-Anthropic 和 OpenAI 都在今年的超级碗投放了广告，试图争夺主流用户的认知。Anthropic 建立「纯净、无广告」的高端形象，OpenAI 继续强化「全民 AI」定位。
+🇮🇳 新兴力量
+3. 印度 Sarvam AI 崛起，OCR 性能击败 GPT-4 & Gemini
+不要忽视印度。Sarvam Vision 在 OCR 领域击败了 Google 与 DeepSeek，尤其擅长处理复杂布局与数学公式，解决了因格式导致的“数据荒漠”问题。
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
