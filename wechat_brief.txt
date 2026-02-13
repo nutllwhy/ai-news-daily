@@ -1,19 +1,21 @@
-【2026-02-12 栗噔噔AI早报】
+【2026-02-13 栗噔噔AI早报】
 
-各位早上好！Anthropic 的新动作在美股掀起了轩然大波，软件SaaS公司遭遇血洗。
+各位早上好！今天是2月13日，星期五，农历腊月廿六。
+
+Anthropic 估值飙升至 $3800亿，全面反攻 OpenAI。不仅重金投入政治游说，更是放开了 Claude 的核心免费功能，AI 军备竞赛进入新阶段。
 
 🚨 头版头条
-1. Anthropic 引发美股软件业“地震”
-Anthropic 发布 Claude Cowork 插件，不仅能自动化法律、金融等复杂工作流，更引发了 SaaS 巨头的恐慌性抛售。Asana 暴跌 66%，Docusign 和 ServiceNow 股价腰斩。市场开始意识到：当 AI Agent 能以极低成本完成同样工作时，昂贵的企业软件订阅费正面临巨大的生存危机。
+1. Anthropic 估值飙升至 $3800亿，全面反攻 OpenAI
+Anthropic 估值已确认达到惊人的 3800 亿美元，正式跻身与 OpenAI、SpaceX 并列的全球顶尖独角兽行列。这不仅是资本市场的胜利，更是其向 OpenAI 发起全面反攻的信号。Anthropic 正在从「产品」和「政治」两条战线同时出击：一方面宣布向 Super PAC "Public First Action" 捐赠 2000 万美元，旨在通过游说更严格的 AI 监管政策来通过「安全」叙事遏制对手；另一方面，为了争夺用户，Anthropic 祭出大招——全面解锁 Claude 免费版功能。包括 Artifacts（实时预览）、Projects（知识库）、更长的上下文窗口等原属于 Pro 会员的核心功能现已免费开放。硅谷分析师指出，此举标志着 AI 竞争进入「烧钱换护城河」的第二阶段，对于用户而言，大模型「免费午餐」的黄金时代将会延长。
 
 💬 行业动态
-2. DeepSeek V4 传闻本月发布
-据 CNN 报道，DeepSeek 将在二月晚些时候推出 V4 模型，重点提升代码能力。虽然阿里 Qwen 团队坦言追赶顶尖模型的概率“低于20%”，但中国 AI 的极高性价比仍令全球瞩目。
+2. Gemini 3.1 Pro 现身，Google 欲重写排行榜？
+Google 的反击可能就在今天。第三方评测平台 Artificial Analysis Arena 后台惊现 "Gemini 3.1 Pro Preview" 字样，且有 DeepMind 员工暗示 "Thursday seems likely"（即今日）。这并非架构级更新，而是针对 Agent 场景的工具调用能力、长文本检索以及代码能力的「点更新」。如果 3.1 如期发布，将是 Google 应对 Anthropic 和 OpenAI 双重压力的快速反应。
 
-3. 全球科技领袖齐聚印度
-2月19日，Google、OpenAI、Nvidia 和 Anthropic 的 CEO 们将齐聚印度 AI 影响力峰会，这可能不仅是一场秀，更预示着下一个巨大的 AI 市场争夺战即将打响。
+3. DeepSeek V4 与 Qwen 3.5 蓄势待发
+春节档将成「模型春晚」。外媒 Rappler 报道，中国 AI 巨头们正准备在春节（2月15日）前后通过密集发布新模型来复刻去年的「DeepSeek 震撼」。DeepSeek 预计发布 V4 版本，继续强化其在推理成本上的极致优势；阿里 Qwen 3.5 系列代码已提交至 Hugging Face，主打数学推理和代码能力。RAND 报告指出，中国模型成本仅为美国同类的 1/4 到 1/6。
 
-4. Oracle 豪赌遇冷
-背负 2500 亿美元数据中心租赁承诺的 Oracle，股价近期腰斩。市场担忧如果 AI 需求不及预期，这些庞大的基础设施投入将变成沉重的财务包袱。
+4. 字节跳动发布 Seedance 2.0：秒级生成电影大片
+字节跳动正式发布视频生成模型 Seedance 2.0。官方宣称其具备「秒级生成电影级大片」的能力，直接对标 OpenAI Sora 和 Google Veo。这一发布卡在春节前，意在抢占假期娱乐流量，同时也展示了字节在视频流领域的统治级野心。
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
