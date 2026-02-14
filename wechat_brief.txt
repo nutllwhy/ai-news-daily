@@ -1,21 +1,22 @@
-【2026-02-13 栗噔噔AI早报】
+【2026-02-14 栗噔噔AI早报】
 
-各位早上好！今天是2月13日，星期五，农历腊月廿六。
+各位早上好！今天是2026年情人节，也是AI界的“春晚”。Google、OpenAI、Anthropic 三巨头同日发布重磅更新，而 DeepSeek 则陷入了 OpenAI 的窃密指控风暴中。
 
-Anthropic 估值飙升至 $3800亿，全面反攻 OpenAI。不仅重金投入政治游说，更是放开了 Claude 的核心免费功能，AI 军备竞赛进入新阶段。
+🚨 硅谷「核爆日」
+1. Gemini 3 Deep Think V2：理科生的终极形态
+Google DeepMind 发布的 Gemini 3 Deep Think V2 在 ARC-AGI-2 基准测试中达到 84.6% 准确率，刷新 SOTA。其在 Codeforces 全球排名第 8，不仅能解题，还能辅助半导体研究和生成 3D 打印模型。
 
-🚨 头版头条
-1. Anthropic 估值飙升至 $3800亿，全面反攻 OpenAI
-Anthropic 估值已确认达到惊人的 3800 亿美元，正式跻身与 OpenAI、SpaceX 并列的全球顶尖独角兽行列。这不仅是资本市场的胜利，更是其向 OpenAI 发起全面反攻的信号。Anthropic 正在从「产品」和「政治」两条战线同时出击：一方面宣布向 Super PAC "Public First Action" 捐赠 2000 万美元，旨在通过游说更严格的 AI 监管政策来通过「安全」叙事遏制对手；另一方面，为了争夺用户，Anthropic 祭出大招——全面解锁 Claude 免费版功能。包括 Artifacts（实时预览）、Projects（知识库）、更长的上下文窗口等原属于 Pro 会员的核心功能现已免费开放。硅谷分析师指出，此举标志着 AI 竞争进入「烧钱换护城河」的第二阶段，对于用户而言，大模型「免费午餐」的黄金时代将会延长。
+2. OpenAI × Cerebras：天下武功，唯快不破
+OpenAI 推出与 Cerebras 合作的 GPT-5.3-Codex-Spark，生成速度突破 1000 tokens/s，比前代快 10 倍。软件开发的瓶颈正式从“写代码”转移到了“读代码”和“提需求”。
 
-💬 行业动态
-2. Gemini 3.1 Pro 现身，Google 欲重写排行榜？
-Google 的反击可能就在今天。第三方评测平台 Artificial Analysis Arena 后台惊现 "Gemini 3.1 Pro Preview" 字样，且有 DeepMind 员工暗示 "Thursday seems likely"（即今日）。这并非架构级更新，而是针对 Agent 场景的工具调用能力、长文本检索以及代码能力的「点更新」。如果 3.1 如期发布，将是 Google 应对 Anthropic 和 OpenAI 双重压力的快速反应。
+3. Anthropic 估值破 3800 亿，营收涨 10 倍
+Anthropic 完成 300 亿美元融资，估值飙升至 3800 亿美元。其年收入突破 140 亿美元，相比去年增长 10 倍，Claude Code 产品 ARR 翻倍。与此同时，OpenAI 指控 DeepSeek 通过“蒸馏”窃取其数据。
 
-3. DeepSeek V4 与 Qwen 3.5 蓄势待发
-春节档将成「模型春晚」。外媒 Rappler 报道，中国 AI 巨头们正准备在春节（2月15日）前后通过密集发布新模型来复刻去年的「DeepSeek 震撼」。DeepSeek 预计发布 V4 版本，继续强化其在推理成本上的极致优势；阿里 Qwen 3.5 系列代码已提交至 Hugging Face，主打数学推理和代码能力。RAND 报告指出，中国模型成本仅为美国同类的 1/4 到 1/6。
+💬 行业风向
+4. 智谱 GLM-5 参数曝光：744B 巨兽
+智谱 AI 的 GLM-5 模型参数量高达 7440 亿，训练数据量 28.5T tokens，集成了 DeepSeek 的稀疏注意力机制。虽然 Code Arena 排名第一，但在 Agent 任务上仍落后于 Claude Opus 4.6。
 
-4. 字节跳动发布 Seedance 2.0：秒级生成电影大片
-字节跳动正式发布视频生成模型 Seedance 2.0。官方宣称其具备「秒级生成电影级大片」的能力，直接对标 OpenAI Sora 和 Google Veo。这一发布卡在春节前，意在抢占假期娱乐流量，同时也展示了字节在视频流领域的统治级野心。
+5. MiniMax M2.5 宣称对标 Claude Opus
+MiniMax 推出 M2.5 模型，号称 SWE-Bench Verified 达到 80.2%，与 Claude Opus 持平。该模型主打“超长程 Agent”，凭借 100 tokens/s 的速度和低价策略进军开发者市场。
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html

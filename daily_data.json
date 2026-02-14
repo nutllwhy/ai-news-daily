@@ -1,56 +1,54 @@
 {
-  "date_str": "2026年2月13日 星期五 | 农历腊月廿六",
-  "date_full": "2026年2月13日 星期五",
-  "issue_no": "第 014 期",
+  "date_str": "2026年2月14日 星期六 | 农历腊月廿七",
+  "date_full": "2026年2月14日 星期六",
+  "issue_no": "第 015 期",
   "headline": {
-    "title": "Anthropic 估值飙升至 $3800亿，全面反攻 OpenAI",
-    "subtitle": "左手重金游说监管，右手免费开放核心功能，Claude 吹响战争号角",
-    "time": "5小时前",
-    "content": "<p><strong>【战争升级】</strong> AI 领域的军备竞赛今日迎来重大转折。<strong>Anthropic 估值已确认达到惊人的 3800 亿美元</strong>，正式跻身与 OpenAI、SpaceX 并列的全球顶尖独角兽行列。这不仅是资本市场的胜利，更是其向 OpenAI 发起全面反攻的信号。</p><p><strong>【双线作战】</strong> Anthropic 正在从「产品」和「政治」两条战线同时出击：<br>1. <strong>政治博弈</strong>：公司宣布向 Super PAC \"Public First Action\" 捐赠 <strong>2000 万美元</strong>，旨在游说美国立法者制定更严格的 AI 监管政策。这一举动被视为直接针对 OpenAI 的自由放任策略，试图通过政策壁垒通过「安全」叙事来遏制对手。<br>2. <strong>产品下沉</strong>：为了争夺用户，Anthropic 祭出大招——<strong>全面解锁 Claude 免费版功能</strong>。包括 Artifacts（实时预览）、Projects（知识库）、更长的上下文窗口等原属于 Pro 会员的核心功能现已免费开放。这是对 OpenAI 和 Google 的直接挑战，意在通过「免费体验差异化」来抢占开发者和大众用户的心智。</p><p><strong>【深度观点】</strong> 硅谷分析师指出，Anthropic 此举标志着 AI 竞争进入「烧钱换护城河」的第二阶段。3800 亿的估值需要巨大的用户量支撑，而「高举高打」的安全牌必须配合「甚至亏本」的市场扩张才能奏效。对于用户而言，这意味着大模型「免费午餐」的黄金时代将会延长；但对于行业，这意味着门槛被进一步拉高，中小模型的生存空间将被进一步挤压。</p>",
+    "title": "硅谷「核爆日」：三巨头同日亮剑，DeepSeek陷窃密风波",
+    "subtitle": "Gemini 3 登顶数学竞赛，OpenAI 推出千 token/s 极速模型，Anthropic 估值破 3800 亿",
+    "time": "1小时前",
+    "content": "<p>2026年的情人节成了AI界的「D-Day」。Google、OpenAI、Anthropic 三巨头罕见地在同一天发布重磅更新，而来自中国的 DeepSeek 则陷入了 OpenAI 的窃密指控风暴中。</p><h3>Gemini 3 Deep Think V2：理科生的终极形态</h3><p>Google DeepMind 发布的 Gemini 3 Deep Think V2 再次刷新了人类认知的上限。Jeff Dean 亲自站台，宣布该模型在 ARC-AGI-2 基准测试中达到了 <strong>84.6%</strong> 的准确率，被认为是新的 SOTA。更惊人的是，它在 Codeforces 编程竞赛中排名全球第 8，不仅能解题，还能辅助半导体晶体生长研究，甚至直接从草图生成 3D 打印模型。Google 强调，这不是实验室玩具，而是「工程级」的推理怪兽。</p><h3>OpenAI × Cerebras：天下武功，唯快不破</h3><p>OpenAI 也不甘示弱，推出了与 Cerebras 合作的 <strong>GPT-5.3-Codex-Spark</strong>。这款模型主打「极速」，生成速度突破 <strong>1000 tokens/s</strong>，比前代快 10 倍。这意味着 AI 编写代码的速度将远超人类阅读速度，软件开发的瓶颈正式从「写代码」转移到了「读代码」和「提需求」。</p><h3>Anthropic 的资本盛宴与 DeepSeek 的危机</h3><p>Anthropic 宣布完成 300 亿美元融资，估值飙升至 <strong>3800 亿美元</strong>，其年收入已突破 140 亿美元，相比去年增长了 10 倍。然而，在一片欢腾中，OpenAI 向美国国会提交备忘录，指控 DeepSeek 通过「蒸馏」技术窃取其模型数据以训练自家 AI，这标志着中美 AI 竞争进入了更激烈的法律与地缘政治博弈阶段。</p>",
     "sources": [
-      {"name": "Washington Times", "url": "https://www.washingtontimes.com/news/2026/feb/12/anthropic-hits-380b-valuation-heightens-competition-openai/"},
-      {"name": "NY Times", "url": "https://www.nytimes.com/2026/02/12/technology/anthropic-super-pac-openai.html"},
-      {"name": "WeBandIT", "url": "https://www.webanditnews.com/2026/02/12/anthropic-loosens-the-velvet-rope-claudes-free-tier-gets-a-major-upgrade-in-a-bid-to-win-the-ai-arms-race/"}
+      {"name": "Latent Space", "url": "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"},
+      {"name": "Reuters", "url": "https://www.reuters.com/world/china/openai-accuses-deepseek-distilling-us-models-gain-advantage-bloomberg-news-2026-02-12/"}
     ]
   },
   "news_list": [
     {
-      "icon": "🕵️",
-      "category": "模型泄露",
-      "title": "Gemini 3.1 Pro 现身，Google 欲重写排行榜？",
-      "meta": "AI505 | 18小时前",
-      "body": "<p><strong>Google 的反击可能就在今天。</strong> 第三方评测平台 Artificial Analysis Arena 后台惊现 \"Gemini 3.1 Pro Preview\" 字样，且有 DeepMind 员工暗示 \"Thursday seems likely\"（即今日）。<br><strong>【核心看点】</strong><br>• <strong>定位</strong>：这并非架构级更新（如 Gemini 4），而是类似 Veo 3.1 的「点更新」。<br>• <strong>预期改进</strong>：重点针对 Agent 场景的工具调用能力、长文本检索（目前 Gemini 3 Pro 已有 1M 窗口但检索准确率有待提升）以及代码能力（SWE-bench）。<br>• <strong>战局</strong>：Claude Opus 4.6 目前在代码任务上领先，Google 急需一个 update 来稳住开发者社区。如果 3.1 如期发布，将是 Google 应对 Anthropic 和 OpenAI 双重压力的快速反应。</p>",
-      "source_name": "AI505",
-      "source_url": "https://ai505.com/gemini-3-1-pro-leaked-why-googles-thursday-hint-may-rewrite-the-ai-leaderboard/"
+      "icon": "🚀",
+      "category": "模型竞速",
+      "title": "MiniMax M2.5 宣称对标 Claude Opus",
+      "meta": "MiniMax | 2小时前",
+      "body": "<p>中国 AI 独角兽 MiniMax 推出 M2.5 模型，号称在 SWE-Bench Verified 测试中达到 80.2%，与 Claude Opus 持平。该模型主打「超长程 Agent」，已在 OpenRouter 和各种 IDE 插件中上线，凭借 100 tokens/s 的速度和低廉价格，试图在开发者市场分一杯羹。</p>",
+      "source_name": "Twitter",
+      "source_url": "https://twitter.com/minimax_ai"
     },
     {
-      "icon": "🐲",
-      "category": "东方力量",
-      "title": "DeepSeek V4 与 Qwen 3.5 蓄势待发",
-      "meta": "Rappler | 16小时前",
-      "body": "<p><strong>春节档将成「模型春晚」。</strong> 外媒 Rappler 报道，中国 AI 巨头们正准备在春节（2月15日）前后通过密集发布新模型来复刻去年的「DeepSeek 震撼」。<br>• <strong>DeepSeek</strong>：预计发布 V4 版本，继续强化其在推理成本上的极致优势。<br>• <strong>阿里 Qwen</strong>：Qwen 3.5 系列代码已提交至 Hugging Face，主打数学推理和代码能力。<br>• <strong>字节跳动</strong>：已发布 Seedance 2.0 视频模型，并计划升级豆包（Doubao）。<br><strong>【行业影响】</strong> RAND 报告指出，中国模型成本仅为美国同类的 1/4 到 1/6。新一轮「价格战」和「开源潮」即将席卷全球。</p>",
-      "source_name": "Rappler",
-      "source_url": "https://www.rappler.com/technology/low-cost-chinese-artificial-intelligence-models-launch-february-2026/"
+      "icon": "🇨🇳",
+      "category": "开源生态",
+      "title": "智谱 GLM-5 参数曝光：744B 巨兽",
+      "meta": "Latent Space | 4小时前",
+      "body": "<p>技术分析显示，智谱 AI 的 GLM-5 模型总参数量高达 7440 亿，激活参数约 400 亿，训练数据量达 28.5T tokens。该模型集成了 DeepSeek 的稀疏注意力机制，并使用了名为「Slime」的异步强化学习架构。虽然在 Code Arena 中排名开源第一，但仍落后于 Claude Opus 4.6。</p>",
+      "source_name": "Latent Space",
+      "source_url": "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
     },
     {
-      "icon": "🎬",
-      "category": "产品发布",
-      "title": "字节跳动发布 Seedance 2.0：秒级生成电影大片",
-      "meta": "Global Times | 20小时前",
-      "body": "<p>字节跳动正式发布视频生成模型 <strong>Seedance 2.0</strong>。官方宣称其具备「秒级生成电影级大片」的能力，直接对标 OpenAI Sora 和 Google Veo。这一发布卡在春节前，意在抢占假期娱乐流量，同时也展示了字节在视频流领域的统治级野心。</p>",
-      "source_name": "Rappler",
-      "source_url": "https://www.rappler.com/technology/low-cost-chinese-artificial-intelligence-models-launch-february-2026/"
+      "icon": "💰",
+      "category": "融资快讯",
+      "title": "Anthropic 营收暴涨 10 倍",
+      "meta": "CNBC | 3小时前",
+      "body": "<p>Anthropic 的财务数据令人咋舌：年收入从去年的 10 亿美元激增至 140 亿美元，Claude Code 产品的 ARR（年度经常性收入）今年以来已翻倍，达到 25 亿美元。这解释了为何资本市场愿意给出 3800 亿美元的天价估值。</p>",
+      "source_name": "CNBC",
+      "source_url": "https://www.cnbc.com"
     }
   ],
   "stats": [
-    {"label": "Anthropic估值", "value": "$380B", "color": "#7B61FF"},
-    {"label": "政治捐款", "value": "$20M", "color": "#FF4B4B"},
-    {"label": "中国模型成本", "value": "1/6", "color": "#00B8D9"},
-    {"label": "Gemini版本", "value": "3.1", "color": "#34A853"}
+    {"label": "GPT-5.3速度", "value": "1k t/s", "color": "#10a37f"},
+    {"label": "Anthropic估值", "value": "$380B", "color": "#d97757"},
+    {"label": "Gemini数学", "value": "84.6%", "color": "#4285f4"},
+    {"label": "GLM-5参数", "value": "744B", "color": "#3b5998"}
   ],
   "review": [
-    "<strong>2月13日</strong><br>Anthropic 估值$380B，全面免费",
-    "<strong>2月12日</strong><br>Gemini 3.1 Pro 泄露",
-    "<strong>2月11日</strong><br>字节发布 Seedance 2.0"
+    "<strong>2月14日</strong><br>三巨头同日发布更新，AI 竞赛白热化",
+    "<strong>2月13日</strong><br>OpenAI 指控 DeepSeek 蒸馏窃密"
   ]
 }
