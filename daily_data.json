@@ -1,54 +1,55 @@
 {
-  "date_str": "2026年2月14日 星期六 | 农历腊月廿七",
-  "date_full": "2026年2月14日 星期六",
-  "issue_no": "第 015 期",
+  "date_str": "2026年2月15日 星期日 | 农历腊月二十八",
+  "date_full": "2026年2月15日 星期日",
+  "issue_no": "第 036 期",
   "headline": {
-    "title": "硅谷「核爆日」：三巨头同日亮剑，DeepSeek陷窃密风波",
-    "subtitle": "Gemini 3 登顶数学竞赛，OpenAI 推出千 token/s 极速模型，Anthropic 估值破 3800 亿",
-    "time": "1小时前",
-    "content": "<p>2026年的情人节成了AI界的「D-Day」。Google、OpenAI、Anthropic 三巨头罕见地在同一天发布重磅更新，而来自中国的 DeepSeek 则陷入了 OpenAI 的窃密指控风暴中。</p><h3>Gemini 3 Deep Think V2：理科生的终极形态</h3><p>Google DeepMind 发布的 Gemini 3 Deep Think V2 再次刷新了人类认知的上限。Jeff Dean 亲自站台，宣布该模型在 ARC-AGI-2 基准测试中达到了 <strong>84.6%</strong> 的准确率，被认为是新的 SOTA。更惊人的是，它在 Codeforces 编程竞赛中排名全球第 8，不仅能解题，还能辅助半导体晶体生长研究，甚至直接从草图生成 3D 打印模型。Google 强调，这不是实验室玩具，而是「工程级」的推理怪兽。</p><h3>OpenAI × Cerebras：天下武功，唯快不破</h3><p>OpenAI 也不甘示弱，推出了与 Cerebras 合作的 <strong>GPT-5.3-Codex-Spark</strong>。这款模型主打「极速」，生成速度突破 <strong>1000 tokens/s</strong>，比前代快 10 倍。这意味着 AI 编写代码的速度将远超人类阅读速度，软件开发的瓶颈正式从「写代码」转移到了「读代码」和「提需求」。</p><h3>Anthropic 的资本盛宴与 DeepSeek 的危机</h3><p>Anthropic 宣布完成 300 亿美元融资，估值飙升至 <strong>3800 亿美元</strong>，其年收入已突破 140 亿美元，相比去年增长了 10 倍。然而，在一片欢腾中，OpenAI 向美国国会提交备忘录，指控 DeepSeek 通过「蒸馏」技术窃取其模型数据以训练自家 AI，这标志着中美 AI 竞争进入了更激烈的法律与地缘政治博弈阶段。</p>",
+    "title": "DeepSeek 震撼一周年：中国 AI 的「新春战役」与突围",
+    "subtitle": "从「价格屠夫」到技术标杆，DeepSeek 倒逼行业洗牌；春节期间多家国产模型密集发布，开源力量正在重塑全球格局",
+    "time": "17小时前",
+    "content": "<p><strong>【一周年回顾】</strong> 距离 DeepSeek R1/V3 横空出世引发全球 AI 圈「地震」已整整一年。这场技术风暴不仅让英伟达股价单日蒸发数千亿，更彻底改变了 AI 行业的定价逻辑。如今，正值中国农历新年（春节）前夕，国内 AI 厂商并未休息，而是掀起了一场新的「新春战役」。</p><p><strong>【群雄逐鹿】</strong> 据路透社报道，为了追赶 DeepSeek 的步伐，字节跳动（ByteDance）、阿里巴巴（Alibaba）和智谱 AI（Zhipu）等竞争对手正在争分夺秒地发布新一代模型。DeepSeek 自身也并未止步，其 V3.2 模型在 SWE-Bench Verified 榜单上以 73.0% 的得分稳居前列，且以极高的性价比（$1.30/run）继续扮演「价格屠夫」的角色。</p><p><strong>【开源崛起】</strong> 值得注意的是，在最新的 SWE-Bench 代码能力榜单中，国产开源模型表现抢眼。MiniMax M2.5 以 80.2% 的高分冲至全球第三，仅次于 Anthropic 的 Claude Opus 系列，成为最强开源模型之一。这标志着中国开源模型正在从「追随者」向「领跑者」转变，开源与闭源的界限日益模糊。</p><p><strong>【深度观点】</strong> DeepSeek 的成功证明了「高效训练」与「极致工程」的价值。一年后的今天，中国 AI 行业已不再满足于单纯的参数堆叠，而是转向更务实的落地能力与成本控制。这个春节，注定是 AI 战国时代的又一个转折点。</p>",
     "sources": [
-      {"name": "Latent Space", "url": "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"},
-      {"name": "Reuters", "url": "https://www.reuters.com/world/china/openai-accuses-deepseek-distilling-us-models-gain-advantage-bloomberg-news-2026-02-12/"}
+      {"name": "Reuters", "url": "https://www.reuters.com/world/china/chinese-ai-models-festoon-spring-festival-year-after-deepseek-shock-2026-02-14/"},
+      {"name": "SWE-Bench", "url": "https://www.marc0.dev/en/leaderboard"}
     ]
   },
   "news_list": [
     {
-      "icon": "🚀",
-      "category": "模型竞速",
-      "title": "MiniMax M2.5 宣称对标 Claude Opus",
-      "meta": "MiniMax | 2小时前",
-      "body": "<p>中国 AI 独角兽 MiniMax 推出 M2.5 模型，号称在 SWE-Bench Verified 测试中达到 80.2%，与 Claude Opus 持平。该模型主打「超长程 Agent」，已在 OpenRouter 和各种 IDE 插件中上线，凭借 100 tokens/s 的速度和低廉价格，试图在开发者市场分一杯羹。</p>",
-      "source_name": "Twitter",
-      "source_url": "https://twitter.com/minimax_ai"
-    },
-    {
-      "icon": "🇨🇳",
-      "category": "开源生态",
-      "title": "智谱 GLM-5 参数曝光：744B 巨兽",
-      "meta": "Latent Space | 4小时前",
-      "body": "<p>技术分析显示，智谱 AI 的 GLM-5 模型总参数量高达 7440 亿，激活参数约 400 亿，训练数据量达 28.5T tokens。该模型集成了 DeepSeek 的稀疏注意力机制，并使用了名为「Slime」的异步强化学习架构。虽然在 Code Arena 中排名开源第一，但仍落后于 Claude Opus 4.6。</p>",
-      "source_name": "Latent Space",
-      "source_url": "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
+      "icon": "⚖️",
+      "category": "伦理争议",
+      "title": "美军承认在委内瑞拉行动中使用 Claude，引发 AI 武器化担忧",
+      "meta": "The Guardian | 8小时前",
+      "body": "<p><strong>【事件曝光】</strong> 据《卫报》和《华尔街日报》报道，美国军方在针对委内瑞拉的军事行动中使用了 Anthropic 的 Claude 模型。这与其「Helper, Honest, Harmless」的品牌形象及禁止用于暴力、武器研发的服务条款（ToS）形成强烈冲突。</p><p><strong>【各方回应】</strong> Anthropic 发言人拒绝确认具体使用情况，但强调所有使用必须合规。五角大楼则表示，正在与多家 AI 公司合作，包括 xAI 和 Google。此事件再次引爆了关于「AI 军事化」的伦理讨论：当通用大模型被用于实战，技术中立的边界在哪里？</p>",
+      "source_name": "The Guardian",
+      "source_url": "https://www.theguardian.com/technology/2026/feb/14/us-military-anthropic-ai-model-claude-venezuela-raid"
     },
     {
       "icon": "💰",
-      "category": "融资快讯",
-      "title": "Anthropic 营收暴涨 10 倍",
-      "meta": "CNBC | 3小时前",
-      "body": "<p>Anthropic 的财务数据令人咋舌：年收入从去年的 10 亿美元激增至 140 亿美元，Claude Code 产品的 ARR（年度经常性收入）今年以来已翻倍，达到 25 亿美元。这解释了为何资本市场愿意给出 3800 亿美元的天价估值。</p>",
-      "source_name": "CNBC",
-      "source_url": "https://www.cnbc.com"
+      "category": "投融资",
+      "title": "豪赌未来：科技巨头 2026 财年 AI 资本支出狂飙至 7000 亿美元",
+      "meta": "Cyber News Centre | 1天前",
+      "body": "<p><strong>【天量投入】</strong> 微软、谷歌、亚马逊和 Meta 四大科技巨头在 2026 财年的 AI 资本支出（CapEx）总额预计将达到惊人的 <strong>7000 亿美元</strong>，同比激增 60%。这一数字已超过大多数中等国家的财政预算。</p><p><strong>【资金去向】</strong> 亚马逊计划投入 2000 亿美元，主要用于 AWS 基础设施和自研芯片；谷歌则为此发行了罕见的「百年债券」筹资。这不仅是技术的竞争，更是财力的比拼。市场分析认为，这场「军备竞赛」正从模型能力转向基础设施规模，谁能承担得起行星级的算力消耗，谁才能拿到通往 AGI 的门票。</p>",
+      "source_name": "Cyber News Centre",
+      "source_url": "https://www.cybernewscentre.com/the-700-billion-reckoning-why-tech-titans-are-betting-the-future-on-ai-and-borrowing-like-sovereigns-to-do-it/"
+    },
+    {
+      "icon": "🏆",
+      "category": "前沿研究",
+      "title": "SWE-Bench 2月榜单：Claude Opus 4.5 霸榜，国产 MiniMax 杀入前三",
+      "meta": "Marc0.dev | 7小时前",
+      "body": "<p><strong>【最新战况】</strong> 2026 年 2 月 SWE-Bench Verified 榜单出炉：<strong>Claude Opus 4.5</strong> 以 80.9% 的得分位居榜首，Opus 4.6 紧随其后。最令人惊喜的是国产模型 <strong>MiniMax M2.5</strong>，以 80.2% 的高分位列第三，且是前五名中唯一的开源权重模型。</p><p><strong>【趋势分析】</strong> 榜单显示，开源模型正在以惊人的速度缩小与闭源模型的差距。同时，Agent 框架（如 Droid, Codex CLI）对模型能力的加持作用日益明显，单纯的模型跑分已不足以说明问题，工程化落地能力成为关键。</p>",
+      "source_name": "Marc0.dev",
+      "source_url": "https://www.marc0.dev/en/leaderboard"
     }
   ],
   "stats": [
-    {"label": "GPT-5.3速度", "value": "1k t/s", "color": "#10a37f"},
-    {"label": "Anthropic估值", "value": "$380B", "color": "#d97757"},
-    {"label": "Gemini数学", "value": "84.6%", "color": "#4285f4"},
-    {"label": "GLM-5参数", "value": "744B", "color": "#3b5998"}
+    {"label": "CapEx", "value": "$700B", "color": "#c41e3a"},
+    {"label": "Opus 4.5", "value": "80.9%", "color": "#1e88e5"},
+    {"label": "M2.5", "value": "No.3", "color": "#00897b"},
+    {"label": "Cost", "value": "$1.30", "color": "#fb8c00"}
   ],
   "review": [
-    "<strong>2月14日</strong><br>三巨头同日发布更新，AI 竞赛白热化",
-    "<strong>2月13日</strong><br>OpenAI 指控 DeepSeek 蒸馏窃密"
+    "<strong>DeepSeek</strong><br>一周年：从黑马到标杆",
+    "<strong>Anthropic</strong><br>陷军事化争议",
+    "<strong>MiniMax</strong><br>开源模型全球第三"
   ]
 }

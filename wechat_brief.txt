@@ -1,22 +1,21 @@
-【2026-02-14 栗噔噔AI早报】
+【2026-02-15 栗噔噔AI早报】
 
-各位早上好！今天是2026年情人节，也是AI界的“春晚”。Google、OpenAI、Anthropic 三巨头同日发布重磅更新，而 DeepSeek 则陷入了 OpenAI 的窃密指控风暴中。
+各位早上好！今天是 DeepSeek R1/V3 发布一周年。这不仅是一个纪念日，更是中国 AI 行业的新起点。在这个特别的日子里，让我们看看这一年来行业发生了怎样的巨变。
 
-🚨 硅谷「核爆日」
-1. Gemini 3 Deep Think V2：理科生的终极形态
-Google DeepMind 发布的 Gemini 3 Deep Think V2 在 ARC-AGI-2 基准测试中达到 84.6% 准确率，刷新 SOTA。其在 Codeforces 全球排名第 8，不仅能解题，还能辅助半导体研究和生成 3D 打印模型。
+🚨 头版头条
+1. DeepSeek 震撼一周年：中国 AI 的「新春战役」与突围
+距离 DeepSeek 引发全球震动已整整一年。如今，字节跳动、阿里巴巴、智谱 AI 等正掀起一场新的「新春战役」，力图追赶并超越。DeepSeek 自身也在 SWE-Bench 榜单上以极高性价比持续领跑。这一年，中国开源模型正从追随者变为领跑者。
 
-2. OpenAI × Cerebras：天下武功，唯快不破
-OpenAI 推出与 Cerebras 合作的 GPT-5.3-Codex-Spark，生成速度突破 1000 tokens/s，比前代快 10 倍。软件开发的瓶颈正式从“写代码”转移到了“读代码”和“提需求”。
+⚖️ 伦理争议
+2. 美军承认在委内瑞拉行动中使用 Claude，引发 AI 武器化担忧
+《卫报》爆料美军在军事行动中使用了 Anthropic 的 Claude 模型，与其「无害」宗旨背道而驰。这一事件再次引爆了关于通用大模型军事化应用的伦理讨论。
 
-3. Anthropic 估值破 3800 亿，营收涨 10 倍
-Anthropic 完成 300 亿美元融资，估值飙升至 3800 亿美元。其年收入突破 140 亿美元，相比去年增长 10 倍，Claude Code 产品 ARR 翻倍。与此同时，OpenAI 指控 DeepSeek 通过“蒸馏”窃取其数据。
+💰 投融资
+3. 豪赌未来：科技巨头 2026 财年 AI 资本支出狂飙至 7000 亿美元
+微软、谷歌、亚马逊和 Meta 计划在 2026 财年投入 7000 亿美元用于 AI 基础设施，规模超多数国家财政预算。谁能承担得起行星级的算力消耗，谁才能拿到通往 AGI 的门票。
 
-💬 行业风向
-4. 智谱 GLM-5 参数曝光：744B 巨兽
-智谱 AI 的 GLM-5 模型参数量高达 7440 亿，训练数据量 28.5T tokens，集成了 DeepSeek 的稀疏注意力机制。虽然 Code Arena 排名第一，但在 Agent 任务上仍落后于 Claude Opus 4.6。
-
-5. MiniMax M2.5 宣称对标 Claude Opus
-MiniMax 推出 M2.5 模型，号称 SWE-Bench Verified 达到 80.2%，与 Claude Opus 持平。该模型主打“超长程 Agent”，凭借 100 tokens/s 的速度和低价策略进军开发者市场。
+🏆 前沿研究
+4. SWE-Bench 2月榜单：Claude Opus 4.5 霸榜，国产 MiniMax 杀入前三
+最新榜单出炉，Claude Opus 4.5 夺冠，国产模型 MiniMax M2.5 惊喜冲至全球第三，成为最强开源模型之一。开源与闭源的界限正在迅速模糊。
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
