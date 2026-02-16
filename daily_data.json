@@ -1,55 +1,77 @@
 {
-  "date_str": "2026年2月15日 星期日 | 农历腊月二十八",
-  "date_full": "2026年2月15日 星期日",
-  "issue_no": "第 036 期",
+  "date_str": "2026年2月16日 星期一 | 农历腊月廿九",
+  "date_full": "2026年2月16日 星期一",
+  "issue_no": "第 017 期",
   "headline": {
-    "title": "DeepSeek 震撼一周年：中国 AI 的「新春战役」与突围",
-    "subtitle": "从「价格屠夫」到技术标杆，DeepSeek 倒逼行业洗牌；春节期间多家国产模型密集发布，开源力量正在重塑全球格局",
-    "time": "17小时前",
-    "content": "<p><strong>【一周年回顾】</strong> 距离 DeepSeek R1/V3 横空出世引发全球 AI 圈「地震」已整整一年。这场技术风暴不仅让英伟达股价单日蒸发数千亿，更彻底改变了 AI 行业的定价逻辑。如今，正值中国农历新年（春节）前夕，国内 AI 厂商并未休息，而是掀起了一场新的「新春战役」。</p><p><strong>【群雄逐鹿】</strong> 据路透社报道，为了追赶 DeepSeek 的步伐，字节跳动（ByteDance）、阿里巴巴（Alibaba）和智谱 AI（Zhipu）等竞争对手正在争分夺秒地发布新一代模型。DeepSeek 自身也并未止步，其 V3.2 模型在 SWE-Bench Verified 榜单上以 73.0% 的得分稳居前列，且以极高的性价比（$1.30/run）继续扮演「价格屠夫」的角色。</p><p><strong>【开源崛起】</strong> 值得注意的是，在最新的 SWE-Bench 代码能力榜单中，国产开源模型表现抢眼。MiniMax M2.5 以 80.2% 的高分冲至全球第三，仅次于 Anthropic 的 Claude Opus 系列，成为最强开源模型之一。这标志着中国开源模型正在从「追随者」向「领跑者」转变，开源与闭源的界限日益模糊。</p><p><strong>【深度观点】</strong> DeepSeek 的成功证明了「高效训练」与「极致工程」的价值。一年后的今天，中国 AI 行业已不再满足于单纯的参数堆叠，而是转向更务实的落地能力与成本控制。这个春节，注定是 AI 战国时代的又一个转折点。</p>",
+    "title": "AI恐慌引爆软件股崩盘：GPT-5.3与Claude Opus 4.6的“毁灭性”一周",
+    "subtitle": "从微软高管预言到xAI创始人辞职，硅谷正在经历“第四次工业革命”的阵痛",
+    "time": "12小时前",
+    "content": "<p><strong>【市场震荡】</strong> 上周，随着OpenAI的<strong>GPT-5.3 Codex</strong>和Anthropic的<strong>Claude Opus 4.6</strong>在2月5日同日发布，全球软件与SaaS板块遭遇了史无前例的“信任危机”。Salesforce、Adobe、Xero等行业巨头股价应声暴跌，投资者普遍担忧传统软件服务将被高能效AI彻底取代。</p><p><strong>【高管预警】</strong> 这种恐慌并非空穴来风。Microsoft AI负责人、DeepMind联合创始人<strong>Mustafa Suleyman</strong>在接受《金融时报》采访时抛出惊人言论：“律师、会计、项目经理等白领工作，将在未来12到18个月内被AI完全自动化。”与此同时，xAI联合创始人<strong>Jimmy Ba</strong>宣布辞职，并在离职感言中写道：“我们要进入100倍生产力的时代，递归自我改进循环将在未来12个月内上线。2026年将是人类历史上最疯狂的一年。”</p><p><strong>【深度观察】</strong> 知名AI创业者Matt Shumer的万字长文《Something Big is Happening》在科技圈疯传。他描述道：“我不再需要编写技术代码，我只需用英语描述，它就凭空出现了。”这种“无代码”的未来正在让资本市场重新评估所有基于“出售专业知识”的公司的价值。牛津大学教授Carl Benedikt Frey指出，AI将稀缺的专业知识转化为廉价产出，利润率将在岗位消失前就被压缩殆尽。</p>",
     "sources": [
-      {"name": "Reuters", "url": "https://www.reuters.com/world/china/chinese-ai-models-festoon-spring-festival-year-after-deepseek-shock-2026-02-14/"},
-      {"name": "SWE-Bench", "url": "https://www.marc0.dev/en/leaderboard"}
+      {
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com/technology/2026/feb/13/ai-effects-on-business-industry-evidence-to-allay-investor-fears"
+      },
+      {
+        "name": "ABC News",
+        "url": "https://www.abc.net.au/news/2026-02-16/ai-jobs-fake-breakthrough-resignation-chat-gpt-claude/106346440"
+      }
     ]
   },
   "news_list": [
     {
-      "icon": "⚖️",
-      "category": "伦理争议",
-      "title": "美军承认在委内瑞拉行动中使用 Claude，引发 AI 武器化担忧",
-      "meta": "The Guardian | 8小时前",
-      "body": "<p><strong>【事件曝光】</strong> 据《卫报》和《华尔街日报》报道，美国军方在针对委内瑞拉的军事行动中使用了 Anthropic 的 Claude 模型。这与其「Helper, Honest, Harmless」的品牌形象及禁止用于暴力、武器研发的服务条款（ToS）形成强烈冲突。</p><p><strong>【各方回应】</strong> Anthropic 发言人拒绝确认具体使用情况，但强调所有使用必须合规。五角大楼则表示，正在与多家 AI 公司合作，包括 xAI 和 Google。此事件再次引爆了关于「AI 军事化」的伦理讨论：当通用大模型被用于实战，技术中立的边界在哪里？</p>",
-      "source_name": "The Guardian",
-      "source_url": "https://www.theguardian.com/technology/2026/feb/14/us-military-anthropic-ai-model-claude-venezuela-raid"
+      "icon": "⚔️",
+      "category": "军事伦理",
+      "title": "五角大楼被曝使用Claude AI参与委内瑞拉抓捕行动",
+      "meta": "WSJ / Hindustan Times | 24小时前",
+      "body": "<p>据《华尔街日报》披露，美国军方在1月3日抓捕委内瑞拉总统马杜罗的行动中，使用了Anthropic开发的<strong>Claude AI</strong>模型。尽管Anthropic的使用政策明确禁止将其用于暴力或监视，但通过其合作伙伴<strong>Palantir</strong>，美军得以绕过部分限制在机密网络中部署该模型。报道称，五角大楼正向OpenAI和Anthropic施压，要求其开放更多无限制的模型用于军事用途。Anthropic目前估值已达3800亿美元。</p>",
+      "source_name": "Hindustan Times",
+      "source_url": "https://www.hindustantimes.com/world-news/us-used-anthropics-claude-ai-in-venezuela-raid-to-capture-nicolas-maduro-report-101771099084645.html"
     },
     {
-      "icon": "💰",
-      "category": "投融资",
-      "title": "豪赌未来：科技巨头 2026 财年 AI 资本支出狂飙至 7000 亿美元",
-      "meta": "Cyber News Centre | 1天前",
-      "body": "<p><strong>【天量投入】</strong> 微软、谷歌、亚马逊和 Meta 四大科技巨头在 2026 财年的 AI 资本支出（CapEx）总额预计将达到惊人的 <strong>7000 亿美元</strong>，同比激增 60%。这一数字已超过大多数中等国家的财政预算。</p><p><strong>【资金去向】</strong> 亚马逊计划投入 2000 亿美元，主要用于 AWS 基础设施和自研芯片；谷歌则为此发行了罕见的「百年债券」筹资。这不仅是技术的竞争，更是财力的比拼。市场分析认为，这场「军备竞赛」正从模型能力转向基础设施规模，谁能承担得起行星级的算力消耗，谁才能拿到通往 AGI 的门票。</p>",
-      "source_name": "Cyber News Centre",
-      "source_url": "https://www.cybernewscentre.com/the-700-billion-reckoning-why-tech-titans-are-betting-the-future-on-ai-and-borrowing-like-sovereigns-to-do-it/"
+      "icon": "📱",
+      "category": "端侧模型",
+      "title": "OpenBMB发布MiniCPM-o 4.5：90亿参数的端侧怪兽",
+      "meta": "OpenBMB | 近期发布",
+      "body": "<p>中国实验室OpenBMB发布了最新的开源模型<strong>MiniCPM-o 4.5</strong>。尽管仅有90亿参数，但该模型专为笔记本和手机等端侧设备设计，无需依赖昂贵的数据中心即可运行。这一发布再次引发了市场对“大模型 vs 端侧小模型”的讨论，如果高性能AI能在本地运行，目前基于云端的万亿参数模型（如Gemini 3 Flash）的算力投资逻辑可能面临挑战。</p>",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2026-02-16/ai-jobs-fake-breakthrough-resignation-chat-gpt-claude/106346440"
     },
     {
-      "icon": "🏆",
-      "category": "前沿研究",
-      "title": "SWE-Bench 2月榜单：Claude Opus 4.5 霸榜，国产 MiniMax 杀入前三",
-      "meta": "Marc0.dev | 7小时前",
-      "body": "<p><strong>【最新战况】</strong> 2026 年 2 月 SWE-Bench Verified 榜单出炉：<strong>Claude Opus 4.5</strong> 以 80.9% 的得分位居榜首，Opus 4.6 紧随其后。最令人惊喜的是国产模型 <strong>MiniMax M2.5</strong>，以 80.2% 的高分位列第三，且是前五名中唯一的开源权重模型。</p><p><strong>【趋势分析】</strong> 榜单显示，开源模型正在以惊人的速度缩小与闭源模型的差距。同时，Agent 框架（如 Droid, Codex CLI）对模型能力的加持作用日益明显，单纯的模型跑分已不足以说明问题，工程化落地能力成为关键。</p>",
-      "source_name": "Marc0.dev",
-      "source_url": "https://www.marc0.dev/en/leaderboard"
+      "icon": "🚶",
+      "category": "人才流动",
+      "title": "Anthropic安全研究主管辞职去写诗：世界处于危险之中",
+      "meta": "X (Twitter) | 2天前",
+      "body": "<p>Anthropic的安全研究主管<strong>Mrinank Sharma</strong>宣布辞职，理由令人深思。他在X上写道：“世界正处于危险之中……我们必须让智慧与改变世界的能力同步增长。”他表示将离开科技界，去学习诗歌并致力于“勇敢的言论”。这反映了AI前沿研究人员中日益增长的忧虑情绪。</p>",
+      "source_name": "ABC News",
+      "source_url": "https://www.abc.net.au/news/2026-02-16/ai-jobs-fake-breakthrough-resignation-chat-gpt-claude/106346440"
     }
   ],
   "stats": [
-    {"label": "CapEx", "value": "$700B", "color": "#c41e3a"},
-    {"label": "Opus 4.5", "value": "80.9%", "color": "#1e88e5"},
-    {"label": "M2.5", "value": "No.3", "color": "#00897b"},
-    {"label": "Cost", "value": "$1.30", "color": "#fb8c00"}
+    {
+      "label": "AI基建支出",
+      "value": "$660B",
+      "color": "#2563eb"
+    },
+    {
+      "label": "软件总营收",
+      "value": "$780B",
+      "color": "#16a34a"
+    },
+    {
+      "label": "Anthropic估值",
+      "value": "$380B",
+      "color": "#c41e3a"
+    },
+    {
+      "label": "自动化倒计时",
+      "value": "18mo",
+      "color": "#d97706"
+    }
   ],
   "review": [
-    "<strong>DeepSeek</strong><br>一周年：从黑马到标杆",
-    "<strong>Anthropic</strong><br>陷军事化争议",
-    "<strong>MiniMax</strong><br>开源模型全球第三"
+    "<strong>2月5日</strong><br>GPT-5.3 Codex与Claude Opus 4.6同日发布",
+    "<strong>2月13日</strong><br>Mustafa Suleyman预言白领工作18个月内被自动化",
+    "<strong>2月15日</strong><br>WSJ披露美军使用Claude参与马杜罗抓捕行动"
   ]
 }
