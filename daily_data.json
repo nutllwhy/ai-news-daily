@@ -1,55 +1,53 @@
 {
-  "date_str": "2026年2月17日 星期二 | 农历正月初一",
-  "date_full": "2026年2月17日 星期二",
-  "issue_no": "第 048 期",
+  "date_str": "2026年2月18日 星期三 | 农历正月初一",
+  "date_full": "2026年2月18日 星期三",
+  "issue_no": "第 049 期",
   "headline": {
-    "title": "全球AI巨头齐聚新德里：印度打造\"AI达沃斯\"",
-    "subtitle": "OpenAI、Google、Anthropic CEO悉数出席，印度欲借10亿美金基金重塑全球AI版图",
-    "time": "12小时前",
-    "content": "<p><strong>【新德里现场】</strong> 本周，全球科技界的目光并未投向硅谷，而是聚焦于印度新德里。一场被誉为\"AI界达沃斯\"的盛会——<strong>India AI Impact Summit 2026</strong> 正式拉开帷幕。包括 <strong>Sam Altman (OpenAI)</strong>、<strong>Sundar Pichai (Google)</strong>、<strong>Dario Amodei (Anthropic)</strong> 和 <strong>Demis Hassabis (DeepMind)</strong> 在内的顶级AI掌门人罕见同台，与印度总理莫迪及法国总统马克龙共商AI未来。</p><h3>10亿美金的国家豪赌</h3><p>会上最重磅的消息莫过于印度政府宣布启动 <strong>11亿美元（约80亿人民币）</strong> 的国家级风投基金，专门用于扶持本土AI和先进制造业初创公司。这一举措标志着印度不再满足于做西方的\"IT后勤部\"，而是要争夺AI时代的定义权。与此同时，黑石集团（Blackstone）领投了印度AI初创公司 Neysa 的 <strong>6亿美元</strong> 股权融资，显示出国际资本对印度AI算力基建的疯狂押注。</p><h3>\"下一个中国\"还是\"AI大工厂\"？</h3><p>Sam Altman 在会上透露了一个惊人数据：<strong>印度已拥有超过1亿的ChatGPT周活跃用户</strong>，仅次于美国。这不仅意味着巨大的市场，更意味着海量的数据红利。然而，Khosla Ventures 创始人 Vinod Khosla 却给印度的传统IT外包行业泼了一盆冷水，他预言：<strong>\"由于AI的冲击，IT服务和BPO（业务流程外包）行业可能在五年内几近消失。\"</strong> 印度能否从\"代码代工厂\"成功转型为\"AI创新中心\"，这场峰会或许就是转折点。</p>",
+    "title": "五角大楼施压硅谷：AI军事化分歧升级",
+    "subtitle": "Anthropic坚守底线，拒绝“所有合法用途”条款，OpenAI等巨头卷入博弈",
+    "time": "9小时前",
+    "content": "<p><strong>【华盛顿突发】</strong>美国国防部与硅谷AI巨头的关系陷入冰点。据Axios与CNBC报道，五角大楼正向Anthropic、OpenAI、Google及xAI四大模型厂商施压，要求其签署新协议，允许军方将AI模型用于“所有合法用途”（all lawful purposes），这直接触及了武器研发、情报收集及战场作战等敏感领域。</p><p><strong>Anthropic成为主要阻力点。</strong>这家以“宪法AI”和安全性著称的公司，明确拒绝了五角大楼的全面授权要求。消息人士透露，谈判已持续数月，五角大楼对此感到“厌倦”，甚至威胁切断合作。Anthropic发言人回应称，双方分歧主要集中在“完全自主武器”和“大规模国内监控”等硬性底线上，目前的讨论并未涉及具体作战行动。</p><h3>伦理与现实的碰撞</h3><p>与此同时，据《华尔街日报》披露，Anthropic的Claude模型实际上已通过Palantir的平台，被用于美军抓捕委内瑞拉前总统马杜罗的行动中。这一事实让“拒绝军事化”的立场显得复杂而微妙。路透社进一步报道称，五角大楼还要求这些公司在机密网络上部署模型，并移除大部分针对普通用户的安全限制。</p><p><strong>深度分析：</strong>这不仅是一场合同纠纷，更是AI发展史上的分水岭。军方需要最先进的AI来维持战略优势，而科技公司则面临员工抗议、公众舆论及自身伦理准则的三重压力。硅谷是否会最终向国家安全让步？Anthropic的抵抗能坚持多久？这将决定未来AI是人类的助手，还是战场的主宰。</p>",
     "sources": [
-      {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/16/all-the-important-news-from-the-ongoing-india-ai-summit/"},
-      {"name": "Reuters", "url": "https://www.reuters.com/business/retail-consumer/openai-google-india-hosts-global-ai-summit-2026-02-16/"}
+      {"name": "CNBC", "url": "https://www.cnbc.com/2026/02/16/pentagon-threatens-anthropic-ai-safeguards-dispute.html"},
+      {"name": "Axios", "url": "https://www.axios.com/2026/02/15/claude-pentagon-anthropic-contract-maduro"}
     ]
   },
   "news_list": [
     {
-      "icon": "🎥",
-      "category": "行业争议",
-      "title": "好莱坞对决字节跳动：Seedance 2.0 引发版权风暴",
-      "meta": "TechStory | 10小时前",
-      "body": "<p><strong>【版权大战一触即发】</strong> 字节跳动（TikTok母公司）近期低调发布的AI视频生成模型 <strong>Seedance 2.0</strong> 正在好莱坞引发一场地震。该模型已集成在中国版剪映（Jianying）中，并计划推向全球 CapCut 用户。</p><p>与 OpenAI 的 Sora 类似，Seedance 2.0 能通过文本生成高质量的15秒视频。但争议点在于其惊人的\"模仿能力\"——社交媒体上疯传着由该模型生成的汤姆·克鲁斯与布拉德·皮特对打的视频，逼真程度令人咋舌。</p><p><strong>迪士尼（Disney）</strong> 和 <strong>派拉蒙（Paramount）</strong> 已火速发送了停只有信（Cease-and-Desist），指责该模型\"虚拟抢劫\"了他们的IP库。美国电影协会（MPA）CEO Charles Rivkin 更是直言，这种无护栏的大规模发布是对版权法的公然践踏。这不仅仅是一个产品的发布，更是硅谷/中国科技圈与好莱坞传统内容产业在生成式AI时代的第一次正面且激烈的交锋。</p>",
-      "source_name": "TechStory",
-      "source_url": "https://techstory.in/why-hollywood-is-sounding-the-alarm-on-seedance-2-0/"
+      "icon": "🐲",
+      "category": "中国AI爆发",
+      "title": "春节前夕国产模型集体“亮剑”",
+      "meta": "Euronews | 11小时前",
+      "body": "<p>在中国农历新年前夕，科技巨头们掀起了一轮发布狂潮。<strong>阿里巴巴</strong>发布了<strong>Qwen 3.5</strong>，号称比上一代便宜60%，Agent部署速度快5倍，并在3D游戏生成和医疗影像分析上表现出色。<strong>字节跳动</strong>推出了<strong>Doubao 2.0</strong>（推理能力对标GPT-4）和<strong>SeeDance 2.0</strong>（视频生成工具，因版权问题遭美国电影协会MPA抗议）。<strong>智谱AI</strong>则开源了<strong>GLM-5</strong>，主打Agent智能和长流程推理，且完全基于华为Ascend芯片训练，实现了算力自主。行业还在屏息以待DeepSeek V4的发布。</p>",
+      "source_name": "Euronews",
+      "source_url": "https://www.euronews.com/next/2026/02/17/these-are-chinas-new-ai-models-that-have-just-been-released-ahead-of-the-lunar-new-year"
     },
     {
-      "icon": "🛡️",
-      "category": "新工具",
-      "title": "XBOW：AI渗透测试进入\"自动驾驶\"时代",
-      "meta": "NetworkIntelligence | 12小时前",
-      "body": "<p>网络安全领域迎来新玩家。<strong>XBOW</strong> 被评为2026年顶级AI渗透测试工具，它不仅能发现漏洞，还能像人类黑客一样利用漏洞。目前的限制是主要集中在Web应用，但计划在2026年内扩展到API和移动端测试。这标志着网络安全攻防战正式进入\"AI对AI\"的阶段。</p>",
-      "source_name": "NetworkIntelligence",
-      "source_url": "https://www.networkintelligence.ai/top-ai-pentesting-tools"
+      "icon": "🛠️",
+      "category": "开源工具",
+      "title": "Agoda开源APIAgent：零代码连接MCP",
+      "meta": "MarkTechPost | 16小时前",
+      "body": "<p>旅游巨头Agoda开源了<strong>APIAgent</strong>，这是一款旨在解决“集成税”问题的工具。它能将任何REST或GraphQL API直接转换为<strong>MCP（Model Context Protocol）服务器</strong>，且无需编写代码。通过读取OpenAPI规范，APIAgent自动生成LLM可用的工具，并内置DuckDB用于本地SQL数据处理。这意味着开发者可以瞬间让Claude或GPT-4连接上千个内部API，极大降低了企业落地AI Agent的门槛。</p>",
+      "source_name": "MarkTechPost",
+      "source_url": "https://www.marktechpost.com/2026/02/16/agoda-open-sources-apiagent-to-convert-any-rest-pr-graphql-api-into-an-mcp-server-with-zero-code/"
     },
     {
-      "icon": "🏠",
-      "category": "大厂动态",
-      "title": "Anthropic 进军亚洲：首个印度办事处落户班加罗尔",
-      "meta": "TechCrunch | 10小时前",
-      "body": "<p>作为全球扩张的一部分，<strong>Anthropic</strong> 宣布在印度科技中心班加罗尔开设首个办事处。官方数据显示，印度已成为 Claude 的第二大用户市场，仅次于美国。此举被视为对 OpenAI 在该地区主导地位的直接挑战。</p>",
-      "source_name": "TechCrunch",
-      "source_url": "https://techcrunch.com/2026/02/16/all-the-important-news-from-the-ongoing-india-ai-summit/"
+      "icon": "📉",
+      "category": "DeepSeek效应",
+      "title": "DeepSeek V3 成本仅600万美元",
+      "meta": "Wikipedia | 12小时前",
+      "body": "<p>DeepSeek披露其V3模型的训练成本仅为<strong>558万美元</strong>（约合600万美元），远低于OpenAI GPT-4据称的1亿美元成本。且其推理算力消耗仅为Meta Llama 3.1的十分之一。这种极致的“性价比”曾引发英伟达股价单日暴跌17%，市值蒸发6000亿美元。市场正密切关注即将发布的V4版本是否会进一步颠覆算力经济学。</p>",
+      "source_name": "Wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/DeepSeek"
     }
   ],
   "stats": [
-    {"label": "ChatGPT印度周活", "value": "1亿+", "color": "#10a37f"},
-    {"label": "印度AI基金规模", "value": "$1.1B", "color": "#f59e0b"},
-    {"label": "Neysa融资额", "value": "$600M", "color": "#3b82f6"},
-    {"label": "Seedance视频时长", "value": "15s", "color": "#ef4444"}
+    {"label": "DeepSeek V3成本", "value": "$600万", "color": "#2ecc71"},
+    {"label": "Qwen 3.5降本", "value": "60%", "color": "#e67e22"},
+    {"label": "英伟达曾跌", "value": "-17%", "color": "#c41e3a"}
   ],
   "review": [
-    "<strong>2月17日</strong><br>印度举办全球AI影响力峰会，巨头云集",
-    "<strong>2月16日</strong><br>字节跳动发布Seedance 2.0，好莱坞抗议",
-    "<strong>2月15日</strong><br>黑石集团领投印度AI创企Neysa"
+    "<strong>2月17日</strong><br>国产AI模型井喷发布",
+    "<strong>2月16日</strong><br>五角大楼施压Anthropic"
   ]
 }
