@@ -1,44 +1,44 @@
 {
-  "date_str": "2026年2月19日 星期四 | 农历正月初二",
-  "date_full": "2026年2月19日 星期四",
-  "issue_no": "第 020 期",
+  "date_str": "2026年2月20日 星期五 | 农历正月初三",
+  "date_full": "2026年2月20日 星期五",
+  "issue_no": "第 021 期",
   "headline": {
-    "title": "Anthropic 发布 Claude Sonnet 4.6：定义 AI \"新中产\" 标准",
-    "subtitle": "性能对标旗舰 Opus，成本仅需五分之一，SaaS 巨头股价应声下跌",
+    "title": "印度 AI 峰会\"全明星\"阵容：地缘博弈下的\"尴尬\"合影",
+    "subtitle": "Modi 做东，OpenAI 与 Anthropic CEO 同台却拒绝握手，AI 冷战浮出水面",
     "time": "5小时前",
-    "content": "<p><strong>【核心突破】</strong> 2026年2月17日，Anthropic 正式发布 Claude Sonnet 4.6，被誉为 AI 领域的\"新中产\"革命。这款模型在性能上几乎追平了仅发布数日的旗舰模型 Opus 4.6，但使用成本仅为其 20%。其核心亮点在于引入了<strong>\"自适应思维引擎\"（Adaptive Thinking Engine）</strong>，能够根据任务复杂度动态调整推理深度（从 Low 到 Max），并支持内部思维链监控，大幅降低了多步推理中的幻觉率。</p><h3>📉 市场震荡：SaaS 行业大地震</h3><p>Sonnet 4.6 的发布引发了资本市场的剧烈反应。由于其在复杂任务自动化（如税务处理、CRM 管理）上的卓越表现，市场担忧传统 SaaS 软件将被 AI Agent 取代。发布当天，Salesforce (-2.7%)、Intuit (-5.2%) 和 Adobe (-1.4%) 股价全线下挫。分析师认为，Sonnet 4.6 以极低的成本实现了企业级自动化，标志着\"白领工作自动化\"进入了深水区。</p><h3>📊 关键数据：性价比之王</h3><ul><li><strong>成本：</strong> 输入 $3 / 输出 $15（每百万 token），仅为 Opus 的 1/5。</li><li><strong>能力：</strong> SWE-bench 编程得分 79.6%，仅次于 GPT-5.2；OSWorld 计算机操作得分 72.5%，是上一代的 5 倍。</li><li><strong>生态：</strong> Snowflake 已宣布扩大 $2 亿合作，将在 Cortex AI 中集成该模型。</li></ul><p><strong>【栗噔噔锐评】</strong> Anthropic 这一刀切得很准。在大家都卷\"地表最强\"的时候，它卷出了\"最强性价比\"。对于开发者和企业来说，90% 的场景不需要昂贵的旗舰模型，一个\"聪明且便宜\"的实干家才是刚需。SaaS 巨头的护城河，正在被这些每百万 token 只要 3 美元的\"数字员工\"填平。</p>",
+    "content": "<p><strong>【核心现场】</strong> 2026年2月19日，新德里成为了全球 AI 权力的中心。印度总理莫迪主持召开了<strong>\"印度 AI 影响力峰会 2026\" (India AI Impact Summit)</strong>，汇聚了 OpenAI CEO Sam Altman、Anthropic CEO Dario Amodei、Google CEO Sundar Pichai 以及法国总统马克龙等重量级人物。然而，聚光灯下最引人注目的并非技术突破，而是一场无声的较量。</p><h3>🥶 尴尬瞬间：拒绝握手</h3><p>在领导人合影环节，当莫迪总理试图举起 Altman 和 Amodei 的手以示团结时，这两位昔日的同事、如今的死对头却默契地选择了<strong>\"拒绝牵手\"</strong>，仅举起拳头示意，全程无眼神交流。这一幕被媒体解读为硅谷 AI 巨头分裂的缩影，也折射出近期双方在商业战场上的白热化竞争——就在两周前，Anthropic 在超级碗广告中公开讽刺 OpenAI 的广告策略。</p><h3>🌍 地缘博弈：AI 冷战升级</h3><p>法国总统马克龙在会上直言不讳地指出：<strong>\"AI 已成为战略竞争的主要领域\"</strong>。他提到一年前 AI 格局开始转变，美国宣布了 Stargate 计划，而中国推出了 DeepSeek，世界正在形成新的技术对立。此次峰会虽然打着\"全球南方\"的旗号，实则是各方势力争夺印度这一巨大市场和人才库的角力场。</p><h3>💰 关键承诺：印度成必争之地</h3><ul><li><strong>OpenAI：</strong> 宣布与塔塔咨询服务公司 (TCS) 合作，并称印度将是其最大的市场之一。</li><li><strong>Anthropic：</strong> 刚刚在班加罗尔开设办事处，任命前微软高管 Irina Ghose 为印度区负责人。</li><li><strong>Google：</strong> 宣布\"美印连接\"计划，将建设连接两国的海底光缆，夯实算力基础设施。</li></ul><p><strong>【栗噔噔锐评】</strong> 这张尴尬的合影不仅是两个 CEO 的私人恩怨，更是 AI 时代\"战国策\"的写照。印度凭借其庞大的数据和工程师红利，正在成为兵家必争之地。而对于 Altman 和 Amodei 来说，曾经并肩作战的理想主义早已让位于残酷的市场份额争夺。技术没有国界，但技术公司有。</p>",
     "sources": [
-      {"name": "FinancialContent", "url": "https://markets.financialcontent.com/stocks/article/tokenring-2026-2-18-anthropic-unleashes-claude-sonnet-46-the-workhorse-ai-model-that-outpaces-flagships-and-ignites-the-agentic-revolution"},
-      {"name": "VentureBeat", "url": "https://venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost"}
+      {"name": "Times of India", "url": "https://timesofindia.indiatimes.com/technology/tech-news/india-ai-impact-summit-2026-live-updates-new-delhi-pm-narendra-modi-bharat-mandapam-niti-aayog-global-tech-leaders/liveblog/128492166.cms"},
+      {"name": "Fortune", "url": "https://fortune.com/2026/02/19/openai-anthropic-sam-altman-dario-amodei-refused-to-hold-hands-ai-super-bowl-ad-war-ceos-big-tech-conflict/"}
     ]
   },
   "news_list": [
     {
-      "icon": "🎭",
-      "category": "行业闹剧",
-      "title": "印度 AI 峰会尴尬一幕：大学展出\"套壳\"中国机器人被驱逐",
-      "meta": "Reuters | 14小时前",
-      "body": "<p>在正在新德里举行的<strong>\"印度 AI 影响力峰会 2026\" (India AI Impact Summit)</strong> 上发生了一起尴尬事件。一家印度大学在展台上展示了一款据称是自主研发的机器人，结果被现场专家和媒体发现，该机器人实际上是中国某厂商的成熟产品，仅仅是贴了牌。主办方随即要求该大学撤展并离开峰会。此次峰会汇聚了 OpenAI CEO Sam Altman、Google CEO Sundar Pichai 等大佬，本意是展示\"全球南方\"的 AI 实力，此插曲引发了关于技术自主性的热议。</p>",
-      "source_name": "Reuters",
-      "source_url": "https://www.reuters.com/world/china/india-tells-university-leave-ai-summit-after-presenting-chinese-robot-its-own-2026-02-18/"
+      "icon": "🥊",
+      "category": "行业八卦",
+      "title": "从超级碗打到新德里：OpenAI vs Anthropic 的恩怨情仇",
+      "meta": "Fortune | 6小时前",
+      "body": "<p>Altman 和 Amodei 在新德里的冷淡并非空穴来风。两周前的超级碗上，Anthropic 投放了一组名为<strong>\"A Time and a Place\"</strong>的广告，直接讽刺 ChatGPT 开始植入广告的行为，打出标语：<strong>\"Ads are coming to AI. But not to Claude.\"（广告正在入侵 AI，但 Claude 除外）</strong>。Altman 随即在 X 上反击，指责 Anthropic \"双标\"且\"不诚实\"。这对曾经的师徒（Amodei 曾任 OpenAI 研究副总裁）如今已彻底决裂。</p>",
+      "source_name": "Fortune",
+      "source_url": "https://fortune.com/2026/02/19/openai-anthropic-sam-altman-dario-amodei-refused-to-hold-hands-ai-super-bowl-ad-war-ceos-big-tech-conflict/"
     },
     {
-      "title": "Google 发布 2026 负责任 AI 报告：从探索走向集成",
-      "icon": "📘",
+      "title": "Google 押注基建：连接美印的 AI 动脉",
+      "icon": "🌐",
       "category": "大厂动态",
-      "meta": "Google Blog | 10小时前",
-      "body": "<p>Google 发布年度重磅报告，强调 AI 发展已从\"探索期\"进入\"集成期\"。报告重点展示了 AI 在解决全球性挑战上的落地成果：<strong>洪水预报系统</strong>已覆盖 7 亿人口，<strong>AlphaGenome</strong> 正在解码人类基因组图谱，以及 <strong>ARDA</strong> 项目在筛查糖尿病视网膜病变上的突破。Google 强调，负责任的 AI 不仅仅是\"防止坏事发生\"，更是要\"确保技术红利惠及所有人\"。</p>",
-      "source_name": "Google Blog",
-      "source_url": "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/"
+      "meta": "TOI | 10小时前",
+      "body": "<p>Google CEO Sundar Pichai 在峰会上强调，不能让\"数字鸿沟\"演变为\"AI 鸿沟\"。为此，Google 宣布了一项名为<strong>\"America-India Connect\"</strong>的宏大计划，包括建设四条新的海底光缆系统直接连接美国和印度。这一举措旨在为印度提供强大的算力和数据传输能力，确保其在 AI 时代的基础设施不掉队。此举也被视为对抗中国在数字基建领域影响力的重要一步。</p>",
+      "source_name": "Times of India",
+      "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/india-ai-impact-summit-2026-live-updates-new-delhi-pm-narendra-modi-bharat-mandapam-niti-aayog-global-tech-leaders/liveblog/128492166.cms"
     }
   ],
   "stats": [
-    {"label": "Sonnet 4.6 成本", "value": "$3/1M", "color": "#2ecc71"},
-    {"label": "SWE-bench", "value": "79.6%", "color": "#3498db"},
-    {"label": "Intuit 跌幅", "value": "-5.2%", "color": "#e74c3c"}
+    {"label": "印度AI投资预期", "value": "$200B", "color": "#27ae60"},
+    {"label": "Anthropic估值", "value": "$380B", "color": "#8e44ad"},
+    {"label": "印度数字支付", "value": "20B/月", "color": "#2980b9"}
   ],
   "review": [
-    "<strong>2月18日</strong><br>Anthropic Sonnet 4.6 发布",
-    "<strong>2月18日</strong><br>印度 AI 峰会召开"
+    "<strong>2月19日</strong><br>印度 AI 影响力峰会开幕",
+    "<strong>2月9日</strong><br>Anthropic 超级碗广告嘲讽 OpenAI"
   ]
 }
