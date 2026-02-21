@@ -1,44 +1,62 @@
 {
-  "date_str": "2026年2月20日 星期五 | 农历正月初三",
-  "date_full": "2026年2月20日 星期五",
-  "issue_no": "第 021 期",
+  "date_str": "2026年2月21日 星期六 | 农历正月初四",
+  "date_full": "2026年2月21日 星期六",
+  "issue_no": "第 022 期",
   "headline": {
-    "title": "印度 AI 峰会\"全明星\"阵容：地缘博弈下的\"尴尬\"合影",
-    "subtitle": "Modi 做东，OpenAI 与 Anthropic CEO 同台却拒绝握手，AI 冷战浮出水面",
-    "time": "5小时前",
-    "content": "<p><strong>【核心现场】</strong> 2026年2月19日，新德里成为了全球 AI 权力的中心。印度总理莫迪主持召开了<strong>\"印度 AI 影响力峰会 2026\" (India AI Impact Summit)</strong>，汇聚了 OpenAI CEO Sam Altman、Anthropic CEO Dario Amodei、Google CEO Sundar Pichai 以及法国总统马克龙等重量级人物。然而，聚光灯下最引人注目的并非技术突破，而是一场无声的较量。</p><h3>🥶 尴尬瞬间：拒绝握手</h3><p>在领导人合影环节，当莫迪总理试图举起 Altman 和 Amodei 的手以示团结时，这两位昔日的同事、如今的死对头却默契地选择了<strong>\"拒绝牵手\"</strong>，仅举起拳头示意，全程无眼神交流。这一幕被媒体解读为硅谷 AI 巨头分裂的缩影，也折射出近期双方在商业战场上的白热化竞争——就在两周前，Anthropic 在超级碗广告中公开讽刺 OpenAI 的广告策略。</p><h3>🌍 地缘博弈：AI 冷战升级</h3><p>法国总统马克龙在会上直言不讳地指出：<strong>\"AI 已成为战略竞争的主要领域\"</strong>。他提到一年前 AI 格局开始转变，美国宣布了 Stargate 计划，而中国推出了 DeepSeek，世界正在形成新的技术对立。此次峰会虽然打着\"全球南方\"的旗号，实则是各方势力争夺印度这一巨大市场和人才库的角力场。</p><h3>💰 关键承诺：印度成必争之地</h3><ul><li><strong>OpenAI：</strong> 宣布与塔塔咨询服务公司 (TCS) 合作，并称印度将是其最大的市场之一。</li><li><strong>Anthropic：</strong> 刚刚在班加罗尔开设办事处，任命前微软高管 Irina Ghose 为印度区负责人。</li><li><strong>Google：</strong> 宣布\"美印连接\"计划，将建设连接两国的海底光缆，夯实算力基础设施。</li></ul><p><strong>【栗噔噔锐评】</strong> 这张尴尬的合影不仅是两个 CEO 的私人恩怨，更是 AI 时代\"战国策\"的写照。印度凭借其庞大的数据和工程师红利，正在成为兵家必争之地。而对于 Altman 和 Amodei 来说，曾经并肩作战的理想主义早已让位于残酷的市场份额争夺。技术没有国界，但技术公司有。</p>",
+    "title": "Moonshot AI 再造“DeepSeek时刻”？Kimi K2 逼近 GPT-5.1",
+    "subtitle": "训练成本仅 460 万美元，中国 AI 模型以低成本挑战硅谷霸主",
+    "time": "12小时前",
+    "content": "<p><strong>中国 AI 模型再次震惊硅谷。</strong>北京初创公司 Moonshot AI（月之暗面）发布的 Kimi K2 Thinking 模型，在 Artificial Analysis 的智能指数排行榜上跃居第二，仅次于 OpenAI 的 <strong>GPT-5.1</strong>，甚至在部分复杂 Agent 任务上超越了 OpenAI。更令人咋舌的是，据 CNBC 报道，该模型的训练成本仅为 <strong>460 万美元</strong>——这与硅谷动辄数亿美元的投入形成鲜明对比。</p><h3>常态化的“DeepSeek 时刻”？</h3><p>Hugging Face 联合创始人 Thomas Wolf 发问：“这是另一个 DeepSeek 时刻吗？” 答案似乎是肯定的。继 DeepSeek 在一月份引发英伟达市值蒸发 6000 亿美元后，Kimi K2 的崛起进一步证明，中国实验室正以惊人的效率缩小与美国顶尖模型的差距。尽管受到芯片限制，但通过算法优化和数据筛选，中国 AI 正走出一条“高智商、低消耗”的独特道路。</p><h3>资本市场的冷思考</h3><p>虽然技术上紧追猛赶，但估值差距依然巨大。Moonshot AI 最新估值约 33 亿美元，而 OpenAI 已达 5000 亿美元。分析师指出，这可能意味着美国科技巨头的巨额资本支出（Capex）面临回报率拷问——如果 460 万美元能做到 90% 的效果，为什么还要花 10 亿美元？这一逻辑正在重塑全球 AI 投资版图。</p>",
     "sources": [
-      {"name": "Times of India", "url": "https://timesofindia.indiatimes.com/technology/tech-news/india-ai-impact-summit-2026-live-updates-new-delhi-pm-narendra-modi-bharat-mandapam-niti-aayog-global-tech-leaders/liveblog/128492166.cms"},
-      {"name": "Fortune", "url": "https://fortune.com/2026/02/19/openai-anthropic-sam-altman-dario-amodei-refused-to-hold-hands-ai-super-bowl-ad-war-ceos-big-tech-conflict/"}
+      {"name": "Bloomberg", "url": "https://www.livemint.com/technology/are-deepseek-moments-now-the-new-normal-11771585662215.html"}
     ]
   },
   "news_list": [
     {
-      "icon": "🥊",
-      "category": "行业八卦",
-      "title": "从超级碗打到新德里：OpenAI vs Anthropic 的恩怨情仇",
-      "meta": "Fortune | 6小时前",
-      "body": "<p>Altman 和 Amodei 在新德里的冷淡并非空穴来风。两周前的超级碗上，Anthropic 投放了一组名为<strong>\"A Time and a Place\"</strong>的广告，直接讽刺 ChatGPT 开始植入广告的行为，打出标语：<strong>\"Ads are coming to AI. But not to Claude.\"（广告正在入侵 AI，但 Claude 除外）</strong>。Altman 随即在 X 上反击，指责 Anthropic \"双标\"且\"不诚实\"。这对曾经的师徒（Amodei 曾任 OpenAI 研究副总裁）如今已彻底决裂。</p>",
-      "source_name": "Fortune",
-      "source_url": "https://fortune.com/2026/02/19/openai-anthropic-sam-altman-dario-amodei-refused-to-hold-hands-ai-super-bowl-ad-war-ceos-big-tech-conflict/"
+      "icon": "🗣️",
+      "category": "行业声音",
+      "title": "Sam Altman 炮轰企业“AI 洗绿”裁员",
+      "meta": "Times of India | 20小时前",
+      "body": "<p>OpenAI CEO Sam Altman 在印度 AI 峰会上直言，许多公司正在进行<strong>“AI 洗绿”（AI washing）</strong>——即把常规的成本削减和裁员归咎于 AI，以掩盖管理层过度招聘或战略失误的真相。数据显示，2026 年 1 月美国裁员数创 2009 年以来新高（超 10 万人），但只有约 7600 人被明确归因于 AI。Altman 警告，真正的 AI 就业替代潮尚未到来，目前更多是企业借 AI 之名行“降本”之实。</p>",
+      "source_name": "TOI",
+      "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/openai-ceo-sam-altman-calls-out-tech-companies-for-mass-layoffs-says-cant-blame-everything-on-/articleshow/128590154.cms"
     },
     {
-      "title": "Google 押注基建：连接美印的 AI 动脉",
-      "icon": "🌐",
-      "category": "大厂动态",
-      "meta": "TOI | 10小时前",
-      "body": "<p>Google CEO Sundar Pichai 在峰会上强调，不能让\"数字鸿沟\"演变为\"AI 鸿沟\"。为此，Google 宣布了一项名为<strong>\"America-India Connect\"</strong>的宏大计划，包括建设四条新的海底光缆系统直接连接美国和印度。这一举措旨在为印度提供强大的算力和数据传输能力，确保其在 AI 时代的基础设施不掉队。此举也被视为对抗中国在数字基建领域影响力的重要一步。</p>",
-      "source_name": "Times of India",
-      "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/india-ai-impact-summit-2026-live-updates-new-delhi-pm-narendra-modi-bharat-mandapam-niti-aayog-global-tech-leaders/liveblog/128492166.cms"
+      "icon": "⚠️",
+      "category": "安全警示",
+      "title": "DeepMind 掌门人呼吁“紧急研究” AI 威胁",
+      "meta": "BBC | 13小时前",
+      "body": "<p>Google DeepMind 创始人 Sir Demis Hassabis 在德里峰会上表示，必须对 AI 的潜在威胁进行<strong>“紧急研究”</strong>。他指出了两大核心风险：一是被坏人利用，二是随着系统变强而失去控制。有趣的是，美国白宫代表明确拒绝了“全球 AI 治理”的提议，主张避免官僚主义阻碍创新，这与英国和欧盟的立场形成鲜明对比。</p>",
+      "source_name": "BBC",
+      "source_url": "https://www.bbc.com/news/articles/c0q3g0ln274o"
+    },
+    {
+      "icon": "🚀",
+      "category": "模型前沿",
+      "title": "阿里 Qwen-3.5 旗舰模型蓄势待发",
+      "meta": "DQ India | 18小时前",
+      "body": "<p>据彭博社消息，阿里巴巴将在未来几周内发布其旗舰模型 <strong>Qwen-3.5</strong>。此前 Qwen 系列在开源界口碑极佳，新版本预计将进一步提升推理能力和上下文长度，与 Kimi K2 和 DeepSeek 共同构成中国 AI 的“三驾马车”，在国际舞台上围剿闭源模型。</p>",
+      "source_name": "DQ India",
+      "source_url": "https://www.dqindia.com/esdm/deepseek-expands-context-ten-fold-as-zhipu-rolls-out-new-model-in-chinas-ai-race-11134555"
+    },
+    {
+      "icon": "🛍️",
+      "category": "应用落地",
+      "title": "ASOS 推出混合 AI 虚拟试穿功能",
+      "meta": "Retail Tech | 17小时前",
+      "body": "<p>时尚电商 ASOS 推出了一项新的 AI 虚拟试穿功能。不同于以往简单的贴图，该技术允许用户上传自己的照片，或者选择一个与自己身材相似的 AI 生成模特，来查看衣服的上身效果。这是生成式 AI 在电商领域从“噱头”走向“实用”的又一例证。</p>",
+      "source_name": "Retail Tech",
+      "source_url": "https://retailtechinnovationhub.com/home/2026/2/19/ai-driven-experiences-transform-online-shopping-this-weeks-biggest-retail-technology-stories"
     }
   ],
   "stats": [
-    {"label": "印度AI投资预期", "value": "$200B", "color": "#27ae60"},
-    {"label": "Anthropic估值", "value": "$380B", "color": "#8e44ad"},
-    {"label": "印度数字支付", "value": "20B/月", "color": "#2980b9"}
+    {"label": "Kimi K2 成本", "value": "$4.6M", "color": "#2ecc71"},
+    {"label": "一月裁员", "value": "10.8万", "color": "#e74c3c"},
+    {"label": "OpenAI 估值", "value": "$500B", "color": "#3498db"}
   ],
   "review": [
-    "<strong>2月19日</strong><br>印度 AI 影响力峰会开幕",
-    "<strong>2月9日</strong><br>Anthropic 超级碗广告嘲讽 OpenAI"
+    "<strong>2月20日</strong><br>Sam Altman 印度峰会遭遇尴尬合影",
+    "<strong>2月19日</strong><br>Sora 2.0 传闻引发影视股震荡",
+    "<strong>2月18日</strong><br>NYT: AI 软件开发进入“趣味时代”"
   ]
 }

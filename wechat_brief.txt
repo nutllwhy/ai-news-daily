@@ -1,22 +1,25 @@
-【2026-02-20 栗噔噔AI早报】
+【2026-02-21 栗噔噔AI早报】
 
-各位早上好！今天是2月20日星期五。印度AI峰会上，OpenAI与Anthropic两大巨头CEO的尴尬同框成为焦点，地缘政治与商业竞争交织下的AI版图正在重塑。
+各位早上好！DeepSeek时刻似乎正在常态化，Moonshot AI 发布 Kimi K2 Thinking，以不到500万美元的成本紧追 OpenAI 的 GPT-5.1。Sam Altman 也在印度峰会上炮轰企业借 AI 之名“洗绿”裁员。
 
 🚨 头版头条
-1. 印度 AI 峰会"全明星"阵容：地缘博弈下的"尴尬"合影
-新德里峰会汇聚了OpenAI、Anthropic、Google等巨头CEO。然而，最受关注的是Sam Altman与Dario Amodei拒绝握手的尴尬瞬间，折射出双方在超级碗广告战后的紧张关系。法国总统马克龙直言"AI已成战略竞争主战场"，各大厂纷纷加码印度市场。
+1. Moonshot AI 再造“DeepSeek时刻”？Kimi K2 逼近 GPT-5.1
+Moonshot AI 发布 Kimi K2 Thinking 模型，智能指数仅次于 GPT-5.1，且在部分任务上反超。令人震惊的是其训练成本仅 460 万美元，远低于硅谷巨头。这引发了资本市场对高额 AI 投资回报率的重新思考。
 
-🥊 行业八卦
-2. 从超级碗打到新德里：OpenAI vs Anthropic 的恩怨情仇
-两周前Anthropic投放广告讽刺ChatGPT植入广告的行为，标语直指"广告入侵AI但Claude除外"。Altman反击称其不诚实。这对昔日师徒如今在新德里形同陌路，商业竞争白热化。
+💬 行业声音
+2. Sam Altman 炮轰企业“AI 洗绿”裁员
+OpenAI CEO 指出许多公司将常规裁员归咎于 AI，以掩盖管理失误。虽然 AI 确实会取代部分工作，但目前的裁员潮更多是企业借机“降本”。
 
-🌐 大厂动态
-3. Google 押注基建：连接美印的 AI 动脉
-Google CEO Sundar Pichai宣布"America-India Connect"计划，将建设四条海底光缆连接美印，旨在夯实印度的算力基础设施，防止出现数字鸿沟。
+⚠️ 安全警示
+3. DeepMind 掌门人呼吁“紧急研究” AI 威胁
+Demis Hassabis 警告必须紧急研究 AI 的潜在威胁，包括被坏人利用和失控风险。美国白宫则拒绝全球治理，主张避免官僚主义。
 
-📊 今日数据
-- 印度AI投资预期：$200B
-- Anthropic最新估值：$380B
-- 印度数字支付月交易量：20B
+🚀 模型前沿
+4. 阿里 Qwen-3.5 旗舰模型蓄势待发
+阿里巴巴预计将在几周内发布 Qwen-3.5，有望进一步提升推理能力，与 Kimi K2、DeepSeek 共同构成中国 AI 的强势阵营。
+
+🛍️ 应用落地
+5. ASOS 推出混合 AI 虚拟试穿功能
+时尚电商 ASOS 利用生成式 AI 技术，让用户上传照片即可看到试穿效果，推动 AI 在电商领域的实用化。
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
