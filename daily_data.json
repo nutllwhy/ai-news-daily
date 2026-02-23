@@ -1,55 +1,54 @@
 {
-  "date_str": "2026年2月22日 星期日 | 农历正月初五",
-  "date_full": "2026年2月22日 星期日",
-  "issue_no": "第 023 期",
+  "date_str": "2026年2月23日 星期一 | 农历正月初七",
+  "date_full": "2026年2月23日 星期一",
+  "issue_no": "第 078 期",
   "headline": {
-    "title": "Anthropic 再出杀招：Claude Code Security 引发网络安全股崩盘",
-    "subtitle": "Claude Opus 4.6 驱动的新工具发现 500+ 开源漏洞，CrowdStrike、Cloudflare 股价暴跌",
-    "time": "12小时前",
-    "content": "<p><strong>【硅谷震荡】</strong> 继 \"Claude Cowork\" 重创 SaaS 板块后，Anthropic 昨日再次引爆市场。公司发布由最新模型 <strong>Claude Opus 4.6</strong> 驱动的 \"Claude Code Security\"，不仅能扫描代码漏洞，更能直接生成修复补丁。这一「发现+修复」的闭环能力直接击穿了传统网络安全厂商的护城河。</p><p><strong>【市场血洗】</strong> 消息一出，网络安全板块全线跳水。CrowdStrike 暴跌 6.5%，Cloudflare 下跌 6%，Okta 重挫 5.7%。Global X 网络安全 ETF 年内跌幅已扩大至 14%。市场恐慌的根源在于：如果 AI 能以 $20/月 的成本提供 24/7 的代码审计与修复，谁还需要昂贵的企业级安全服务？</p><p><strong>【降维打击】</strong> Anthropic 透露，在内部测试中，Claude Opus 4.6 扫描了主流开源项目，竟挖掘出 <strong>500 多个潜伏多年未被发现的漏洞</strong>。与传统工具仅由人类复核不同，Claude 直接给出 Patch 代码，将安全运维周期从「天」压缩至「分钟」。</p><h3>深度观察</h3><p>这不是一次简单的产品发布，而是 AI 对「专业服务业」的又一次降维打击。从 SaaS 到 Security，AI 正在从「辅助工具」进化为「替代方案」。对于企业主，这意味着成本骤降；对于从业者，这意味着 \"Security Engineer\" 的门槛正在被永久性重构。</p>",
+    "title": "OpenAI Sora 2 安卓版悄然现身？APK流出曝重大更新",
+    "subtitle": "新增「Cameos」真人出镜功能，打造AI视频社交平台",
+    "time": "20小时前",
+    "content": "<p>就在刚刚，OpenAI 的视频生成模型 Sora 迎来重大动向。网络上流出了版本号为 <strong>1.2026.050</strong> 的 Sora Android APK 安装包，据描述基于 <strong>Sora 2 引擎</strong>，不仅生成质量大幅提升，更通过全新的 App 形态展示了 OpenAI 的野心。</p><h3>核心功能：Cameos 与社交化</h3><p>最引人注目的新功能是 <strong>Cameos（客串）</strong>。用户可以录制自己的面部和声音，直接通过 Prompt 将自己植入到 AI 生成的视频场景中，实现前所未有的沉浸感。此外，App 引入了类似 Instagram 的 <strong>Social Feed（社交流）</strong>，用户可以关注创作者、点赞分享，甚至基于他人的 Prompt 进行二次创作（Remix）。</p><h3>深度分析：从工具到平台</h3><p>OpenAI 此举意味着 Sora 不再仅仅是一个生产力工具，而是意图打造一个<strong>原生的 AI 视频社交平台</strong>。通过 Cameos 解决\"AI 视频缺乏人味\"的问题，通过社交流建立用户粘性。如果该 APK 属实，这标志着 AI 视频生成正式进入 C 端社交应用的争夺战，直接对标 TikTok 和 Instagram。</p>",
     "sources": [
-      {"name": "India Today", "url": "https://www.indiatoday.in/technology/news/story/after-saas-shock-new-anthropic-claude-update-sends-cybersecurity-stocks-crashing-2871944-2026-02-21"},
-      {"name": "TestingCatalog", "url": "https://www.testingcatalog.com/anthropic-released-claude-code-security-as-research-preview/"}
+      {"name": "APKMirror", "url": "https://www.apkmirror.com/apk/openai/sora-by-openai/sora-by-openai-1-2026-050-release/"},
+      {"name": "Uptodown", "url": "https://sora-by-openai.en.uptodown.com/android"}
     ]
   },
   "news_list": [
     {
-      "icon": "🌏",
-      "category": "全球视野",
-      "title": "印度 AI 峰会落幕：88 国签署《新德里宣言》，千亿美金砸向基建",
-      "meta": "ETV Bharat | 10小时前",
-      "body": "<p><strong>【全球共识】</strong> 2026 印度 AI 影响力峰会（India AI Impact Summit）闭幕，包括美、中、英、德在内的 88 个国家共同签署《新德里宣言》。宣言确立了 \"SARVAJAN HITAYA\"（为了所有人的福利）原则，标志着全球 AI 治理重心从单纯的「安全防御」转向「发展与普惠」。</p><p><strong>【基建狂魔】</strong> 峰会期间达成了超过 <strong>2500 亿美元</strong> 的基础设施投资承诺，主要流向数据中心与半导体工厂。莫迪总理提出的 MANAV 框架（道德、负责、主权、可访问、有效）被写入宣言，这也意味着全球南方国家在 AI 算力分配上争取到了更多话语权。</p>",
-      "source_name": "ETV Bharat",
-      "source_url": "https://www.etvbharat.com/en/technology/live-blog--india-ai-impact-summit-2026-live-updates-new-delhi-declaration-pm-narendra-modi-ashwini-vaishnaw-bharat-mandapam-global-tech-leaders-enn26022101160"
+      "icon": "🗣️",
+      "category": "行业声音",
+      "title": "Sam Altman 抨击企业\"AI洗白\"式裁员",
+      "meta": "India AI Summit | 14小时前",
+      "body": "<p>在印度新德里举行的 AI Impact Summit 2026 上，OpenAI CEO Sam Altman 罕见地对当前的企业裁员潮发表尖锐评论。他指出，许多公司正在进行<strong>\"AI Washing\"（AI洗白）</strong>——即把原本就计划进行的裁员，借口推给 AI 技术进步。</p><p>Altman 强调：\"确实有部分工作被 AI 取代，但更多情况下，AI 只是被用作掩盖管理层决策的借口。\"这一言论直接回应了近期科技圈对 AI 导致失业的恐慌，试图将技术进步与企业降本增效的策略剥离。</p>",
+      "source_name": "India Today",
+      "source_url": "https://www.indiatoday.in/technology/news/story/ai-vs-humans-sam-altman-says-some-companies-are-using-ai-as-excuse-to-fire-employees-2872340-2026-02-22"
     },
     {
-      "icon": "🛠️",
-      "category": "新工具",
-      "title": "Supercool：拒绝半成品，AI 直出「成品级」交付物",
-      "meta": "Ohsem.me | 9小时前",
-      "body": "<p><strong>【拒绝草稿】</strong> AI 生成的内容往往需要大量人工后期修饰。初创公司 Supercool 推出的新平台试图打破这一魔咒，主打生成「Ready-to-use」的最终成品。无论是长篇书籍、商业演示文稿（Deck）还是结构化研报，Supercool 强调内容的一致性与完整性。</p><p><strong>【工作流重构】</strong> 不同于单一模态工具，Supercool 在一个环境中打通了「调研-写作-排版」全流程。在 AI 模型能力日益同质化的今天，Supercool 押注的是「工作流体验」而非单纯的「模型智商」，试图解决企业从 AI 实验转向生产部署的最后一步痛点。</p>",
-      "source_name": "Ohsem.me",
-      "source_url": "https://ohsem.me/2026/02/supercool-develops-ai-platform-designed-to-deliver-finished-outputs-across-formats/"
+      "icon": "🤖",
+      "category": "前沿技术",
+      "title": "中国春晚机器人震撼登场：3米/秒高速功夫秀",
+      "meta": "CCTV Gala | 1天前",
+      "body": "<p>在刚结束的 2026 年央视春晚上，一组人形机器人与塔沟武校的学员同台献艺，技惊四座。这些机器人不仅展示了复杂的功夫动作，更实现了<strong>3米/秒</strong>的高速移动，动作精准度与稳定性令人咋舌。</p><p>据透露，参与演出的包括<strong>宇树科技 (Unitree)</strong> 和 <strong>Noetix Robotics</strong> 等多家顶尖国产机器人厂商。业内分析认为，这不仅是一场表演，更是中国人形机器人产业链的一次\"阅兵\"，证明了国产机器人在运动控制算法和伺服关节技术上已达到世界一流水准。</p>",
+      "source_name": "YuanTalks",
+      "source_url": "https://www.yuantalks.com/four-chinese-robotics-leaders-leveraged-2026-spring-festival-gala-for-market-validation/"
     },
     {
-      "icon": "🧠",
-      "category": "前沿研究",
-      "title": "神经形态计算突破：类脑芯片攻克物理模拟难题",
-      "meta": "ScienceDaily | 8小时前",
-      "body": "<p><strong>【算力革命】</strong> 传统超级计算机在模拟复杂物理方程时耗能巨大。ScienceDaily 报道，最新的神经形态计算机（Neuromorphic Computers）模仿人脑结构，成功解决了复杂的物理模拟方程。这一突破可能彻底改变气象预测、材料科学等领域的计算范式，让高能效、低功耗的边缘计算处理复杂科学问题成为可能。</p>",
-      "source_name": "ScienceDaily",
-      "source_url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "icon": "⚠️",
+      "category": "AI安全",
+      "title": "微软AI CEO Mustafa Suleyman：我们要\"健康地恐惧\"",
+      "meta": "BBC Interview | 20小时前",
+      "body": "<p>微软 AI CEO、DeepMind 联合创始人 Mustafa Suleyman 在接受 BBC 专访时表示，尽管他是技术的坚定乐观主义者，但他呼吁人们对 AI 保持<strong>\"健康的恐惧\" (Healthily Afraid)</strong>。</p><p>Suleyman 警告称，如果没有正确的伦理护栏，AI 的力量可能会压倒人类。他致力于构建一种\"以人为本的超级智能\"，永远服务于人类而非反客为主。这一表态反映了科技巨头在推进 AGI 进程中，对安全监管的日益重视。</p>",
+      "source_name": "BBC",
+      "source_url": "https://www.bbc.com/audio/play/w3ct8c48"
     }
   ],
   "stats": [
-    {"label": "安全股暴跌", "value": "-6.5%", "color": "#c41e3a"},
-    {"label": "印度峰会引资", "value": "$250B", "color": "#10b981"},
-    {"label": "漏洞发现", "value": "500+", "color": "#f59e0b"},
-    {"label": "宣言签署国", "value": "88", "color": "#3b82f6"}
+    {"label": "Sora版本", "value": "2.0", "color": "#10a37f"},
+    {"label": "机器人极速", "value": "3m/s", "color": "#c41e3a"},
+    {"label": "Altman", "value": "AI Washing", "color": "#ff9900"}
   ],
   "review": [
-    "<strong>2月21日</strong><br>Anthropic 发布 Claude Opus 4.6",
-    "<strong>2月21日</strong><br>印度 AI 峰会签署《新德里宣言》",
-    "<strong>2月20日</strong><br>OpenAI 2026 亏损预期达 $14B"
+    "<strong>2月22日</strong><br>Sora 2 APK流出，含Cameos功能",
+    "<strong>2月22日</strong><br>Sam Altman在新德里峰会发言",
+    "<strong>2月21日</strong><br>国产机器人在春晚展示高动态运动"
   ]
 }
