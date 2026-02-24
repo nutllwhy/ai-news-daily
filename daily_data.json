@@ -1,54 +1,63 @@
 {
-  "date_str": "2026年2月23日 星期一 | 农历正月初七",
-  "date_full": "2026年2月23日 星期一",
-  "issue_no": "第 078 期",
+  "date_str": "2026年2月24日 星期二 | 农历正月初七",
+  "date_full": "2026年2月24日 星期二",
+  "issue_no": "第 382 期",
   "headline": {
-    "title": "OpenAI Sora 2 安卓版悄然现身？APK流出曝重大更新",
-    "subtitle": "新增「Cameos」真人出镜功能，打造AI视频社交平台",
-    "time": "20小时前",
-    "content": "<p>就在刚刚，OpenAI 的视频生成模型 Sora 迎来重大动向。网络上流出了版本号为 <strong>1.2026.050</strong> 的 Sora Android APK 安装包，据描述基于 <strong>Sora 2 引擎</strong>，不仅生成质量大幅提升，更通过全新的 App 形态展示了 OpenAI 的野心。</p><h3>核心功能：Cameos 与社交化</h3><p>最引人注目的新功能是 <strong>Cameos（客串）</strong>。用户可以录制自己的面部和声音，直接通过 Prompt 将自己植入到 AI 生成的视频场景中，实现前所未有的沉浸感。此外，App 引入了类似 Instagram 的 <strong>Social Feed（社交流）</strong>，用户可以关注创作者、点赞分享，甚至基于他人的 Prompt 进行二次创作（Remix）。</p><h3>深度分析：从工具到平台</h3><p>OpenAI 此举意味着 Sora 不再仅仅是一个生产力工具，而是意图打造一个<strong>原生的 AI 视频社交平台</strong>。通过 Cameos 解决\"AI 视频缺乏人味\"的问题，通过社交流建立用户粘性。如果该 APK 属实，这标志着 AI 视频生成正式进入 C 端社交应用的争夺战，直接对标 TikTok 和 Instagram。</p>",
+    "title": "Anthropic 指控中国大模型厂商“大规模窃取”数据",
+    "subtitle": "DeepSeek、Moonshot 和 MiniMax 被指通过 1600 万次对话进行蒸馏攻击",
+    "time": "3小时前",
+    "content": "<p><strong>【旧金山消息】</strong>美东时间周一，Anthropic 发布了一份令人震惊的声明，公开指控三家中国顶尖 AI 实验室——DeepSeek（深度求索）、Moonshot AI（月之暗面）和 MiniMax（稀宇科技）——对其 Claude 模型实施了“工业级”的数据窃取和模型蒸馏攻击。</p><h3>具体指控细节</h3><p>Anthropic 称，这三家公司通过创建超过 <strong>24,000 个虚假账户</strong>，绕过安全防护，累计产生了超过 <strong>1600 万次</strong> API 对话。其中，MiniMax 规模最大，涉及 1300 万次交互；Moonshot 约为 340 万次；DeepSeek 则进行了约 15 万次针对性的高价值对话。</p><h3>什么是“蒸馏攻击”？</h3><p>所谓“模型蒸馏”（Distillation），是指利用一个更强大的模型（如 Claude 3.5 Sonnet）的输出来训练一个小模型，从而以极低的成本“复制”大模型的能力。Anthropic 强调，这种行为不仅违反了服务条款，实质上是在“搭便车”，利用美国公司的研发投入来提升自身技术水平。</p><p><strong>影响与回应：</strong>此举可能进一步加剧已被 DeepSeek R1 点燃的 AI 地缘政治紧张局势。此前，OpenAI 也曾向美国立法者提出过类似担忧。目前被指控的三家中国公司尚未对此作出正式回应。</p>", 
     "sources": [
-      {"name": "APKMirror", "url": "https://www.apkmirror.com/apk/openai/sora-by-openai/sora-by-openai-1-2026-050-release/"},
-      {"name": "Uptodown", "url": "https://sora-by-openai.en.uptodown.com/android"}
+      {"name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/anthropic-china-ai-distillation-claims"},
+      {"name": "New York Times", "url": "https://www.nytimes.com/2026/02/23/technology/anthropic-chinese-startups-distillation.html"}
     ]
   },
   "news_list": [
     {
-      "icon": "🗣️",
-      "category": "行业声音",
-      "title": "Sam Altman 抨击企业\"AI洗白\"式裁员",
-      "meta": "India AI Summit | 14小时前",
-      "body": "<p>在印度新德里举行的 AI Impact Summit 2026 上，OpenAI CEO Sam Altman 罕见地对当前的企业裁员潮发表尖锐评论。他指出，许多公司正在进行<strong>\"AI Washing\"（AI洗白）</strong>——即把原本就计划进行的裁员，借口推给 AI 技术进步。</p><p>Altman 强调：\"确实有部分工作被 AI 取代，但更多情况下，AI 只是被用作掩盖管理层决策的借口。\"这一言论直接回应了近期科技圈对 AI 导致失业的恐慌，试图将技术进步与企业降本增效的策略剥离。</p>",
-      "source_name": "India Today",
-      "source_url": "https://www.indiatoday.in/technology/news/story/ai-vs-humans-sam-altman-says-some-companies-are-using-ai-as-excuse-to-fire-employees-2872340-2026-02-22"
+      "icon": "📉",
+      "category": "市场震荡",
+      "title": "Anthropic 发布 COBOL 工具，IBM 股价暴跌 13%",
+      "meta": "CNBC | 4小时前",
+      "body": "<p><strong>AI 正在吞噬旧世界。</strong> Anthropic 今日发布新工具 <strong>Claude Code</strong>，专门用于通过 AI 自动化维护和更新 COBOL 代码——这是银行、航空和政府系统的基石语言。市场反应剧烈，作为 COBOL 维护领域霸主的 IBM 股价应声暴跌 13.2%，收于 223.35 美元。Anthropic 称，AI 现在可以几分钟内完成人类数月的工作量，打破了“重写旧代码太贵”的僵局。</p>",
+      "source_name": "CNBC",
+      "source_url": "https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casualty-shares-are-tanking-on-anthropic-cobol-threat.html"
+    },
+    {
+      "icon": "💰",
+      "category": "巨额融资",
+      "title": "OpenAI 估值飙升至 8500 亿美元，亚马逊拟投 500 亿",
+      "meta": "BitcoinWorld | 5小时前",
+      "body": "<p>据报道，OpenAI 正在敲定一轮超过 <strong>1000 亿美元</strong> 的融资，将其估值推高至惊人的 <strong>8500 亿美元</strong>。这使其超越特斯拉和 Meta，成为全球市值最高的非上市科技公司之一。据悉，亚马逊正洽谈投入 500 亿美元，软银拟投 300 亿美元，英伟达跟投 200 亿美元。这笔资金将用于支持其昂贵的 AGI 研发及数据中心建设。</p>",
+      "source_name": "BitcoinWorld",
+      "source_url": "https://bitcoinworld.co.in/openai-100-billion-deal-valuation/"
     },
     {
       "icon": "🤖",
-      "category": "前沿技术",
-      "title": "中国春晚机器人震撼登场：3米/秒高速功夫秀",
-      "meta": "CCTV Gala | 1天前",
-      "body": "<p>在刚结束的 2026 年央视春晚上，一组人形机器人与塔沟武校的学员同台献艺，技惊四座。这些机器人不仅展示了复杂的功夫动作，更实现了<strong>3米/秒</strong>的高速移动，动作精准度与稳定性令人咋舌。</p><p>据透露，参与演出的包括<strong>宇树科技 (Unitree)</strong> 和 <strong>Noetix Robotics</strong> 等多家顶尖国产机器人厂商。业内分析认为，这不仅是一场表演，更是中国人形机器人产业链的一次\"阅兵\"，证明了国产机器人在运动控制算法和伺服关节技术上已达到世界一流水准。</p>",
-      "source_name": "YuanTalks",
-      "source_url": "https://www.yuantalks.com/four-chinese-robotics-leaders-leveraged-2026-spring-festival-gala-for-market-validation/"
+      "category": "新模型",
+      "title": "Google 发布 Gemini 3.1 Pro：重夺榜首？",
+      "meta": "LLM Stats | 1天前",
+      "body": "<p>Google DeepMind 悄然发布了 <strong>Gemini 3.1 Pro</strong>，号称是目前最强的 Pro 级模型。新模型拥有 <strong>100 万 token 上下文窗口</strong>，在 ARC-AGI-2 基准测试中取得了 77.1% 的高分，并在多模态推理（文本、图像、视频、代码）上表现出色。这被视为 Google 应对 DeepSeek R1 冲击的最新反击。</p>",
+      "source_name": "LLM Stats",
+      "source_url": "https://llm-stats.com/ai-news"
     },
     {
-      "icon": "⚠️",
-      "category": "AI安全",
-      "title": "微软AI CEO Mustafa Suleyman：我们要\"健康地恐惧\"",
-      "meta": "BBC Interview | 20小时前",
-      "body": "<p>微软 AI CEO、DeepMind 联合创始人 Mustafa Suleyman 在接受 BBC 专访时表示，尽管他是技术的坚定乐观主义者，但他呼吁人们对 AI 保持<strong>\"健康的恐惧\" (Healthily Afraid)</strong>。</p><p>Suleyman 警告称，如果没有正确的伦理护栏，AI 的力量可能会压倒人类。他致力于构建一种\"以人为本的超级智能\"，永远服务于人类而非反客为主。这一表态反映了科技巨头在推进 AGI 进程中，对安全监管的日益重视。</p>",
-      "source_name": "BBC",
-      "source_url": "https://www.bbc.com/audio/play/w3ct8c48"
+      "icon": "💸",
+      "category": "行业数据",
+      "title": "Bridgewater：科技巨头 2026 年 AI 支出将达 6500 亿美元",
+      "meta": "Reuters | 8小时前",
+      "body": "<p>对冲基金桥水（Bridgewater）发布报告预测，Alphabet、亚马逊、Meta 和微软四家科技巨头在 2026 年的 AI 资本支出（CapEx）总额将达到 <strong>6500 亿美元</strong>。这一数字不仅显示了 AI 基础设施建设的疯狂速度，也暗示了英伟达等硬件供应商的长期利好。</p>",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com"
     }
   ],
   "stats": [
-    {"label": "Sora版本", "value": "2.0", "color": "#10a37f"},
-    {"label": "机器人极速", "value": "3m/s", "color": "#c41e3a"},
-    {"label": "Altman", "value": "AI Washing", "color": "#ff9900"}
+    {"label": "蒸馏次数", "value": "16M+", "color": "#c41e3a"},
+    {"label": "IBM跌幅", "value": "-13.2%", "color": "#10b981"},
+    {"label": "OpenAI估值", "value": "$850B", "color": "#3b82f6"},
+    {"label": "AI年支出", "value": "$650B", "color": "#f59e0b"}
   ],
   "review": [
-    "<strong>2月22日</strong><br>Sora 2 APK流出，含Cameos功能",
-    "<strong>2月22日</strong><br>Sam Altman在新德里峰会发言",
-    "<strong>2月21日</strong><br>国产机器人在春晚展示高动态运动"
+    "<strong>2月24日</strong><br>Anthropic 引发中美 AI 数据战",
+    "<strong>2月23日</strong><br>IBM 因 COBOL AI 工具暴跌"
   ]
 }

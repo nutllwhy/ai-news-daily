@@ -1,21 +1,31 @@
-【2026-02-23 栗噔噔AI早报】
+【2026-02-24 栗噔噔AI早报】
 
-各位早上好！Sora 2 安卓版安装包疑似流出，新增「Cameos」真人出镜功能，直接杀入短视频社交赛道。
+各位早上好！Anthropic 今日重磅指控中国大模型厂商进行“大规模蒸馏攻击”，同时其发布的 COBOL 工具直接重创 IBM 股价。此外，OpenAI 的千亿融资细节曝光，估值直逼万亿美元。
 
 🚨 头版头条
-1. Sora 2 悄然现身？APK流出曝重大更新
-OpenAI 的视频生成模型 Sora 迎来重大动向。网络上流出了版本号为 1.2026.050 的 Sora Android APK 安装包，据描述基于 Sora 2 引擎。最引人注目的新功能是 Cameos（客串），用户可以录制自己的面部和声音植入视频场景。OpenAI 此举意味着 Sora 不再仅仅是一个生产力工具，而是意图打造一个原生的 AI 视频社交平台。
+1. Anthropic 指控中国大模型厂商“大规模窃取”数据
+Anthropic 声称 DeepSeek、Moonshot 和 MiniMax 通过 2.4 万个虚假账户和 1600 万次对话，对其 Claude 模型进行了“工业级”蒸馏攻击。这引发了关于数据窃取和 AI 地缘政治的新一轮争论。
 
-💬 行业声音
-2. Sam Altman 抨击企业"AI洗白"式裁员
-在印度新德里举行的 AI Impact Summit 2026 上，OpenAI CEO Sam Altman 罕见地对当前的企业裁员潮发表尖锐评论。他指出，许多公司正在进行"AI Washing"（AI洗白）——即把原本就计划进行的裁员，借口推给 AI 技术进步。
+📉 市场震荡
+2. Anthropic 发布 COBOL 工具，IBM 股价暴跌 13%
+Anthropic 发布 Claude Code 自动化 COBOL 代码维护，直接威胁 IBM 的核心维护业务，导致后者股价大跌 13.2%。
 
-🤖 前沿技术
-3. 中国春晚机器人震撼登场：3米/秒高速功夫秀
-在刚结束的 2026 年央视春晚上，一组人形机器人与塔沟武校的学员同台献艺，技惊四座。这些机器人不仅展示了复杂的功夫动作，更实现了3米/秒的高速移动，证明了国产机器人在运动控制算法和伺服关节技术上已达到世界一流水准。
+💰 巨额融资
+3. OpenAI 估值飙升至 8500 亿美元，亚马逊拟投 500 亿
+OpenAI 正在敲定超千亿美元融资，亚马逊、软银、英伟达悉数入局，估值超越特斯拉和 Meta。
 
-⚠️ AI安全
-4. 微软AI CEO Mustafa Suleyman：我们要"健康地恐惧"
-微软 AI CEO、DeepMind 联合创始人 Mustafa Suleyman 在接受 BBC 专访时表示，尽管他是技术的坚定乐观主义者，但他呼吁人们对 AI 保持"健康的恐惧" (Healthily Afraid)。如果没有正确的伦理护栏，AI 的力量可能会压倒人类。
+🤖 新模型
+4. Google 发布 Gemini 3.1 Pro：重夺榜首？
+Google 悄然发布 Gemini 3.1 Pro，拥有 100 万 token 上下文，宣称在 ARC-AGI-2 基准测试中夺回第一。
 
-完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
+💸 行业数据
+5. Bridgewater：科技巨头 2026 年 AI 支出将达 6500 亿美元
+四家科技巨头（Alphabet、亚马逊、Meta、微软）今年的 AI 资本支出预计将达到惊人的 6500 亿美元。
+
+📊 今日数据
+- 蒸馏次数：1600 万+
+- IBM 跌幅：-13.2%
+- OpenAI 估值：8500 亿美元
+- AI 年支出：6500 亿美元
+
+完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/
