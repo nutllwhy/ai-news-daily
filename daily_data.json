@@ -1,63 +1,45 @@
 {
-  "date_str": "2026年2月24日 星期二 | 农历正月初七",
-  "date_full": "2026年2月24日 星期二",
-  "issue_no": "第 382 期",
+  "date_str": "2026年2月25日 星期三 | 农历正月初九",
+  "date_full": "2026年2月25日 星期三",
+  "issue_no": "第 026 期",
   "headline": {
-    "title": "Anthropic 指控中国大模型厂商“大规模窃取”数据",
-    "subtitle": "DeepSeek、Moonshot 和 MiniMax 被指通过 1600 万次对话进行蒸馏攻击",
-    "time": "3小时前",
-    "content": "<p><strong>【旧金山消息】</strong>美东时间周一，Anthropic 发布了一份令人震惊的声明，公开指控三家中国顶尖 AI 实验室——DeepSeek（深度求索）、Moonshot AI（月之暗面）和 MiniMax（稀宇科技）——对其 Claude 模型实施了“工业级”的数据窃取和模型蒸馏攻击。</p><h3>具体指控细节</h3><p>Anthropic 称，这三家公司通过创建超过 <strong>24,000 个虚假账户</strong>，绕过安全防护，累计产生了超过 <strong>1600 万次</strong> API 对话。其中，MiniMax 规模最大，涉及 1300 万次交互；Moonshot 约为 340 万次；DeepSeek 则进行了约 15 万次针对性的高价值对话。</p><h3>什么是“蒸馏攻击”？</h3><p>所谓“模型蒸馏”（Distillation），是指利用一个更强大的模型（如 Claude 3.5 Sonnet）的输出来训练一个小模型，从而以极低的成本“复制”大模型的能力。Anthropic 强调，这种行为不仅违反了服务条款，实质上是在“搭便车”，利用美国公司的研发投入来提升自身技术水平。</p><p><strong>影响与回应：</strong>此举可能进一步加剧已被 DeepSeek R1 点燃的 AI 地缘政治紧张局势。此前，OpenAI 也曾向美国立法者提出过类似担忧。目前被指控的三家中国公司尚未对此作出正式回应。</p>", 
+    "title": "Anthropic的双线战争：指控中国窃密，发布企业级大杀器",
+    "subtitle": "一边起诉DeepSeek/MiniMax“蒸馏”Claude数据，一边发布10款企业插件重创SaaS股价",
+    "time": "5小时前",
+    "content": "<p><strong>【硅谷打响数据保卫战】</strong> Anthropic今日正式向DeepSeek（深度求索）、MiniMax和Moonshot AI（月之暗面）三家中国顶尖AI实验室“宣战”，指控其利用超过2.4万个虚假账号，通过“蒸馏”（distillation）技术非法获取Claude的推理数据以训练自家模型。Anthropic称监测到超过1600万次异常交互，DeepSeek专注于逻辑与审查规避，而MiniMax则被指控在发布新模型时将近半流量重定向至Claude以“吸血”。这一指控正值美国讨论收紧AI芯片出口之际，Anthropic明确表示：这种“抄作业”行为需要高端芯片支持，进一步证明了出口管制的必要性。</p><h3>企业级市场：SaaS公司的噩梦</h3><p>在并在指控竞争对手的同时，Anthropic并未放慢商业化步伐。继早前引发软件股暴跌的“法律插件”后，今日Anthropic一口气发布了<strong>10款企业级插件</strong>，覆盖金融、法律、HR等核心部门。这些插件能直接执行市场调研、财务建模、职位描述生成等任务，并集成了Gmail、DocuSign等工具。TechCrunch评论称，这是对传统SaaS产品的直接降维打击，“2025年被认为是Agent元年但未达预期，Anthropic正试图用更标准化的‘插件’模式修正这一路径”。</p>",
     "sources": [
-      {"name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/anthropic-china-ai-distillation-claims"},
-      {"name": "New York Times", "url": "https://www.nytimes.com/2026/02/23/technology/anthropic-chinese-startups-distillation.html"}
+      {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/"},
+      {"name": "TechCrunch (Business)", "url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/"}
     ]
   },
   "news_list": [
     {
-      "icon": "📉",
-      "category": "市场震荡",
-      "title": "Anthropic 发布 COBOL 工具，IBM 股价暴跌 13%",
-      "meta": "CNBC | 4小时前",
-      "body": "<p><strong>AI 正在吞噬旧世界。</strong> Anthropic 今日发布新工具 <strong>Claude Code</strong>，专门用于通过 AI 自动化维护和更新 COBOL 代码——这是银行、航空和政府系统的基石语言。市场反应剧烈，作为 COBOL 维护领域霸主的 IBM 股价应声暴跌 13.2%，收于 223.35 美元。Anthropic 称，AI 现在可以几分钟内完成人类数月的工作量，打破了“重写旧代码太贵”的僵局。</p>",
-      "source_name": "CNBC",
-      "source_url": "https://www.cnbc.com/2026/02/23/ibm-is-the-latest-ai-casualty-shares-are-tanking-on-anthropic-cobol-threat.html"
+      "icon": "🎥",
+      "category": "新工具",
+      "title": "字节跳动Seedance 2.0：比Sora更像电影，但也更像“侵权风暴”",
+      "meta": "The Verge | 6小时前",
+      "body": "<p>字节跳动最新视频模型Seedance 2.0引发轰动，其生成的“汤姆·克鲁斯”大战僵尸片段流畅度远超Sora和Runway。然而，过于逼真的效果也引来了好莱坞的怒火——迪士尼、派拉蒙和Netflix已发函警告。The Verge犀利点评：Seedance 2.0确实在视觉上超越了对手，但其核心竞争力似乎建立在对版权内容的“完美复刻”上，本质上仍是“更高级的缝合怪（Slop Generator）”。目前字节跳动已暂停API开放计划以应对版权质疑。</p>",
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/883615/seedance-bytedance-tom-cruise-brad-pitt-jia-zhangke"
     },
     {
       "icon": "💰",
-      "category": "巨额融资",
-      "title": "OpenAI 估值飙升至 8500 亿美元，亚马逊拟投 500 亿",
-      "meta": "BitcoinWorld | 5小时前",
-      "body": "<p>据报道，OpenAI 正在敲定一轮超过 <strong>1000 亿美元</strong> 的融资，将其估值推高至惊人的 <strong>8500 亿美元</strong>。这使其超越特斯拉和 Meta，成为全球市值最高的非上市科技公司之一。据悉，亚马逊正洽谈投入 500 亿美元，软银拟投 300 亿美元，英伟达跟投 200 亿美元。这笔资金将用于支持其昂贵的 AGI 研发及数据中心建设。</p>",
-      "source_name": "BitcoinWorld",
-      "source_url": "https://bitcoinworld.co.in/openai-100-billion-deal-valuation/"
-    },
-    {
-      "icon": "🤖",
-      "category": "新模型",
-      "title": "Google 发布 Gemini 3.1 Pro：重夺榜首？",
-      "meta": "LLM Stats | 1天前",
-      "body": "<p>Google DeepMind 悄然发布了 <strong>Gemini 3.1 Pro</strong>，号称是目前最强的 Pro 级模型。新模型拥有 <strong>100 万 token 上下文窗口</strong>，在 ARC-AGI-2 基准测试中取得了 77.1% 的高分，并在多模态推理（文本、图像、视频、代码）上表现出色。这被视为 Google 应对 DeepSeek R1 冲击的最新反击。</p>",
-      "source_name": "LLM Stats",
-      "source_url": "https://llm-stats.com/ai-news"
-    },
-    {
-      "icon": "💸",
       "category": "行业数据",
-      "title": "Bridgewater：科技巨头 2026 年 AI 支出将达 6500 亿美元",
-      "meta": "Reuters | 8小时前",
-      "body": "<p>对冲基金桥水（Bridgewater）发布报告预测，Alphabet、亚马逊、Meta 和微软四家科技巨头在 2026 年的 AI 资本支出（CapEx）总额将达到 <strong>6500 亿美元</strong>。这一数字不仅显示了 AI 基础设施建设的疯狂速度，也暗示了英伟达等硬件供应商的长期利好。</p>",
-      "source_name": "Reuters",
-      "source_url": "https://www.reuters.com"
+      "title": "2026年AI API价格战：GPT-5每百万token仅需$1.25",
+      "meta": "DevTk.AI | 1天前",
+      "body": "<p>2026年初API价格战格局初定：<strong>OpenAI GPT-5</strong>与<strong>Google Gemini 2.5 Pro</strong>定价惊人一致，均为<strong>$1.25/1M tokens</strong>。相比之下，Anthropic坚持高端路线，<strong>Claude Opus 4.5</strong>定价高达<strong>$5.00</strong>。而“价格屠夫”DeepSeek继续领跑性价比，<strong>DeepSeek V3.2</strong>仅需<strong>$0.27</strong>。开发者现在面临33倍的价差选择：是用最昂贵的Opus处理复杂逻辑，还是用极低成本的Flash/DeepSeek处理海量数据？</p>",
+      "source_name": "DevTk.AI",
+      "source_url": "https://devtk.ai/en/blog/ai-api-pricing-comparison-2026/"
     }
   ],
   "stats": [
-    {"label": "蒸馏次数", "value": "16M+", "color": "#c41e3a"},
-    {"label": "IBM跌幅", "value": "-13.2%", "color": "#10b981"},
-    {"label": "OpenAI估值", "value": "$850B", "color": "#3b82f6"},
-    {"label": "AI年支出", "value": "$650B", "color": "#f59e0b"}
+    {"label": "GPT-5价格", "value": "$1.25", "color": "#10a37f"},
+    {"label": "DeepSeek价格", "value": "$0.27", "color": "#4e46dc"},
+    {"label": "Opus 4.5价格", "value": "$5.00", "color": "#d97757"},
+    {"label": "Claude被窃取", "value": "1600万次", "color": "#c41e3a"}
   ],
   "review": [
-    "<strong>2月24日</strong><br>Anthropic 引发中美 AI 数据战",
-    "<strong>2月23日</strong><br>IBM 因 COBOL AI 工具暴跌"
+    "<strong>SaaS股震荡</strong><br>Anthropic新插件发布引发市场对ServiceNow等SaaS巨头的担忧",
+    "<strong>DeepSeek V4</strong><br>传闻即将发布，号称代码能力超越Claude与GPT"
   ]
 }

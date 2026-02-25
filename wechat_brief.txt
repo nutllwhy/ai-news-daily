@@ -1,31 +1,17 @@
-【2026-02-24 栗噔噔AI早报】
+【2026-02-25 栗噔噔AI早报】
 
-各位早上好！Anthropic 今日重磅指控中国大模型厂商进行“大规模蒸馏攻击”，同时其发布的 COBOL 工具直接重创 IBM 股价。此外，OpenAI 的千亿融资细节曝光，估值直逼万亿美元。
+各位早上好！Anthropic 指控 DeepSeek 和 MiniMax 窃取数据，同时发布企业插件重击 SaaS 股；字节 Seedance 2.0 引发好莱坞版权风暴；2026 AI API 价格战尘埃落定。
 
 🚨 头版头条
-1. Anthropic 指控中国大模型厂商“大规模窃取”数据
-Anthropic 声称 DeepSeek、Moonshot 和 MiniMax 通过 2.4 万个虚假账户和 1600 万次对话，对其 Claude 模型进行了“工业级”蒸馏攻击。这引发了关于数据窃取和 AI 地缘政治的新一轮争论。
+1. Anthropic的双线战争：指控中国窃密，发布企业级大杀器
+Anthropic今日正式指控DeepSeek、MiniMax等中国AI实验室利用2.4万个虚假账号窃取Claude推理数据，监测到1600万次异常交互。与此同时，Anthropic并未放慢脚步，针对企业市场发布10款新插件，覆盖金融、法律、HR等核心职能，直接威胁传统SaaS巨头地位。这一组合拳既是针对“蒸馏”行为的反击，也是对企业级应用市场的强力收割。
 
-📉 市场震荡
-2. Anthropic 发布 COBOL 工具，IBM 股价暴跌 13%
-Anthropic 发布 Claude Code 自动化 COBOL 代码维护，直接威胁 IBM 的核心维护业务，导致后者股价大跌 13.2%。
+🎥 新工具
+2. 字节跳动Seedance 2.0：比Sora更像电影，但也更像“侵权风暴”
+字节跳动最新视频模型生成的“汤姆·克鲁斯”大战僵尸片段过于逼真，引来迪士尼等好莱坞巨头的版权警告。虽然视觉效果惊人，但其核心技术被指依赖对版权内容的复刻，API开放计划已被迫暂停。
 
-💰 巨额融资
-3. OpenAI 估值飙升至 8500 亿美元，亚马逊拟投 500 亿
-OpenAI 正在敲定超千亿美元融资，亚马逊、软银、英伟达悉数入局，估值超越特斯拉和 Meta。
+💰 行业数据
+3. 2026年AI API价格战：GPT-5每百万token仅需$1.25
+最新API价格对比出炉：GPT-5与Gemini 2.5 Pro定价惊人一致（$1.25/1M），而Claude Opus 4.5依然高居$5.00/1M。追求极致性价比的开发者仍首选DeepSeek V3.2（$0.27/1M），价格差距高达33倍。
 
-🤖 新模型
-4. Google 发布 Gemini 3.1 Pro：重夺榜首？
-Google 悄然发布 Gemini 3.1 Pro，拥有 100 万 token 上下文，宣称在 ARC-AGI-2 基准测试中夺回第一。
-
-💸 行业数据
-5. Bridgewater：科技巨头 2026 年 AI 支出将达 6500 亿美元
-四家科技巨头（Alphabet、亚马逊、Meta、微软）今年的 AI 资本支出预计将达到惊人的 6500 亿美元。
-
-📊 今日数据
-- 蒸馏次数：1600 万+
-- IBM 跌幅：-13.2%
-- OpenAI 估值：8500 亿美元
-- AI 年支出：6500 亿美元
-
-完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/
+完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
