@@ -1,45 +1,54 @@
 {
-  "date_str": "2026年2月25日 星期三 | 农历正月初九",
-  "date_full": "2026年2月25日 星期三",
+  "date_str": "2026年2月26日 星期四 | 农历正月初十",
+  "date_full": "2026年2月26日 星期四",
   "issue_no": "第 026 期",
   "headline": {
-    "title": "Anthropic的双线战争：指控中国窃密，发布企业级大杀器",
-    "subtitle": "一边起诉DeepSeek/MiniMax“蒸馏”Claude数据，一边发布10款企业插件重创SaaS股价",
-    "time": "5小时前",
-    "content": "<p><strong>【硅谷打响数据保卫战】</strong> Anthropic今日正式向DeepSeek（深度求索）、MiniMax和Moonshot AI（月之暗面）三家中国顶尖AI实验室“宣战”，指控其利用超过2.4万个虚假账号，通过“蒸馏”（distillation）技术非法获取Claude的推理数据以训练自家模型。Anthropic称监测到超过1600万次异常交互，DeepSeek专注于逻辑与审查规避，而MiniMax则被指控在发布新模型时将近半流量重定向至Claude以“吸血”。这一指控正值美国讨论收紧AI芯片出口之际，Anthropic明确表示：这种“抄作业”行为需要高端芯片支持，进一步证明了出口管制的必要性。</p><h3>企业级市场：SaaS公司的噩梦</h3><p>在并在指控竞争对手的同时，Anthropic并未放慢商业化步伐。继早前引发软件股暴跌的“法律插件”后，今日Anthropic一口气发布了<strong>10款企业级插件</strong>，覆盖金融、法律、HR等核心部门。这些插件能直接执行市场调研、财务建模、职位描述生成等任务，并集成了Gmail、DocuSign等工具。TechCrunch评论称，这是对传统SaaS产品的直接降维打击，“2025年被认为是Agent元年但未达预期，Anthropic正试图用更标准化的‘插件’模式修正这一路径”。</p>",
+    "title": "Anthropic 的至暗时刻：中美两线“开战”",
+    "subtitle": "五角大楼下达最后通牒，同时指控中国大模型“蒸馏窃密”",
+    "time": "12小时前",
+    "content": "<p><strong>【四面楚歌】</strong> 2026年开春，以“AI安全”著称的 Anthropic 陷入了成立以来最严峻的生存危机。一边是来自华盛顿的铁拳，一边是来自大洋彼岸的“围剿”。</p><p><strong>【五角大楼通牒】</strong> 据 Fortune 报道，美国国防部长 Pete Hegseth 已向 Anthropic CEO Dario Amodei 下达最后通牒：必须在<strong>本周五前</strong>同意军方对 Claude 模型的“无限制使用权”（包括用于战争和间谍活动），否则将面临《国防生产法》强制征用甚至被列入黑名单。Anthropic 坚持的“不作恶”条款在国家安全机器面前显得不堪一击。</p><p><strong>【指控中国厂商】</strong> 就在与军方僵持之际，Anthropic 突然公开发难，指控 <strong>DeepSeek、Moonshot（月之暗面）和 MiniMax</strong> 三家中国公司对其发动了“工业级蒸馏攻击”。数据显示，这三家公司利用 2.4 万个虚假账号，进行了超过 1600 万次交互，意图“窃取” Claude 的思考链来训练自己的模型。Anthropic 称这种行为不仅侵权，还绕过了安全护栏。</p><h3>深度观察</h3><p>这不仅仅是一家公司的危机，而是 <strong>AI 理想主义的终结</strong>。当技术成为地缘政治的核武器，无论是“宪法AI”的自我约束，还是开源社区的共享精神，都将被迫在国家意志面前选边站队。Anthropic 的遭遇或许预示着：2026年，AI 将彻底告别“中立时代”。</p>",
     "sources": [
-      {"name": "TechCrunch", "url": "https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/"},
-      {"name": "TechCrunch (Business)", "url": "https://techcrunch.com/2026/02/24/anthropic-launches-new-push-for-enterprise-agents-with-plugins-for-finance-engineering-and-design/"}
+      {"name": "Fortune", "url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"},
+      {"name": "FastCompany", "url": "https://fastcompany.co.za/fast-company/business/2026-02-25-is-anthropics-future-at-risk-navigating-ai-safety-and-geopolitics-in-2026/"}
     ]
   },
   "news_list": [
     {
-      "icon": "🎥",
-      "category": "新工具",
-      "title": "字节跳动Seedance 2.0：比Sora更像电影，但也更像“侵权风暴”",
-      "meta": "The Verge | 6小时前",
-      "body": "<p>字节跳动最新视频模型Seedance 2.0引发轰动，其生成的“汤姆·克鲁斯”大战僵尸片段流畅度远超Sora和Runway。然而，过于逼真的效果也引来了好莱坞的怒火——迪士尼、派拉蒙和Netflix已发函警告。The Verge犀利点评：Seedance 2.0确实在视觉上超越了对手，但其核心竞争力似乎建立在对版权内容的“完美复刻”上，本质上仍是“更高级的缝合怪（Slop Generator）”。目前字节跳动已暂停API开放计划以应对版权质疑。</p>",
-      "source_name": "The Verge",
-      "source_url": "https://www.theverge.com/ai-artificial-intelligence/883615/seedance-bytedance-tom-cruise-brad-pitt-jia-zhangke"
+      "icon": "🚀",
+      "category": "行业爆发",
+      "title": "OpenClaw 引爆算力需求，GPU 价格回升",
+      "meta": "Business Insider | 10小时前",
+      "body": "<p>Business Insider 最新数据显示，开源 Agent 系统 <strong>OpenClaw</strong> 的爆发式增长正在重塑算力市场。OpenRouter 上的 Token 使用量在2026年初几周内<strong>翻了一番</strong>，单周处理量突破 <strong>13万亿</strong>。分析师指出，这标志着 AI 从“对话时代”正式迈入“Agent 自动化时代”。受此驱动，Nvidia H100 租赁价格自12月以来强劲反弹。</p>",
+      "source_name": "Business Insider",
+      "source_url": "https://www.businessinsider.com/openclaw-ai-demand-token-use-surge-nvidia-pricing-jumps-2026-2"
     },
     {
-      "icon": "💰",
-      "category": "行业数据",
-      "title": "2026年AI API价格战：GPT-5每百万token仅需$1.25",
-      "meta": "DevTk.AI | 1天前",
-      "body": "<p>2026年初API价格战格局初定：<strong>OpenAI GPT-5</strong>与<strong>Google Gemini 2.5 Pro</strong>定价惊人一致，均为<strong>$1.25/1M tokens</strong>。相比之下，Anthropic坚持高端路线，<strong>Claude Opus 4.5</strong>定价高达<strong>$5.00</strong>。而“价格屠夫”DeepSeek继续领跑性价比，<strong>DeepSeek V3.2</strong>仅需<strong>$0.27</strong>。开发者现在面临33倍的价差选择：是用最昂贵的Opus处理复杂逻辑，还是用极低成本的Flash/DeepSeek处理海量数据？</p>",
-      "source_name": "DevTk.AI",
-      "source_url": "https://devtk.ai/en/blog/ai-api-pricing-comparison-2026/"
+      "icon": "🤝",
+      "category": "巨头结盟",
+      "title": "Meta 豪掷千金买 AMD，意在摆脱英伟达依赖？",
+      "meta": "Fortune | 13小时前",
+      "body": "<p>Meta 宣布将采购 AMD 最新的 <strong>MI450 芯片</strong>，并获得购买 AMD 10% 股份的期权，交易潜在价值超 <strong>1000亿美元</strong>。受此消息刺激，AMD 股价大涨 9%。这被视为扎克伯格在构建算力基础设施上的又一次豪赌，意在减少对 Nvidia 的单一依赖。</p>",
+      "source_name": "Fortune",
+      "source_url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"
+    },
+    {
+      "icon": "👋",
+      "category": "高管变动",
+      "title": "亚马逊 AI 实验室负责人离职，AGI 竞赛再失一将",
+      "meta": "LinkedIn | 14小时前",
+      "body": "<p>亚马逊 AGI 团队副总裁 David Luan 宣布离职，距离他随 Adept 收购加入亚马逊仅 14 个月。他在告别信中提到“AGI 已近在咫尺”，决定全身心投入新项目。这对正努力追赶 OpenAI 和 Google 的亚马逊来说无疑是一记重创。</p>",
+      "source_name": "Fortune",
+      "source_url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"
     }
   ],
   "stats": [
-    {"label": "GPT-5价格", "value": "$1.25", "color": "#10a37f"},
-    {"label": "DeepSeek价格", "value": "$0.27", "color": "#4e46dc"},
-    {"label": "Opus 4.5价格", "value": "$5.00", "color": "#d97757"},
-    {"label": "Claude被窃取", "value": "1600万次", "color": "#c41e3a"}
+    {"label": "Token周增量", "value": "+103%", "color": "#c41e3a"},
+    {"label": "AMD大涨", "value": "+9%", "color": "#2E8B57"},
+    {"label": "蒸馏攻击次数", "value": "1600万", "color": "#1E90FF"},
+    {"label": "Meta交易额", "value": "$100B", "color": "#FF8C00"}
   ],
   "review": [
-    "<strong>SaaS股震荡</strong><br>Anthropic新插件发布引发市场对ServiceNow等SaaS巨头的担忧",
-    "<strong>DeepSeek V4</strong><br>传闻即将发布，号称代码能力超越Claude与GPT"
+    "<strong>2月25日</strong><br>OpenClaw 带动推理算力暴涨",
+    "<strong>2月24日</strong><br>Anthropic 遭遇监管至暗时刻"
   ]
 }
