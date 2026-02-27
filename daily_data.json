@@ -1,54 +1,55 @@
 {
-  "date_str": "2026年2月26日 星期四 | 农历正月初十",
-  "date_full": "2026年2月26日 星期四",
-  "issue_no": "第 026 期",
+  "date_str": "2026年2月27日 星期五 | 农历正月十一",
+  "date_full": "2026年2月27日 星期五",
+  "issue_no": "第 028 期",
   "headline": {
-    "title": "Anthropic 的至暗时刻：中美两线“开战”",
-    "subtitle": "五角大楼下达最后通牒，同时指控中国大模型“蒸馏窃密”",
-    "time": "12小时前",
-    "content": "<p><strong>【四面楚歌】</strong> 2026年开春，以“AI安全”著称的 Anthropic 陷入了成立以来最严峻的生存危机。一边是来自华盛顿的铁拳，一边是来自大洋彼岸的“围剿”。</p><p><strong>【五角大楼通牒】</strong> 据 Fortune 报道，美国国防部长 Pete Hegseth 已向 Anthropic CEO Dario Amodei 下达最后通牒：必须在<strong>本周五前</strong>同意军方对 Claude 模型的“无限制使用权”（包括用于战争和间谍活动），否则将面临《国防生产法》强制征用甚至被列入黑名单。Anthropic 坚持的“不作恶”条款在国家安全机器面前显得不堪一击。</p><p><strong>【指控中国厂商】</strong> 就在与军方僵持之际，Anthropic 突然公开发难，指控 <strong>DeepSeek、Moonshot（月之暗面）和 MiniMax</strong> 三家中国公司对其发动了“工业级蒸馏攻击”。数据显示，这三家公司利用 2.4 万个虚假账号，进行了超过 1600 万次交互，意图“窃取” Claude 的思考链来训练自己的模型。Anthropic 称这种行为不仅侵权，还绕过了安全护栏。</p><h3>深度观察</h3><p>这不仅仅是一家公司的危机，而是 <strong>AI 理想主义的终结</strong>。当技术成为地缘政治的核武器，无论是“宪法AI”的自我约束，还是开源社区的共享精神，都将被迫在国家意志面前选边站队。Anthropic 的遭遇或许预示着：2026年，AI 将彻底告别“中立时代”。</p>",
+    "title": "五角大楼向Anthropic下达最后通牒",
+    "subtitle": "要求放弃AI护栏否则断供，CEO Dario Amodei强硬回绝",
+    "time": "4小时前",
+    "content": "<p><strong>【深度博弈】</strong> 在一场关乎AI伦理与国家安全的公开对峙中，五角大楼（DoD）向AI巨头Anthropic发出了“最后通牒”。国防部长Pete Hegseth要求Anthropic在周五晚之前签署协议，放弃对其Claude模型在军事用途上的限制，否则将面临失去所有国防合同并被列为“供应链风险”的制裁。</p><p><strong>【核心分歧】</strong> 双方的冲突焦点在于“大规模监控”与“自主武器”。Anthropic CEO Dario Amodei明确表示，虽然愿意支持导弹防御等防御性用途，但坚决反对将AI用于针对美国公民的大规模监控或全自主致死性武器。DoD提出的“最终报价”虽然表面上包含了妥协条款，但Anthropic认为其中充斥着“逃生舱口”（escape hatches），允许军方在认为必要时随意绕过安全护栏。</p><p><strong>【行业震荡】</strong> Anthropic的态度在硅谷显得格格不入。OpenAI、Google和xAI等竞争对手此前已表现出更积极的拥抱军方态度。如果Anthropic坚持到底，可能不仅意味着放弃数亿美元的合同，更可能在未来的政府AI基础设施建设中被边缘化。然而，这一强硬立场也为其赢得了AI安全社区的广泛支持，成为AI伦理防线上的“孤勇者”。</p><h3>深度观察</h3><p>这场对峙不仅是商业谈判，更是AI发展方向的路线之争。一边是国家安全对技术绝对掌控的需求，另一边是技术创造者对滥用风险的底线坚守。如果《国防生产法》被启动，Anthropic可能被迫就范，这将标志着民用AI公司独立性的终结。</p>",
     "sources": [
-      {"name": "Fortune", "url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"},
-      {"name": "FastCompany", "url": "https://fastcompany.co.za/fast-company/business/2026-02-25-is-anthropics-future-at-risk-navigating-ai-safety-and-geopolitics-in-2026/"}
+      {"name": "CBS News", "url": "https://www.cbsnews.com/news/pentagon-anthropic-offer-ai-unrestricted-military-use-sources/"},
+      {"name": "Bloomberg", "url": "https://www.bloomberg.com/news/features/2026-02-26/pentagon-pressures-anthropic-to-drop-ai-guardrails-in-military-standoff"}
     ]
   },
   "news_list": [
     {
-      "icon": "🚀",
-      "category": "行业爆发",
-      "title": "OpenClaw 引爆算力需求，GPU 价格回升",
-      "meta": "Business Insider | 10小时前",
-      "body": "<p>Business Insider 最新数据显示，开源 Agent 系统 <strong>OpenClaw</strong> 的爆发式增长正在重塑算力市场。OpenRouter 上的 Token 使用量在2026年初几周内<strong>翻了一番</strong>，单周处理量突破 <strong>13万亿</strong>。分析师指出，这标志着 AI 从“对话时代”正式迈入“Agent 自动化时代”。受此驱动，Nvidia H100 租赁价格自12月以来强劲反弹。</p>",
-      "source_name": "Business Insider",
-      "source_url": "https://www.businessinsider.com/openclaw-ai-demand-token-use-surge-nvidia-pricing-jumps-2026-2"
+      "icon": "🌏",
+      "category": "中美博弈",
+      "title": "DeepSeek V4拒绝向英伟达AMD开放，华为获独家首发",
+      "meta": "Reuters | 9小时前",
+      "body": "<p>中国AI独角兽DeepSeek在即将发布的旗舰模型V4上做出惊人举动：拒绝向美国芯片巨头Nvidia和AMD提供预发布版本进行优化，转而将早期访问权独家授予华为等中国本土芯片厂商。此举不仅让国产芯片获得了数周的软件调优先发优势，更被视为中国科技界减少对美依赖的标志性事件。有消息称，V4实际上是在Nvidia Blackwell集群上训练的，但DeepSeek可能通过技术手段掩盖这一事实，以规避出口管制风险。</p>",
+      "source_name": "Reuters",
+      "source_url": "https://www.reuters.com/world/china/deepseek-withholds-latest-ai-model-us-chipmakers-including-nvidia-sources-say-2026-02-25/"
     },
     {
-      "icon": "🤝",
-      "category": "巨头结盟",
-      "title": "Meta 豪掷千金买 AMD，意在摆脱英伟达依赖？",
-      "meta": "Fortune | 13小时前",
-      "body": "<p>Meta 宣布将采购 AMD 最新的 <strong>MI450 芯片</strong>，并获得购买 AMD 10% 股份的期权，交易潜在价值超 <strong>1000亿美元</strong>。受此消息刺激，AMD 股价大涨 9%。这被视为扎克伯格在构建算力基础设施上的又一次豪赌，意在减少对 Nvidia 的单一依赖。</p>",
-      "source_name": "Fortune",
-      "source_url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"
+      "icon": "🕵️",
+      "category": "行业黑幕",
+      "title": "Anthropic指控中国AI三巨头窃取“蒸馏”数据",
+      "meta": "Euronews | 18小时前",
+      "body": "<p>Anthropic公开指控DeepSeek、Moonshot AI（月之暗面）和MiniMax通过大规模“蒸馏攻击”窃取其技术。据称，这三家公司利用2.4万个虚假账号，与Claude进行了超过1600万次对话，旨在通过这些高质量问答数据来训练自己的小模型。Anthropic特别指出，DeepSeek利用这些数据训练模型刻意回避敏感话题，而Moonshot和MiniMax的窃取规模甚至更大。这一指控将大模型训练数据的灰色产业链暴露在聚光灯下。</p>",
+      "source_name": "Euronews",
+      "source_url": "https://www.euronews.com/next/2026/02/26/the-ai-cold-war-us-tech-companies-accuse-chinas-ai-firms-of-stealing-billions-in-research"
     },
     {
-      "icon": "👋",
-      "category": "高管变动",
-      "title": "亚马逊 AI 实验室负责人离职，AGI 竞赛再失一将",
-      "meta": "LinkedIn | 14小时前",
-      "body": "<p>亚马逊 AGI 团队副总裁 David Luan 宣布离职，距离他随 Adept 收购加入亚马逊仅 14 个月。他在告别信中提到“AGI 已近在咫尺”，决定全身心投入新项目。这对正努力追赶 OpenAI 和 Google 的亚马逊来说无疑是一记重创。</p>",
-      "source_name": "Fortune",
-      "source_url": "https://fortune.com/2026/02/25/nvidia-earnings-amd-wows-wall-street-meta-chip-deal/"
+      "icon": "🍌",
+      "category": "新产品",
+      "title": "Google发布Nano Banana 2：更快的图像生成模型",
+      "meta": "TechCrunch | 7小时前",
+      "body": "<p>Google今日发布了名为“Nano Banana 2”（实为Gemini 3.1 Flash Image）的新一代图像生成模型。这款模型主打极速生成与高保真度，支持最高4K分辨率，并能在一个工作流中保持最多5个角色的一致性。它将全面取代旧版模型，成为Gemini App、Google Search和Flow视频剪辑工具的默认图像引擎。所有生成内容均强制植入SynthID水印，以应对日益严重的AI伪造问题。</p>",
+      "source_name": "TechCrunch",
+      "source_url": "https://techcrunch.com/2026/02/26/google-launches-nano-banana-2-model-with-faster-image-generation/"
     }
   ],
   "stats": [
-    {"label": "Token周增量", "value": "+103%", "color": "#c41e3a"},
-    {"label": "AMD大涨", "value": "+9%", "color": "#2E8B57"},
-    {"label": "蒸馏攻击次数", "value": "1600万", "color": "#1E90FF"},
-    {"label": "Meta交易额", "value": "$100B", "color": "#FF8C00"}
+    {"label": "蒸馏攻击次数", "value": "1600万+", "color": "#c41e3a"},
+    {"label": "涉案虚假账号", "value": "2.4万", "color": "#ff9900"},
+    {"label": "DeepSeek下载量", "value": "7500万", "color": "#0099cc"},
+    {"label": "Nano Banana分辨率", "value": "4K", "color": "#33cc33"}
   ],
   "review": [
-    "<strong>2月25日</strong><br>OpenClaw 带动推理算力暴涨",
-    "<strong>2月24日</strong><br>Anthropic 遭遇监管至暗时刻"
+    "<strong>2月27日</strong><br>Anthropic与五角大楼决裂",
+    "<strong>2月26日</strong><br>DeepSeek拥抱华为芯片",
+    "<strong>2月26日</strong><br>Google发布Nano Banana 2"
   ]
 }

@@ -1,25 +1,14 @@
-【2026-02-26 栗噔噔AI早报】
+【2026-02-27 栗噔噔AI早报】
 
-各位早上好！Anthropic 今日遭遇重大危机，一面是五角大楼的强硬通牒，一面是指控中国大模型“蒸馏窃密”，AI 中立时代恐将终结。此外，OpenClaw 带动的算力需求正在重塑市场。
+各位早上好！Anthropic与五角大楼的对峙升级为公开决裂，这可能是AI伦理史上最重要的一天。同时，中美科技战火烧到了数据蒸馏领域，DeepSeek与华为深度绑定，并被指控大规模窃取Claude数据。
 
 🚨 头版头条
-1. Anthropic 的至暗时刻：中美两线“开战”
-五角大楼向 Anthropic 下达最后通牒，要求本周五前开放 Claude 用于军事用途，否则面临制裁。与此同时，Anthropic 指控 DeepSeek、Moonshot 和 MiniMax 利用 2.4 万个账号对其进行“工业级蒸馏攻击”，窃取思考链数据。这标志着 AI 技术地缘政治化的全面升级。
+1. 五角大楼向Anthropic下达最后通牒
+要求放弃AI护栏否则断供，CEO Dario Amodei强硬回绝。这不仅是一份合同的得失，更是AI伦理底线的生死之战。
 
-💬 行业动态
-2. OpenClaw 引爆算力需求，GPU 价格回升
-Business Insider 数据显示，开源 Agent 系统 OpenClaw 的爆发式增长推动 OpenRouter 周 Token 使用量翻倍，单周突破 13 万亿。Nvidia H100 租赁价格受此驱动强劲反弹，AI 正从对话时代迈入 Agent 自动化时代。
-
-3. Meta 豪掷千金买 AMD，意在摆脱英伟达依赖？
-Meta 宣布采购 AMD 最新 MI450 芯片，并获得购买 AMD 10% 股份的期权，交易潜在价值超 1000 亿美元。扎克伯格此举意在构建多元化算力基础设施，减少对 Nvidia 的单一依赖。
-
-4. 亚马逊 AI 实验室负责人离职，AGI 竞赛再失一将
-亚马逊 AGI 团队副总裁 David Luan 宣布离职，距离他随 Adept 收购加入仅 14 个月。他在告别信中称 AGI 已近在咫尺，决定全身心投入新项目。
-
-📊 今日数据
-- Token周增量：+103%
-- AMD大涨：+9%
-- 蒸馏攻击次数：1600万
-- Meta交易额：$100B
+💬 行业声音
+2. DeepSeek V4拒绝向英伟达AMD开放，华为获独家首发
+3. Anthropic指控中国AI三巨头窃取“蒸馏”数据
+4. Google发布Nano Banana 2：更快的图像生成模型
 
 完整版见链接 👉 https://nutllwhy.github.io/ai-news-daily/index.html
